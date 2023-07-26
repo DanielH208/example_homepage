@@ -23,6 +23,64 @@
     white-space: normal;
 }
 
+// BANNER 
+.text > h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 0 0 1.25rem;
+    font-weight: 600;
+    
+}
+
+.text > p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-top: 0 0 0.375rem;
+    font-weight: 600;
+}
+.banner {
+    height: 550px;
+    width: 100%;
+    color: white;
+}
+
+.content {
+    position: relative;
+    z-index: 4;
+    padding: 60px 0px;
+}
+
+.image-cover-container {
+    position: absolute;
+    height: 550px;
+    width: auto;
+}
+
+picture > img{
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner-btn-web {
+    height: auto;
+    padding: 5px 20px;
+    font-size: 1.25rem;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    white-space: normal;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(232, 230, 227);
+    background-color: rgb(94, 65, 119);
+    border-color: rgb(86, 59, 109);
+    margin-top: 1.938rem;
+    margin-bottom: 1.125;
+    line-height: 50px;
+}
+
+
+
 // CLIENT SLIDER 
 .client-slider {
     padding-top: 50px;
@@ -189,10 +247,6 @@ footer .container ul li {
 }
 
 @media (max-width: 767px) {
-    h1 {
-        text-align: center;
-        color: green;
-    }
     
     .footer-social{
         
@@ -207,6 +261,10 @@ footer .container ul li {
         display: flex;
         flex-wrap: wrap;
     }
+    .text {
+        text-align: center;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -231,6 +289,16 @@ footer .container ul li {
     .col-md-3 {
         width: 25%;
     }
+    .text > h1 {
+        font-size: 4rem;
+        line-height: 5rem;      
+    }
+    
+    .text > p {
+        font-size: 1.625rem;
+        line-height: 2.5rem;
+    }
+
 }
 
 
