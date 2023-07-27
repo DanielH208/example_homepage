@@ -26,6 +26,38 @@
     white-space: normal;
 }
 
+#btn-google {
+    background-color: rgb(8, 66, 161);
+    margin: 20px 8px 0px 0px;
+}
+
+.btn-trust {
+    background-color: rgb(0, 146, 98);
+
+}
+
+#btn-choose {
+    margin: 20px 8px 0px 0px;
+}
+
+#btn-choose, #btn-culture {
+    background-color: rgb(31, 33, 43);
+}
+
+.row a[class^="btn"] {
+    padding: 10px 30px;
+    margin: 20px 0px 0px;
+    font-size: 20px;
+    border-radius: 6px;
+}
+.clients-buttons, .brand-buttons {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+
+
+
 // BANNER 
 .text > h1 {
     font-size: 2.5rem;
@@ -56,7 +88,7 @@
 .image-cover-container {
     position: absolute;
     height: 550px;
-    width: auto;
+    width: 100%;
 }
 
 picture > img{
@@ -122,11 +154,13 @@ picture > img{
 .col-welcome {
     min-height: 1px;
     padding: 0px 15px;
+    padding-bottom: 50px;
 }
 
 .col-clients{
     min-height: 1px;
     padding: 0px 15px;
+
 }
 
 .star {
