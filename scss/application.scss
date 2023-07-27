@@ -22,7 +22,6 @@
     padding: 5px 15px;
     text-transform: uppercase;
     font-size: 1.063rem;
-    border-radius: 3px;
     white-space: normal;
 }
 
@@ -114,6 +113,23 @@ picture > img{
     line-height: 50px;
 }
 
+// CERTIFICATION SLIDER 
+.slider {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: #181a1b;
+}
+
+.slider-item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+
 // BRAND 
 
 .brand-background {
@@ -175,22 +191,93 @@ picture > img{
 }
 
 
-
-// CLIENT SLIDER 
-.client-slider {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 100%;
+// NEWS 
+.latest-articles {
     background-color: #181a1b;
+    color: white;
 }
 
-.client-slider-item {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
-    
+.row div[class^="article"] {
+    width: 100%;
 }
+
+.article-image {
+    width: 100%;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+}
+
+.article-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.careers-btn {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: #fff;
+    background-color: rgb(33, 87, 156);;
+    font-size: .75rem;
+    padding: 0 10px;
+    line-height: 1.438rem;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.block {
+    border-color: rgb(62, 68, 70);
+    border: 1px solid #ccc;
+    border-radius: 0px 0px 3px 3px;
+    padding: 30px;
+}
+
+.block h3 a {
+    color: rgb(80, 153, 218);
+}
+.read-time {
+    color: rgba(194, 189, 181, 0.5);
+}
+
+.user {
+    width: 100%
+    font-size .875rem;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #ccc;
+    border-top-color: rgb(62, 68, 70);
+    display: flex;
+    direction: row;
+}
+
+.details {
+    padding: 0px 0px 0px 20px;
+    font-size: 14px;
+    line-height: 1.375rem;
+}
+
+.article-buttons {
+    background-color: rgb(33, 87, 156);
+    border-color: rgb(30, 79, 141);
+} 
+
+#receptionist-title {
+    color: rgb(154, 121, 182);
+}
+
+#reception-button, #receptionist-careers-btn {
+    color: rgb(232, 230, 227);
+    background-color: rgb(94, 65, 119);
+    border-color: rgb(86, 59, 109);
+}
+
+
 
 
 
@@ -376,7 +463,16 @@ footer .container ul li {
     .row {
         width: 750px;
     }
-    
+    .article-three {
+        display: none;
+    }
+    .article-one, .article-two {
+        padding: 0px 15px;
+    }
+    .article-list {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
 }
 
 
@@ -418,5 +514,13 @@ footer .container ul li {
     .row {
         width: 1200px
     }
+    .article-three {
+        display: block;
+    }
+
+    .article-one, .article-two, .article-three {
+        padding: 0px 15px;
+    }
+
 
 }
