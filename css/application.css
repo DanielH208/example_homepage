@@ -52,6 +52,194 @@
   flex-wrap: wrap;
 }
 
+.services-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0px 20px;
+}
+
+#services-footer {
+  display: flex;
+  justify-content: center;
+  margin: 0px 20px;
+}
+
+#services-footer > h3 {
+  font-size: 26px;
+}
+
+.services-header > h2 {
+  font-size: 43.2px;
+}
+
+.services-header > h3 {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+}
+
+a[class^=card-] > span {
+  display: block;
+  text-align: center;
+}
+
+.service-list > .row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#service-section {
+  background-color: #ffffff;
+}
+
+.top-cards {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.other-cards {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+span[class^=btn] {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+  margin-bottom: 0;
+  font-weight: 400;
+  border: 1px solid transparent;
+}
+
+#software-btn {
+  display: inline-block;
+  color: #fff;
+  background-color: #67809f;
+  border-color: #67809f;
+}
+
+#software-background {
+  background-color: #67809f;
+}
+
+#it-btn {
+  display: inline-block;
+  color: #fff;
+  background-color: #4183d7;
+  border-color: #4183d7;
+}
+
+#it-background {
+  background-color: #4183d7;
+}
+
+#digital-btn {
+  display: inline-block;
+  color: #fff;
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+
+#digital-background {
+  background-color: #2ecc71;
+}
+
+#telecoms-btn {
+  display: inline-block;
+  color: #fff;
+  background-color: #d64541;
+  border-color: #d64541;
+}
+
+#telecoms-background {
+  background-color: #d64541;
+}
+
+#web-btn {
+  display: inline-block;
+  color: #fff;
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+
+#web-background {
+  background-color: #926fb1;
+}
+
+#cyber-btn {
+  display: inline-block;
+  color: #fff;
+  background-color: #f62459;
+  border-color: #f62459;
+}
+
+#cyber-background {
+  background-color: #f62459;
+}
+
+#training-btn {
+  display: inline-block;
+  color: #fff;
+  background-color: #ce4125;
+  border-color: #ce4125;
+}
+
+#training-background {
+  background-color: #ce4125;
+}
+
+a[class^=card-] > .icon {
+  height: 65px;
+  width: 65px;
+  margin: 0 auto 17px;
+  background-color: #333645;
+  color: #fff;
+  border-radius: 50%;
+}
+
+a[class$=-block] {
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 15px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  display: block;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.icon > img {
+  width: 32px;
+  filter: invert(100%);
+  padding: 25%;
+}
+
+.service-list span.p {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  font-weight: 400;
+}
+
+.service-list span.h2 {
+  font-size: 1.3rem;
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0 0 11px;
+}
+
+.software-colour {
+  color: #fff;
+  background-color: #67809f;
+  border-color: #67809f;
+}
+
 .text > h1 {
   font-size: 2.5rem;
   line-height: 3rem;
@@ -127,10 +315,7 @@ picture > img {
 
 .row {
   width: 100%;
-  margin-left: -15px;
-  margin-right: -15px;
   display: flex;
-  direction: row;
   flex-wrap: wrap;
 }
 
@@ -213,7 +398,7 @@ picture > img {
   z-index: 1;
 }
 
-.block {
+div[class^=block] {
   border-color: rgb(62, 68, 70);
   border: 1px solid #ccc;
   border-radius: 0px 0px 3px 3px;
@@ -421,6 +606,9 @@ footer .container ul li {
   .smallestvp-view-all {
     display: block;
   }
+  .services-header > h3 {
+    display: none;
+  }
 }
 @media (max-width: 991px) {
   .link-row {
@@ -429,6 +617,9 @@ footer .container ul li {
   }
   .text {
     text-align: center;
+  }
+  .top-cards, .other-cards {
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -458,6 +649,9 @@ footer .container ul li {
   .heading-container {
     width: 720px;
   }
+  #services-footer {
+    display: none;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -483,6 +677,12 @@ footer .container ul li {
   .heading-container {
     width: 940px;
   }
+  .top-cards {
+    width: 30%;
+  }
+  .other-cards {
+    width: 46.65%;
+  }
 }
 @media (min-width: 1260px) {
   .container {
@@ -502,6 +702,12 @@ footer .container ul li {
   }
   .heading-container {
     width: 1170px;
+  }
+  .top-cards {
+    width: 30.65%;
+  }
+  .other-cards {
+    width: 22.33%;
   }
 }
 
