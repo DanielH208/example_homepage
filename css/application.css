@@ -52,6 +52,116 @@
   flex-wrap: wrap;
 }
 
+.nav-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-row > li {
+  display: flex;
+  text-align: center;
+  flex-wrap: nowrap;
+}
+
+.nav-row > li img {
+  width: 23.41px;
+}
+
+.sub-menu {
+  float: left;
+  overflow: hidden;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0; /* Important for vertical align on mobile phones */
+  /*
+  position: relative;
+  display: flex;
+  */
+}
+
+.sub-menu-banner {
+  /*
+  background-color: blue;
+  */
+}
+
+.sub-menu-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1200px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  /*
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  text-align: left;
+  width: 1200px;
+  background-color: red;
+  */
+}
+
+.sub-menu-item {
+  font-size: 19.2px;
+  text-align: left;
+  letter-spacing: 0.4px;
+  line-height: 21px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+}
+
+.sub-menu-banner {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.sub-menu-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  /*
+  margin: 0;
+  display: none;
+  background-color: #1d1f28;
+  position: absolute;
+  align-self: center;
+  top: 100%;
+  left: 0;
+  width: 102vw;
+  margin-left: calc(-26.3vw);
+  z-index: 10;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  */
+}
+
+.sub-menu-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.sub-menu:hover .sub-menu-content {
+  display: block;
+}
+
 .services-header {
   display: flex;
   flex-direction: row;
@@ -245,6 +355,7 @@ a[class$=-block] {
   line-height: 3rem;
   margin: 0 0 1.25rem;
   font-weight: 600;
+  z-index: 0;
 }
 
 .text > p {
