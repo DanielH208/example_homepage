@@ -22,6 +22,7 @@ html {
 }
 
 
+
 .btn {
     height: auto;
     line-height: 35px;
@@ -47,6 +48,17 @@ html {
 
 #btn-choose, #btn-culture {
     background-color: rgb(31, 33, 43);
+}
+
+#search-form-button {
+    background-color: #999aa2 !important;
+    color: white;
+    
+}
+
+#search-form-button > i {
+    font-size: 23px;
+    line-height: 23px;
 }
 
 .row a[class^="btn"] {
@@ -110,18 +122,22 @@ html {
     border-radius: 0 3px 3px 0;
     border: none;
     vertical-align: bottom;
-    background-color: #999aa2;
+    background-color: none;
     line-height: 0px;
     right: 6px;
 }
 
+
+
+
+/*
 #magni-glass {
     filter: invert(100%);
     font-size: 23px;
     width: 28px;
     height: 32px;
 }
-
+*/
 .header-actions {
     display: flex;
     flex-wrap: nowrap;
@@ -156,6 +172,7 @@ html {
     align-self: center;
 }
 
+/*
 .menu-button-container {
     background-color: #333645;
     border-color: #333645;
@@ -163,7 +180,7 @@ html {
     height: 46px;
     margin-left: 20px;
     padding: 5px 15px;
-    align-self: flex-end;
+    
 }
 
 #menu-button {
@@ -172,7 +189,35 @@ html {
     filter: invert(100%);
     
 }
+*/
 
+#header-row i {
+    font-size: 23px;
+}
+
+#hamburger-menu-btn {
+    position: relative;
+    background-color: #333645;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 56px;   
+    align-self: flex-end;
+    margin-left: 20px;
+}
+
+.hamburger--slider .hamburger-inner, .hamburger--slider .hamburger-inner::before, .hamburger--slider .hamburger-inner::after {
+    background-color: white;
+}
+
+
+
+.header-actions > a {
+    text-decoration: none;
+}
+
+.header-actions > a:hover, #search-form-button:hover {
+    filter: brightness(90%);
+}
 
 .search-form {
     margin-top: 11px;
@@ -182,7 +227,7 @@ html {
 #search-form-button {
     position: absolute;
     border: none;
-    color: #333645;
+    //color: #333645;
     line-height: 47px;
     font-size: 20px;
     bottom: 0;
@@ -382,11 +427,6 @@ html {
 
 .sub-menu-item-text > i {
     padding-right: 10px;
-}
-
-.menu-button-container {
-    display: none;
-
 }
 
 .nav-row > li img {
@@ -1151,6 +1191,14 @@ footer .container ul li {
     .article-one, .article-two, .article-three {
         margin-bottom: 40px;
     }
+    #search-form-button {
+        background-color: transparent !important;   
+        color: #333645;
+    }
+
+    #search-form-button > i {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -1214,6 +1262,10 @@ footer .container ul li {
     } 
     .license {
         max-width: 100%
+    }
+    .search-form-input:focus {
+        border-color: lightblue;
+        box-shadow: 0px 0px 15px lightgray;
     }
 
 
