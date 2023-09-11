@@ -203,6 +203,10 @@ html {
 
 // NAVIGATION BAR
 
+.main-navigation {
+    background-color: #333645;
+}
+
 .nav-row {
     display: flex;
     flex-direction: row;
@@ -213,27 +217,253 @@ html {
     display: flex;
     text-align: center;
     flex-wrap: nowrap;
+    width: 14.28%;
+    flex-grow: 1;
+    color: white;
+}
+/*
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: -15px;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+*/
+
+#bespoke-menu:hover {
+    background-color: #67809f;
+    #laptop-icon {
+        color: white;
+    }
+}
+
+#bespoke-content { 
+    background-color: #526781;
+}
+
+#bespoke-triangle {
+    border-top-color: #67809f;
+}
+
+#laptop-icon {
+    font-size: 1.2rem;
+    color: #526781;
+}
+
+#support-menu:hover {
+    background-color: #4183d7;
+    #desktop-icon {
+        color: white;
+    }
+}
+
+#support-content { 
+    background-color: #286abd;
+}
+
+#support-triangle {
+    border-top-color: #4183d7;
+    margin-left: 140px;
+}
+
+#desktop-icon {
+    font-size: 1.2rem;
+    color: #286abd;
+}
+
+#digital-menu:hover {
+    background-color: #2ecc71;
+    #signal-icon {
+        color: white;
+    }
+}
+
+#digital-content {
+    background-color: #25a25a;
+}
+
+#digital-triangle {
+    border-top-color: #2ecc71;
+    margin-left: 276px;
+}
+
+#signal-icon {
+    font-size: 1.2rem;
+    color: #2ecc71;
+}
+
+#telecoms-menu:hover {
+    background-color: #d64541;
+    #telecoms-icon {
+        color: white;
+    }
+}
+
+#telecoms-content { 
+    background-color: #bc2c28;
+}
+
+#telecoms-triangle {
+    border-top-color: #d64541;
+    margin-left: 414px;
+}
+
+#telecoms-icon {
+    font-size: 1.2rem;
+    color: #d64541
+}
+
+#web-menu:hover {
+    background-color: #926fb1;
+    #web-icon {
+        color: white;
+    }
+}
+
+#web-content {
+    background-color: #61427b;
+}
+
+#web-triangle {
+    border-top-color: #926fb1;
+    margin-left: 554px;
+}
+
+#web-icon {
+    font-size: 1.2rem;
+    color: #926fb1;
+}
+
+#security-menu:hover {
+    background-color: #fb2459;
+    #security-icon {
+        color: white;
+    }
+}
+
+#security-content {
+    background-color: #de093f;
+}
+
+#security-triangle {
+    margin-left: 692px;
+    border-top-color: #fb2459;
+}
+
+
+#security-icon {
+    font-size: 1.2rem;
+    color: #de093f;
+}
+
+#developer-menu:hover {
+    background-color: #ce4125;
+    #developer-icon {
+        color: white;
+    }
+}
+
+#developer-content {
+    background-color: #a3331d;
+}
+
+#developer-triangle {
+    margin-left: 830px;
+    border-top-color: #ce4125;
+}
+
+#developer-icon {
+    font-size: 1.2rem;
+    color: #ce4125;
+}
+
+.sub-menu-item-text > i {
+    padding-right: 10px;
+}
+
+.menu-button-container {
+    display: none;
+
 }
 
 .nav-row > li img {
     width: 23.41px;
 
 }
+.sub-menu > a { 
+    width: 100%;
+}
 
-.sub-menu{
+.sub-menu-item-text {
+    display: inline-flex;
+    flex-direction: row;
+    height: 15px;
+    width: 100%;
+}
 
+.sub-menu-item-text-value:hover {
+    text-decoration: underline;
+}
+
+.sub-menu-item-text-value {
+    display: inline-block;
+    overflow-wrap: break-word;
+}
+
+.sub-menu {
+    width: 100%;
     float: left;
     overflow: hidden;
     font-size: 16px;
     border: none;
     outline: none;
-    padding: 14px 16px;
+    padding: 18px 0px;
     background-color: inherit;
     margin: 0; 
-
+    overflow-wrap: break-word;
+}
     
+.triangle-down {
+    margin-top: -15px;
+    width: 0;
+    height: 0;
+    border-left: 69px solid transparent;
+    border-right: 69px solid transparent;
+    border-top: 35px solid blue;
+  }
+
+.dropbtn h1 {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: -6px;
 }
 
+.sub-menu-banner > h2 {
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+.dropbtn h2 {
+    font-size: 10px;
+    font-weight: lighter;
+    margin: 0px;
+}
+
+.content-columns {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.content-columns > li {
+    width: 33%;
+    flex-grow: 1;
+}
 
 .sub-menu-container {
     display: flex;
@@ -243,6 +473,13 @@ html {
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 20px;
+    letter-spacing: 0.4px;
+    
+}
+
+.sub-menu-item > a > span {
+    color: white;
 }
 
 .main-navigation {
@@ -257,7 +494,7 @@ html {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 15px;
-
+    
 }
 
 .sub-menu-banner {
@@ -1028,7 +1265,6 @@ footer .container ul li {
         border-radius: 3px !important;
         left: 1px;
     }
-
 }
 
 
@@ -1067,9 +1303,31 @@ footer .container ul li {
         border-radius: 0px 3px 3px 0px !important;
         left: -6px;
     }
-
     .sub-menu-container {
         width: 1200px;
+    }
+    #support-triangle {
+        margin-left: 172px;
+    }
+    #digital-triangle {
+        margin-left: 344px;
+    }
+    #telecoms-triangle {
+        margin-left: 516px;
+    }
+    #web-triangle {
+        margin-left: 688px;
+    }
+    #security-triangle {
+        margin-left: 860px;
+    }
+    #developer-triangle {
+        margin-left: 1032px;
+    }
+    .triangle-down {
+        border-left: 85px solid transparent;
+        border-right: 85px solid transparent;
+        border-top: 35px solid blue;
     }
 
 
