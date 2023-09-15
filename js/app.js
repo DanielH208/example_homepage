@@ -43,3 +43,27 @@ function hasScrolled() {
 }
 
 
+let open = false
+$("#hamburger-menu-btn").on("click", () => {
+    if (open == false) {
+        openNav();
+        open = true;
+    } else {
+        closeNav()
+        open = false;
+    }
+})
+
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+    $("#hamburger-menu-btn").addClass("hamburger hamburger--slider is-active");
+    $("#side-nav-bar").css("width", "250px");
+    $("main").css("margin-right", "250px");
+    $("main").css("margin-left", "-250px")
+  } 
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    $("#hamburger-menu-btn").removeClass("hamburger hamburger--slider is-active");
+    $("#side-nav-bar").css("width",  "0px");
+    $("main").css("margin-right", "0px").css("margin-left", "0px")
+}

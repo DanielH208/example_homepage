@@ -3,10 +3,17 @@
 
 html {
     font-family: 'Poppins';
+    overflow-x: hidden; /* Disable horizontal scroll */
 }
 
 #privacy-link {
     text-decoration: underline;
+}
+
+main {
+    position: relative;
+    transition: all .5s;
+    overflow-x: hidden; /* Disable horizontal scroll */
 }
 
 .section {
@@ -14,11 +21,32 @@ html {
     padding-bottom: 50px;
 }
 
+#side-nav-bar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    top: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    right: 0px;
+    background-color: #111; /* Black*/
+    padding-top: 60px; /* Place content 60px from the top */
+}
+
 .container {
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;  
+}
+
+.body {
+    transition: right 0.5s ease-in-out;
+}
+
+.open {
+    margin-right: 200px;
+    overflow: hidden;
+    transition: left 0.5s ease-in-out;
 }
 
 .header {
@@ -212,16 +240,17 @@ html {
 
 #hamburger-menu-btn {
     position: relative;
-    background-color: #333645;
+    background-color: #333645 !important;
     border: 3px solid transparent;
     border-radius: 3px;
-    height: 56px;   
+    padding: 5px 15px !important;
+    height: 56px !important;   
     align-self: flex-end;
     margin-left: 20px;
 }
 
 .hamburger--slider .hamburger-inner, .hamburger--slider .hamburger-inner::before, .hamburger--slider .hamburger-inner::after {
-    background-color: white;
+    background-color: white !important;
 }
 
 
