@@ -19,6 +19,20 @@ html {
   padding-right: 15px;
 }
 
+.header {
+  height: 168px;
+  position: absolute;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  background-color: white;
+  z-index: 100000;
+}
+
+.nav-up {
+  top: -168px;
+}
+
 .btn {
   height: auto;
   line-height: 35px;
@@ -143,6 +157,7 @@ html {
   flex-wrap: nowrap;
   width: 100%;
   align-items: center;
+  height: 70px;
 }
 
 .header-icon {
@@ -151,6 +166,7 @@ html {
 }
 
 .header-icon > img {
+  max-width: 402px;
   width: 100%;
 }
 
@@ -742,6 +758,11 @@ a[class$=-block] {
   z-index: 0;
 }
 
+/*
+.image-cover-container img {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,255,255,1));
+}
+*/
 .text > p {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -753,6 +774,7 @@ a[class$=-block] {
   height: 550px;
   width: 100%;
   color: white;
+  margin-top: 154px;
 }
 
 .content {
@@ -1196,6 +1218,15 @@ footer .container ul li {
     border-color: lightblue;
     box-shadow: 0px 0px 15px lightgray;
   }
+  .header {
+    height: 110px;
+  }
+  .nav-up {
+    top: -110px;
+  }
+  .banner {
+    margin-top: 110px;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -1236,6 +1267,15 @@ footer .container ul li {
   #search-form-button {
     border-radius: 3px !important;
     left: 1px;
+  }
+  .header {
+    height: 215px;
+  }
+  .nav-up {
+    top: -215px;
+  }
+  .banner {
+    margin-top: 215px;
   }
 }
 @media (min-width: 1260px) {
