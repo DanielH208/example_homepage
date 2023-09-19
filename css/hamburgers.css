@@ -40,11 +40,11 @@
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: -2px; }
+  margin-top: 2px; }
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 33px;
     height: 4px;
-    background-color: #000;
+    background-color: white;
     border-radius: 4px;
     position: absolute;
     transition-property: transform;

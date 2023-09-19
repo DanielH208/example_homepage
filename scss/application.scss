@@ -3,10 +3,18 @@
 
 html {
     font-family: 'Poppins';
+    overflow-x: hidden; /* Disable horizontal scroll */
 }
 
 #privacy-link {
     text-decoration: underline;
+}
+
+main {
+    position: relative;
+    transition: all .5s;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    z-index: 1000;
 }
 
 .section {
@@ -14,11 +22,23 @@ html {
     padding-bottom: 50px;
 }
 
+
+
 .container {
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;  
+}
+
+.body {
+    transition: right 0.5s ease-in-out;
+}
+
+.open {
+    margin-right: 200px;
+    overflow: hidden;
+    transition: left 0.5s ease-in-out;
 }
 
 .header {
@@ -28,12 +48,10 @@ html {
     transition: top 0.2s ease-in-out;
     width: 100%;
     background-color: white;
-    z-index: 100000
+    z-index: 100000;
 }
 
-.nav-up {
-    top: -168px; // same as header height. use variables in LESS/SASS
-  }
+
 
 .btn {
     height: auto;
@@ -83,6 +101,160 @@ html {
     display: inline-flex;
     flex-wrap: wrap;
 }
+
+
+// SIDENAV 
+
+#side-nav-bar {
+    height: 100%; /* 100% Full-height */
+    width: 275px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    top: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    right: 0px;
+    color: white;
+    background-color: #333645; 
+    z-index: 5;
+}
+
+#contact-us-lg-sidenav {
+    padding-top: 0px !important;
+}
+
+#side-nav-services > li {
+    padding-top: 20px;
+}
+
+.nav-up {
+    top: -168px; // same as header height. use variables in LESS/SASS
+}
+
+#side-nav-content {
+    padding: 21px;
+}
+
+#side-nav-company-info {
+    margin-bottom: 25px;
+}
+
+#services-md-hidden-menu {
+    display: none;
+}
+
+#covid-sidenav > a {
+    margin-bottom: 1px !important;
+}
+
+#side-nav-services > li > a {
+    font-size: 1.125rem;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+    padding: 19px 0 18px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    outline: 1px solid rgba(0,0,0,.25);
+    border: 1px solid hsla(0,0%,100%,.1);
+}
+
+#side-nav-company-info > li > a {
+    font-size: 16px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+    outline: 1px solid rgba(0,0,0,.25);
+    border: 1px solid hsla(0,0%,100%,.1);
+    text-align: left;
+    line-height: 1;
+}
+
+#side-nav-company-info .sidenav-sub-menu-item > a {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 20px;
+}
+
+#side-nav-company-info h2 {
+    font-size: 14px !important;
+    line-height: 20px;
+    font-weight: 100;
+    text-align: left;
+}
+
+.unfocused { 
+    filter: brightness(65%);
+}
+
+#side-nav-company-info > li > a {
+    margin-bottom: -22px;
+}
+
+.sidenav-sub-menu-item > a > i {
+    margin-top: 6px;
+    margin-right: 20px;
+    font-size: 8px;
+}
+
+
+#side-nav-company-info .sidenav-sub-menu-item > li > a {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 100;
+}
+
+#side-nav-company-info > li > a > h1 {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#side-nav-services > li > a > h3 {
+    margin: 0px 0px; 
+    font-size: 10px;
+    font-weight: 100;
+}
+
+#side-nav-services > li > a > h1 {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.sidenav-sub-menu-item > a > h2 {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+#side-nav-bar h2 {
+    margin: 0px;
+    font-size: 16px;
+}
+
+.side-nav-icon {
+    font-size: 1.2rem;
+}
+
+.sidenav-sub-menu-item > a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,.25);
+    padding: 10px;
+    border-top: 1px solid hsla(0,0%,100%,.05);
+    text-decoration: none;
+}
+
+.sidenav-sub-menu-banner { 
+    margin-top: 20px;
+}
+
+.sidenav-sub-menu-banner > ul > li:not(:first-child) > a {
+    border-top: 1px solid hsla(0,0%,100%,.05);
+}
+
+
 
 // HEADER 
 .header-actions-buttons {
@@ -187,41 +359,23 @@ html {
     align-self: center;
 }
 
-/*
-.menu-button-container {
-    background-color: #333645;
-    border-color: #333645;
-    border-radius: 3px;
-    height: 46px;
-    margin-left: 20px;
-    padding: 5px 15px;
-    
-}
-
-#menu-button {
-    width: 33px;
-    height: 46px;
-    filter: invert(100%);
-    
-}
-*/
-
 #header-row i {
     font-size: 23px;
 }
 
 #hamburger-menu-btn {
     position: relative;
-    background-color: #333645;
+    background-color: #333645 !important;
     border: 3px solid transparent;
     border-radius: 3px;
-    height: 56px;   
+    padding: 5px 15px !important;
+    height: 56px !important;   
     align-self: flex-end;
     margin-left: 20px;
 }
 
 .hamburger--slider .hamburger-inner, .hamburger--slider .hamburger-inner::before, .hamburger--slider .hamburger-inner::after {
-    background-color: white;
+    background-color: white !important;
 }
 
 
@@ -281,17 +435,7 @@ html {
     flex-grow: 1;
     color: white;
 }
-/*
-{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: -15px;
-    list-style: none;
-    text-align: left;
-    padding: 0;
-}
-*/
+
 
 #bespoke-menu:hover {
     background-color: #67809f;
@@ -308,7 +452,7 @@ html {
     border-top-color: #67809f;
 }
 
-#laptop-icon {
+#laptop-icon, #sidenav-laptop-icon {
     font-size: 1.2rem;
     color: #526781;
 }
@@ -329,7 +473,7 @@ html {
     margin-left: 140px;
 }
 
-#desktop-icon {
+#desktop-icon, #sidenav-desktop-icon {
     font-size: 1.2rem;
     color: #286abd;
 }
@@ -350,7 +494,7 @@ html {
     margin-left: 276px;
 }
 
-#signal-icon {
+#signal-icon, #sidenav-digital-icon {
     font-size: 1.2rem;
     color: #2ecc71;
 }
@@ -371,7 +515,7 @@ html {
     margin-left: 414px;
 }
 
-#telecoms-icon {
+#telecoms-icon, #sidenav-telecoms-icon {
     font-size: 1.2rem;
     color: #d64541
 }
@@ -392,7 +536,7 @@ html {
     margin-left: 554px;
 }
 
-#web-icon {
+#web-icon, #sidenav-code-icon {
     font-size: 1.2rem;
     color: #926fb1;
 }
@@ -414,7 +558,7 @@ html {
 }
 
 
-#security-icon {
+#security-icon, #sidenav-cyber-icon {
     font-size: 1.2rem;
     color: #de093f;
 }
@@ -435,7 +579,7 @@ html {
     border-top-color: #ce4125;
 }
 
-#developer-icon {
+#developer-icon, #sidenav-graduation-icon {
     font-size: 1.2rem;
     color: #ce4125;
 }
@@ -846,20 +990,54 @@ picture > img{
 }
 
 // CERTIFICATION SLIDER 
+
+
 .slider {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    z-index: 10000;
+    position: relative;
+    overflow: hidden;
     width: 100%;
-    background-color: #181a1b;
+    display: block;
+    background-color: white;
+    padding-bottom: 30px;
+    
+}
+#slider-certification {
+    position: relative;
+    display: block;
+    width: 2500px;
+    transition: all 0.25s ease 0s;
 }
 
-.slider-item {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
-    
+.slider-certification-item-container {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    width: auto;
 }
+
+.slider-certification-item
+{
+    vertical-align: middle;
+    padding: 0 20px;
+    position: relative;
+    max-height: 70px;
+    height: 70px; 
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.slider-certification-image {
+    filter: grayscale(100%);
+}
+
+.slider-certification-image:hover {
+    filter: grayscale(0%);
+}
+
+
 
 
 // BRAND 
@@ -1356,6 +1534,22 @@ footer .container ul li {
     }
     .banner {
         margin-top: 215px;
+    }
+
+    #services-md-hidden-menu { 
+        display: block;
+    }
+    #side-nav-content { 
+        display: none;
+    }
+    #support-sidenav {
+        display: none;
+    }
+    #side-nav-company-info {
+        margin-bottom: 0px;
+    }
+    #side-nav-bar {
+        width: 350px;
     }
 }
 
