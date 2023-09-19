@@ -6,28 +6,584 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/application.css">
         <link rel="stylesheet" href="css/hamburgers.css">
+        <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
         <script src="https://kit.fontawesome.com/7cba581338.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="side-nav-bar">
             <div id="side-nav-content">
                 <ul id="side-nav-services">
-                    <li>cdscscs</li>
-                    <li>scscscs</li>
-                    <li>cscscscs</li>
-                    <li>cscscscs</li>
-                    <li>cscscsc</li>
-                    <li>scscscs</li>
-                </ul>
-                <ul id="side-nav-company-info">
-                    <li>cdscscs</li>
-                    <li>scscscs</li>
-                    <li>cscscscs</li>
-                    <li>cscscscs</li>
-                    <li>cscscsc</li>
-                    <li>scscscs</li>
+                    <li id="contact-us-lg-sidenav">
+                        <a href="#">
+                            <h1>CONTACT US</h1>
+                        </a>
+                    </li>
+                    <li id="software-sidenav">
+                        <a href="#">
+                            <span id="sidenav-laptop-icon" class="side-nav-icon">
+                                <i class="fa-solid fa-laptop"></i>
+                            </span>
+                            <h3>BESPOKE</h3>
+                            <h1>SOFTWARE</h1>
+                        </a>
+                        <div class="sidenav-sub-menu-banner">
+                            <ul class="sidenav-sub-menu">
+                                <li class="sidenav-sub-menu-title">
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Bespoke CRM</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Buisness Automation</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Software Integrations</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Mobile App Devlopment</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Bespoke Databases</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Sharepoint Development</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Operational Systems</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Buisness Central Implementation</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Internet Of Things (IOT) Software</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Intranet Development</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Customer Portal Development</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Reporting Hub</h2>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="support-sidenav">
+                        <a href="#">
+                            <span id="sidenav-desktop-icon" class="side-nav-icon">
+                                <i class="fa-solid fa-desktop"></i>
+                            </span>
+                            <h3>IT</h3>
+                            <h1>SUPPORT</h1>
+                        </a>
+                        <div class="sidenav-sub-menu-banner">
+                            <ul class="sidenav-sub-menu">
+                                <li class="sidenav-sub-menu-title">
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Managed IT Support</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Buisness IT Support</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Office 365 For Buisness</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>IT Consultancy</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Cloud Service Provider</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Data Backup & Disaster Recovery</h2>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="digital-sidenav">
+                        <a href="#">
+                            <span id="sidenav-digital-icon" class="side-nav-icon">
+                                <i class="fa-solid fa-signal"></i>
+                            </span>
+                            <h3>DIGITAL</h3>
+                            <h1>MARKETING</h1>
+                        </a>
+                        <div class="sidenav-sub-menu-banner">
+                            <ul class="sidenav-sub-menu">
+                                <li class="sidenav-sub-menu-title">
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Search Engine Optimisation (SEO)</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Pay Per Click Advertising (PPC)</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Conversation Rate Optimisation (CRO)</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Email Marketing</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Social Media Marketing</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Content Marketing</h2>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="telecoms-sidenav">
+                        <a href="#">
+                            <span id="sidenav-telecoms-icon" class="side-nav-icon">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </span>
+                            <h3>TELECOMS</h3>
+                            <h1>MARKETING</h1>
+                        </a>
+                        <div class="sidenav-sub-menu-banner">
+                            <ul class="sidenav-sub-menu">
+                                <li class="sidenav-sub-menu-title">
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Buisness Mobile</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Hosted VOIP Provider</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Buisness VOIP Systems</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Buisness Broadband</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Leased Lines Provider</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>3CX Systems</h2>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="web-sidenav">
+                        <a href="#">
+                            <span id="sidenav-code-icon" class="side-nav-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </span>
+                            <h3>WEB</h3>
+                            <h1>DESIGN</h1>
+                        </a>
+                        <div class="sidenav-sub-menu-banner">
+                            <ul class="sidenav-sub-menu">
+                                <li class="sidenav-sub-menu-title">
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Bespoke Website Design</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Ecommerce Website Design</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Pay Monthly Websites</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Branding & Design</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Mobile App Development</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Web Hosting</h2>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="cyber-sidenav">
+                        <a href="#">
+                            <span id="sidenav-cyber-icon" class="side-nav-icon">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </span>
+                            <h3>Cyber</h3>
+                            <h1>Security</h1>
+                        </a>
+                        <div class="sidenav-sub-menu-banner">
+                            <ul class="sidenav-sub-menu">
+                                <li class="sidenav-sub-menu-title">
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Cyber Security Assessment</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Cyber Security Management</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Cyber Penetration testing</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Cyber Essentials Certification</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>PCI Compliance</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Hacking Prevention</h2>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="developer-sidenav">
+                        <a href="#">
+                            <span id="sidenav-graduation-icon" class="side-nav-icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </span>
+                            <h3>DEVELOPER</h3>
+                            <h1>COURSE</h1>
+                        </a>
+                        <div class="sidenav-sub-menu-banner">
+                            <ul class="sidenav-sub-menu">
+                                <li class="sidenav-sub-menu-title">
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Train For A Career In Tech</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Skills Bootcamp</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Scion Scheme Frequently Asked Questions</h2>
+                                    </a>
+                                </li>
+                                <li class="sidenav-sub-menu-item">
+                                    <a href="#">
+                                        <h2>Scion Collaborators</h2>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
+            <ul id="side-nav-company-info">
+                <li id="services-md-hidden-menu">
+                    <a href="#">
+                        <h1>SERVICES</h1>
+                    </a>
+                    <div class="sidenav-sub-menu-banner">
+                        <ul class="sidenav-sub-menu">
+                            <li class="sidenav-sub-menu-title">
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>Bespoke Software</h2>
+                                </a>
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>IT Support</h2>
+                                </a>
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>Digital Marketing</h2>
+                                </a>
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>Telecoms Services</h2>
+                                </a>
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>Web Design</h2>
+                                </a>
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>Cyber Security</h2>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="our-work-sidenav">
+                    <a href="#">
+                        <h1>Our Work</h1>
+                    </a>
+                    <div class="sidenav-sub-menu-banner">
+                        <ul class="sidenav-sub-menu">
+                            <li class="sidenav-sub-menu-title">
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>Case Studies</h2>
+                                </a>
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>Our IT Clients</h2>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="our-knowledge-sidenav">
+                    <a href="#">
+                        <h1>Our Knowledge</h1>
+                    </a>
+                    <div class="sidenav-sub-menu-banner">
+                        <ul class="sidenav-sub-menu">
+                            <li class="sidenav-sub-menu-title">
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>Technologies</h2>
+                                </a>
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>INDUSTRIES</h2>
+                                </a>
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>News</h2>
+                                </a>
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>Insights</h2>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="training-sidenav">
+                    <a href="#">
+                        <h1>Training</h1>
+                    </a>
+                    <div class="sidenav-sub-menu-banner">
+                        <ul class="sidenav-sub-menu">
+                            <li class="sidenav-sub-menu-title">
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>Train For A Career In tech</h2>
+                                </a>
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>Skills Bootcamp</h2>
+                                </a>
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>SCS Frequently Asked Question</h2>
+                                </a>
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>Scion Collaborators</h2>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="company-sidenav">
+                    <a href="#">
+                        <h1>OUR COMPANY</h1>
+                    </a>
+                    <div class="sidenav-sub-menu-banner">
+                        <ul class="sidenav-sub-menu">
+                            <li class="sidenav-sub-menu-title">
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>Why Choose Us?</h2>
+                                </a>
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>Our Culture</h2>
+                                </a>
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>Our Team</h2>
+                                </a>
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>Our Careers</h2>
+                                </a>
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>Our Benefits</h2>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="contact-sidenav">
+                    <a href="#">
+                        <h1>CONTACT US</h1>
+                    </a>
+                    <div class="sidenav-sub-menu-banner">
+                        <ul class="sidenav-sub-menu">
+                            <li class="sidenav-sub-menu-title">
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>London Office</h2>
+                                </a>
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>Cambridge Office</h2>
+                                </a>
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>Wyondham Office</h2>
+                                </a>
+                            </li>
+                            <li class="sidenav-sub-menu-item">
+                                <a href="#">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <h2>Great Yarmouth Office</h2>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="covid-sidenav">
+                    <a href="#">
+                        <h1>COVID RISK ASSESSMENTS</h1>
+                    </a>
+                </li>
+                <li id="support-sidenav">
+                    <a href="#">
+                        <h1>SUPPORT</h1>
+                    </a>
+                </li>
+            </ul>
         </div>
         <main>
             <div class="header">
@@ -679,495 +1235,554 @@
                     </div>
                 </div>
             </div>
-            <div class="banner">
-                <div class="image-cover-container">
-                    <picture>
-                        <img src="assets/images/asset 3.png">
-                    </picture>
-                </div>
-                <div class="content">
-                    <div class="container">
-                        <div class="text">
-                            <h1>The East Of England's Leading Technology Company</h1>
-                            <p>
-                                Performance-driven digital and technology services
-                                <br>
-                                with complete transparency.
-                            </p>
-                            <a class="banner-btn-web">
-                                Find Out More <i class="fa-solid fa-arrow-right"></i>
-                            </a>
+            <div id="main-content">
+                <div class="banner">
+                    <div class="image-cover-container">
+                        <picture>
+                            <img src="assets/images/asset 3.png">
+                        </picture>
+                    </div>
+                    <div class="content">
+                        <div class="container">
+                            <div class="text">
+                                <h1>The East Of England's Leading Technology Company</h1>
+                                <p>
+                                    Performance-driven digital and technology services
+                                    <br>
+                                    with complete transparency.
+                                </p>
+                                <a class="banner-btn-web">
+                                    Find Out More <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="section" id="service-section">
-                <div class="container">
-                    <div class="service-list">
-                        <div class="services-header">
-                            <h2>
-                                <strong>Our Services</strong>
-                            </h2>
-                            <h3>
-                                <a>
-                                    View Our Work <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </h3>
+                <div class="section" id="service-section">
+                    <div class="container">
+                        <div class="service-list">
+                            <div class="services-header">
+                                <h2>
+                                    <strong>Our Services</strong>
+                                </h2>
+                                <h3>
+                                    <a>
+                                        View Our Work <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="row">
+                                <div class="top-cards">
+                                    <a class="card-software-block">
+                                        <span class="icon" id="software-background">
+                                            <i class="fa-solid fa-laptop"></i>
+                                        </span>
+                                        <span class="h2">
+                                            Bespoke Software 
+                                        </span>
+                                        <span class="p">
+                                            Bespoke software solutions for all your business needs 
+                                            including integrations and reporting.
+                                        </span>
+                                        <span class="btn-software" id="software-btn">
+                                                Read More 
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="top-cards">
+                                    <a class="card-it-block">
+                                        <span class="icon" id="it-background">
+                                            <i class="fa-solid fa-desktop"></i>
+                                        </span>
+                                        <span class="h2">
+                                            IT Support
+                                        </span>
+                                        <span class="p">
+                                            Fully managed IT support and consultancy packages 
+                                            tailored to meet your exact business needs.
+                                        </span>
+                                        <span class="btn-it" id="it-btn">
+                                                Read More 
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="top-cards">
+                                    <a class="card-digital-block">
+                                        <span class="icon" id="digital-background">
+                                            <i class="fa-solid fa-signal"></i>
+                                        </span>
+                                        <span class="h2">
+                                            Digital Marketing 
+                                        </span>
+                                        <span class="p">
+                                            Driven brand awareness & ROI through creative 
+                                            digital marketing campaigns.
+                                        </span>
+                                        <span class="btn-digital" id="digital-btn">
+                                                Read More 
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="other-cards">
+                                    <a class="card-telecoms-block">
+                                        <span class="icon" id="telecoms-background">
+                                            <i class="fa-solid fa-phone-volume"></i>
+                                        </span>
+                                        <span class="h2">
+                                            Telecoms Services 
+                                        </span>
+                                        <span class="p">
+                                            Business telephony solutions including mobile 
+                                            & connectivity solutions.
+                                        </span>
+                                        <span class="btn-telecoms" id="telecoms-btn">
+                                                Read More 
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="other-cards">
+                                    <a class="card-web-block">
+                                        <span class="icon" id="web-background">
+                                            <i class="fa-solid fa-code"></i>
+                                        </span>
+                                        <span class="h2">
+                                            Web Design
+                                        </span>
+                                        <span class="p">
+                                            User-centric design for businesses looking to make 
+                                            a lasting impression.
+                                        </span>
+                                        <span class="btn-web" id="web-btn">
+                                                Read More 
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="other-cards">
+                                    <a class="card-cyber-block">
+                                        <span class="icon" id="cyber-background">
+                                            <i class="fa-solid fa-shield-halved"></i>
+                                        </span>
+                                        <span class="h2">
+                                            Cyber Security
+                                        </span>
+                                        <span class="p">
+                                            Prevention, testing, consultancy & breach management services.
+                                        </span>
+                                        <span class="btn-cyber" id="cyber-btn">
+                                                Read More 
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="other-cards">
+                                    <a class="card-training-block">
+                                        <span class="icon" id="training-background">
+                                            <i class="fa-solid fa-graduation-cap"></i>
+                                        </span>
+                                        <span class="h2">
+                                            Developer Training
+                                        </span>
+                                        <span class="p">
+                                            Web design & software training courses designed to secure a job in tech.
+                                        </span>
+                                        <span class="btn-training" id="training-btn">
+                                                Read More 
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="services-footer">
+                                <h3>
+                                    <a>
+                                        View Our Work <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </h3>
+                            </div>
                         </div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div id="slider-certification">
+                        <div class="slider-certification-item-container">
+                            <div class="slider-certification-item">           
+                                <img class="slider-certification-image" src="assets/images/asset 19.jpeg">         
+                            </div>
+                        </div>
+                        <div class="slider-certification-item-container">
+                            <div class="slider-certification-item">
+                                <img class="slider-certification-image" src="assets/images/asset 9.jpeg">
+                            </div>
+                        </div>
+                        <div class="slider-certification-item-container">
+                            <div class="slider-certification-item">
+                                <img class="slider-certification-image" src="assets/images/asset 11.jpeg">
+                            </div>
+                        </div>
+                        <div class="slider-certification-item-container">
+                            <div class="slider-certification-item">
+                                <img class="slider-certification-image" src="assets/images/asset 13.jpeg">
+                            </div>
+                        </div>
+                        <div class="slider-certification-item-container">
+                            <div class="slider-certification-item">
+                                <img class="slider-certification-image" src="assets/images/asset 15.jpeg">
+                            </div>
+                        </div>
+                        <div class="slider-certification-item-container">
+                            <div class="slider-certification-item">
+                                <img class="slider-certification-image" src="assets/images/asset 17.jpeg">
+                            </div>
+                        </div>
+                        <div class="slider-certification-item-container">
+                            <div class="slider-certification-item">
+                                <img class="slider-certification-image" src="assets/images/asset 19.jpeg">
+                            </div>
+                        </div>
+                        <div class="slider-certification-item-container">
+                            <div class="slider-certification-item">
+                                <img class="slider-certification-image" src="assets/images/asset 21.jpeg">
+                            </div>
+                        </div>
+                        <div class="slider-certification-item-container">
+                            <div class="slider-certification-item">
+                                <img class="slider-certification-image" src="assets/images/asset 23.jpeg">
+                            </div>
+                        </div>
+                        <div class="slider-certification-item-container">
+                            <div class="slider-certification-item">
+                                <img class="slider-certification-image" src="assets/images/asset 25.jpeg">
+                            </div>
+                        </div>
+                        <div class="slider-certification-item-container">
+                            <div class="slider-certification-item">
+                                <img class="slider-certification-image" src="assets/images/asset 27.png">
+                            </div>
+                        </div>
+                        <div class="slider-certification-item-container">
+                            <div class="slider-certification-item">
+                                <img class="slider-certification-image" src="assets/images/asset 29.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-background">
+                    <div class="container section">
                         <div class="row">
-                            <div class="top-cards">
-                                <a class="card-software-block">
-                                    <span class="icon" id="software-background">
-                                        <i class="fa-solid fa-laptop"></i>
+                            <div class="col-welcome">
+                                <h2 class="brand-header">
+                                    <strong>Welcome To Netmatters</strong>
+                                </h2>
+                                <p>
+                                    <strong>
+                                        Netmatters is a leading 
+                                        <a>Bespoke Software</a>
+                                        ,  
+                                        <a>IT Support</a>
+                                        , and 
+                                        <a>Digital Marketing </a>
+                                        company based in the East of England with offices in 
+                                        <a>London</a>
+                                        , 
+                                        <a>Cambridge</a>
+                                        , 
+                                        <a>Wymondham</a>
+                                        , and 
+                                        <a>Great Yarmouth</a>
+                                        .
+                                    </strong>
+                                </p>
+                                <p>
+                                    We aren't tied into contracts with third-party providers, 
+                                    so you know that our recommendations for your business are 
+                                    based purely with one benefit in mind: to help improve your 
+                                    business with the most appropriate solutions.
+                                </p>
+                                <p>
+                                    We pride ourselves on being an ethical business and have a 
+                                    unique business offering and cost model that ensures you get 
+                                    the most from our relationship in an upfront manner.
+                                </p>
+                                <div class="brand-buttons">
+                                    <a id="btn-choose" class="btn-choose">why choose us <i class="fa-solid fa-arrow-right"></i></a>
+                                    <a id="btn-culture" class="btn-culture">our culture <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+
+                            </div>            
+                            <div class="col-clients">
+                                <h2 class="brand-header">
+                                    <strong>What Our Clients Think</strong>
+                                </h2>
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p>
+                                    <span id="client-quote">
+                                        Netmatters stood out from the start. Great guys and 
+                                        very easy to work with. Both the build and digital marketing 
+                                        teams are clearly skilled -they know their stuff! They delivered 
+                                        a website to our (high!) expectations and went over and above to 
+                                        ensure we were satisfied clients - and we are!
                                     </span>
-                                    <span class="h2">
-                                        Bespoke Software 
+                                </p>
+                                <p>
+                                    <span id="client-quote-author">
+                                        Eleanor Bishop, Head of Marketing - 
+                                        <a>Ashcroft Partnership LLp</a>
                                     </span>
-                                    <span class="p">
-                                        Bespoke software solutions for all your business needs 
-                                        including integrations and reporting.
-                                    </span>
-                                    <span class="btn-software" id="software-btn">
-                                            Read More 
-                                    </span>
-                                </a>
+                                </p>
+                                <div class="clients-buttons">
+                                    <a id="btn-google" class="btn-google">Google Reviews <i class="fa-solid fa-arrow-right"></i></a>
+                                    <a class="btn-trust">Trustpilot reviews <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+
                             </div>
-                            <div class="top-cards">
-                                <a class="card-it-block">
-                                    <span class="icon" id="it-background">
-                                        <i class="fa-solid fa-desktop"></i>
-                                    </span>
-                                    <span class="h2">
-                                        IT Support
-                                    </span>
-                                    <span class="p">
-                                        Fully managed IT support and consultancy packages 
-                                        tailored to meet your exact business needs.
-                                    </span>
-                                    <span class="btn-it" id="it-btn">
-                                            Read More 
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="top-cards">
-                                <a class="card-digital-block">
-                                    <span class="icon" id="digital-background">
-                                        <i class="fa-solid fa-signal"></i>
-                                    </span>
-                                    <span class="h2">
-                                        Digital Marketing 
-                                    </span>
-                                    <span class="p">
-                                        Driven brand awareness & ROI through creative 
-                                        digital marketing campaigns.
-                                    </span>
-                                    <span class="btn-digital" id="digital-btn">
-                                            Read More 
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="other-cards">
-                                <a class="card-telecoms-block">
-                                    <span class="icon" id="telecoms-background">
-                                        <i class="fa-solid fa-phone-volume"></i>
-                                    </span>
-                                    <span class="h2">
-                                        Telecoms Services 
-                                    </span>
-                                    <span class="p">
-                                        Business telephony solutions including mobile 
-                                        & connectivity solutions.
-                                    </span>
-                                    <span class="btn-telecoms" id="telecoms-btn">
-                                            Read More 
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="other-cards">
-                                <a class="card-web-block">
-                                    <span class="icon" id="web-background">
-                                        <i class="fa-solid fa-code"></i>
-                                    </span>
-                                    <span class="h2">
-                                        Web Design
-                                    </span>
-                                    <span class="p">
-                                        User-centric design for businesses looking to make 
-                                        a lasting impression.
-                                    </span>
-                                    <span class="btn-web" id="web-btn">
-                                            Read More 
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="other-cards">
-                                <a class="card-cyber-block">
-                                    <span class="icon" id="cyber-background">
-                                        <i class="fa-solid fa-shield-halved"></i>
-                                    </span>
-                                    <span class="h2">
-                                        Cyber Security
-                                    </span>
-                                    <span class="p">
-                                        Prevention, testing, consultancy & breach management services.
-                                    </span>
-                                    <span class="btn-cyber" id="cyber-btn">
-                                            Read More 
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="other-cards">
-                                <a class="card-training-block">
-                                    <span class="icon" id="training-background">
-                                        <i class="fa-solid fa-graduation-cap"></i>
-                                    </span>
-                                    <span class="h2">
-                                        Developer Training
-                                    </span>
-                                    <span class="p">
-                                        Web design & software training courses designed to secure a job in tech.
-                                    </span>
-                                    <span class="btn-training" id="training-btn">
-                                            Read More 
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="services-footer">
-                            <h3>
-                                <a>
-                                    View Our Work <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </h3>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="slider">
-                <div class="section-certification">
-                    <img class="slider-item" src="assets/images/asset 19.jpeg">
-                </div>
-            </div>
-            <div class="brand-background">
-                <div class="container section">
-                    <div class="row">
-                        <div class="col-welcome">
-                            <h2 class="brand-header">
-                                <strong>Welcome To Netmatters</strong>
-                            </h2>
-                            <p>
-                                <strong>
-                                    Netmatters is a leading 
-                                    <a>Bespoke Software</a>
-                                    ,  
-                                    <a>IT Support</a>
-                                    , and 
-                                    <a>Digital Marketing </a>
-                                    company based in the East of England with offices in 
-                                    <a>London</a>
-                                    , 
-                                    <a>Cambridge</a>
-                                    , 
-                                    <a>Wymondham</a>
-                                    , and 
-                                    <a>Great Yarmouth</a>
-                                    .
-                                </strong>
-                            </p>
-                            <p>
-                                We aren't tied into contracts with third-party providers, 
-                                so you know that our recommendations for your business are 
-                                based purely with one benefit in mind: to help improve your 
-                                business with the most appropriate solutions.
-                            </p>
-                            <p>
-                                We pride ourselves on being an ethical business and have a 
-                                unique business offering and cost model that ensures you get 
-                                the most from our relationship in an upfront manner.
-                            </p>
-                            <div class="brand-buttons">
-                                <a id="btn-choose" class="btn-choose">why choose us <i class="fa-solid fa-arrow-right"></i></a>
-                                <a id="btn-culture" class="btn-culture">our culture <i class="fa-solid fa-arrow-right"></i></a>
+                <div class="latest-articles">
+                    <div class="bar">
+                        <div class="container">
+                            <div class="heading-container">
+                                <h2 id="articles-bar-latest-news">
+                                    <strong>Latest News</strong>
+                                </h2>
+                                <h3 id="articles-bar-view-all">
+                                    <a>
+                                        View All <i class="fa-solid fa-arrow-right"></i> 
+                                    </a>
+                                </h3>
                             </div>
-
-                        </div>            
-                        <div class="col-clients">
-                            <h2 class="brand-header">
-                                <strong>What Our Clients Think</strong>
-                            </h2>
-                            <div>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <p>
-                                <span id="client-quote">
-                                    Netmatters stood out from the start. Great guys and 
-                                    very easy to work with. Both the build and digital marketing 
-                                    teams are clearly skilled -they know their stuff! They delivered 
-                                    a website to our (high!) expectations and went over and above to 
-                                    ensure we were satisfied clients - and we are!
-                                </span>
-                            </p>
-                            <p>
-                                <span id="client-quote-author">
-                                    Eleanor Bishop, Head of Marketing - 
-                                    <a>Ashcroft Partnership LLp</a>
-                                </span>
-                            </p>
-                            <div class="clients-buttons">
-                                <a id="btn-google" class="btn-google">Google Reviews <i class="fa-solid fa-arrow-right"></i></a>
-                                <a class="btn-trust">Trustpilot reviews <i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-
                         </div>
                     </div>
-                </div>
-            </div>
+                    <div class="section">
+                        <div class="container">
+                            <div class="article-list">
+                                <div class="article-one">
+                                    <div class="image-container">
+                                        <a class="careers-btn" class="btn"> Careers</a>
+                                        <img class="article-image" src="assets/images/2nd-line-technician-Rnd7.png">
+                                    </div>
+                                    <div class="block">
+                                        <h3>
+                                            <a> 2nd Line Technician </a>
+                                            <span class="read-time"> - 4 minute read </span>
+                                        </h3>
+                                        <p>
+                                            Salary Range £28k-£36k + Bonuses + Pension Hours 40 hours per week, 
+                                            Monday - Friday Location Wymondh...
+                                        </p>
+                                        <a class="btn article-buttons" class="btn"> Read More </a>
+                                        <div class="user">
+                                            <div class="avatar">
+                                                <img src="assets/images/rob-george-zFWY.png" class="article-image">
+                                            </div>
+                                            <div class="details">
+                                                <strong class="text-primary">Posted by Rob George</strong>
+                                                <br>
+                                                25th July 2023 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-            <div class="latest-articles">
-                <div class="bar">
+                                <div class="article-two">
+                                    <div class="image-container">
+                                        <a class="careers-btn" class="btn"> Careers</a>
+                                        <img class="article-image" src="assets/images/1st-line-technician-PiSq.png">
+                                    </div>
+                                    <div class="block">
+                                        <h3>
+                                            <a> 1st Line Technician </a>
+                                        </h3>
+                                        <p>
+                                            Salary Range £23k-£28k + Bonuses + 
+                                            Pension Hours 40 hours per week, Monday 
+                                            - Friday Location Wymondh...
+                                        </p>
+                                        <a class="btn article-buttons" class="btn"> Read More </a>
+                                        <div class="user">
+                                            <div class="avatar">
+                                                <img src="assets/images/rob-george-zFWY.png" class="article-image">
+                                            </div>
+                                            <div class="details">
+                                                <strong class="text-primary">Posted by Rob George</strong>
+                                                <br>
+                                                24th July 2023 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="article-three">
+                                    <div class="image-container">
+                                        <a id="receptionist-careers-btn" class="careers-btn" class="btn"> Careers </a>
+                                        <img class="article-image" src="assets/images/receptionist-dKHK.png">
+                                    </div>
+                                    <div class="block">
+                                        <h3>
+                                            <a id="receptionist-title"> Temporary Role - Receptionist </a>
+                                        </h3>
+                                        <p>
+                                            Salary Range £21,000-£23,000 per annum Hours 40 hours per week, 
+                                            Mon - Fri Location Wymondham, Norfol...
+                                        </p>
+                                        <a id="reception-button" class="btn"> Read More </a>
+                                        <div class="user">
+                                            <div class="avatar">
+                                                <img src="assets/images/asset 31.jpeg" class="article-image">
+                                            </div>
+                                            <div class="details">
+                                                <strong class="text-primary">Posted by Bethany Shakespear</strong>
+                                                <br>
+                                                14th July 2023 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="smallestvp-view-all">
+                        <a>View All</a>
+                        <strong>
+                            &rarr;
+                        </strong>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="section-clients">
+                        <img class="slider-item" src="assets/images/asset 38.png">
+                    </div>
+                </div>
+                <div class="newsletter">
                     <div class="container">
-                        <div class="heading-container">
-                            <h2 id="articles-bar-latest-news">
-                                <strong>Latest News</strong>
-                            </h2>
-                            <h3 id="articles-bar-view-all">
-                                <a>
-                                    View All <i class="fa-solid fa-arrow-right"></i> 
-                                </a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="section">
-                    <div class="container">
-                        <div class="article-list">
-                            <div class="article-one">
-                                <div class="image-container">
-                                    <a class="careers-btn" class="btn"> Careers</a>
-                                    <img class="article-image" src="assets/images/2nd-line-technician-Rnd7.png">
-                                </div>
-                                <div class="block">
-                                    <h3>
-                                        <a> 2nd Line Technician </a>
-                                        <span class="read-time"> - 4 minute read </span>
-                                    </h3>
-                                    <p>
-                                        Salary Range £28k-£36k + Bonuses + Pension Hours 40 hours per week, 
-                                        Monday - Friday Location Wymondh...
-                                    </p>
-                                    <a class="btn article-buttons" class="btn"> Read More </a>
-                                    <div class="user">
-                                        <div class="avatar">
-                                            <img src="assets/images/rob-george-zFWY.png" class="article-image">
-                                        </div>
-                                        <div class="details">
-                                            <strong class="text-primary">Posted by Rob George</strong>
-                                            <br>
-                                            25th July 2023 
-                                        </div>
+                        <form class="form-signup">
+                            <h2>Email Newsletter <br> Sign-Up</h2>
+                            <div class="sign-up-inputs-group">
+                                <div class="sign-up-input">
+                                    <div class="form-group">
+                                        <label for="form-name" class="required">Your Name *</label>
+                                        <br>
+                                        <input id="form-name" name="name" type="text">
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="article-two">
-                                <div class="image-container">
-                                    <a class="careers-btn" class="btn"> Careers</a>
-                                    <img class="article-image" src="assets/images/1st-line-technician-PiSq.png">
-                                </div>
-                                <div class="block">
-                                    <h3>
-                                        <a> 1st Line Technician </a>
-                                    </h3>
-                                    <p>
-                                        Salary Range £23k-£28k + Bonuses + 
-                                        Pension Hours 40 hours per week, Monday 
-                                        - Friday Location Wymondh...
-                                    </p>
-                                    <a class="btn article-buttons" class="btn"> Read More </a>
-                                    <div class="user">
-                                        <div class="avatar">
-                                            <img src="assets/images/rob-george-zFWY.png" class="article-image">
-                                        </div>
-                                        <div class="details">
-                                            <strong class="text-primary">Posted by Rob George</strong>
-                                            <br>
-                                            24th July 2023 
-                                        </div>
+                                <div class="sign-up-input">
+                                    <div class="form-group">
+                                        <label for="form-email" class="required">
+                                            Your Email 
+                                        </label>
+                                        <br>
+                                        <input id="form-email" name="name" type="text">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="article-three">
-                                <div class="image-container">
-                                    <a id="receptionist-careers-btn" class="careers-btn" class="btn"> Careers </a>
-                                    <img class="article-image" src="assets/images/receptionist-dKHK.png">
-                                </div>
-                                <div class="block">
-                                    <h3>
-                                        <a id="receptionist-title"> Temporary Role - Receptionist </a>
-                                    </h3>
-                                    <p>
-                                        Salary Range £21,000-£23,000 per annum Hours 40 hours per week, 
-                                        Mon - Fri Location Wymondham, Norfol...
-                                    </p>
-                                    <a id="reception-button" class="btn"> Read More </a>
-                                    <div class="user">
-                                        <div class="avatar">
-                                            <img src="assets/images/asset 31.jpeg" class="article-image">
-                                        </div>
-                                        <div class="details">
-                                            <strong class="text-primary">Posted by Bethany Shakespear</strong>
-                                            <br>
-                                            14th July 2023 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="smallestvp-view-all">
-                    <a>View All</a>
-                    <strong>
-                        &rarr;
-                    </strong>
-                </div>
-            </div>
-
-            <div class="slider">
-                <div class="section-clients">
-                    <img class="slider-item" src="assets/images/asset 38.png">
-                </div>
-            </div>
-            <div class="newsletter">
-                <div class="container">
-                    <form class="form-signup">
-                        <h2>Email Newsletter <br> Sign-Up</h2>
-                        <div class="sign-up-inputs-group">
-                            <div class="sign-up-input">
-                                <div class="form-group">
-                                    <label for="form-name" class="required">Your Name *</label>
-                                    <br>
-                                    <input id="form-name" name="name" type="text">
-                                </div>
-                            </div>
-                            <div class="sign-up-input">
-                                <div class="form-group">
-                                    <label for="form-email" class="required">
-                                        Your Email 
-                                    </label>
-                                    <br>
-                                    <input id="form-email" name="name" type="text">
-                                </div>
-                            </div>
-                        </div>    
-                        <div class="form-group">
-                            <span class="media">
-                                <span class="media-left checkbox-left">
-                                    <span id="button-checkbox" class="button">
-                                        <span class="mdi-action-done"></span>
-                                        <input name="preference" type="checkbox" vaule="1">
+                            </div>    
+                            <div class="form-group">
+                                <span class="media">
+                                    <span class="media-left checkbox-left">
+                                        <span id="button-checkbox" class="button">
+                                            <span class="mdi-action-done"></span>
+                                            <input name="preference" type="checkbox" vaule="1">
+                                        </span>
                                     </span>
+                                <span class="media-body">
+                                    Please tick this box if you wish to receive marketing information from us.
+                                    Please see our
+                                    <a target="_blank" id="privacy-link" rel="noopener noreferrer">Privacy Policy</a>
+                                    for more information on how we keep your data safe.
+                                </span>    
                                 </span>
-                            <span class="media-body">
-                                Please tick this box if you wish to receive marketing information from us.
-                                Please see our
-                                <a target="_blank" id="privacy-link" rel="noopener noreferrer">Privacy Policy</a>
-                                for more information on how we keep your data safe.
-                            </span>    
-                            </span>
-                        </div>
-                        <button class="btn" name="submit" id="newsletter-btn-primary"> Subscribe </button>
-                    </form>
+                            </div>
+                            <button class="btn" name="submit" id="newsletter-btn-primary"> Subscribe </button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <footer>
-                <div class="container">
-                    <div class="footer-row">
-                        <div class="footer-social">
-                            <div class="footer-social-menu">
-                                <img src="assets/images/asset 48.png" width="100%">
-                                <h4>FOLLOW US ON:</h4>
-                                <div class="footer-social-menu-logos">
-                                    <div class="footer-social-menu-logos-container">
-                                        <a>
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
+                <footer>
+                    <div class="container">
+                        <div class="footer-row">
+                            <div class="footer-social">
+                                <div class="footer-social-menu">
+                                    <img src="assets/images/asset 48.png" width="100%">
+                                    <h4>FOLLOW US ON:</h4>
+                                    <div class="footer-social-menu-logos">
+                                        <div class="footer-social-menu-logos-container">
+                                            <a>
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </a>
+                                        </div>
+                                        <div class="footer-social-menu-logos-container">
+                                            <a>
+                                                <i class="fa-brands fa-linkedin-in"></i>
+                                            </a>
+                                        </div>
+                                        <div class="footer-social-menu-logos-container">
+                                            <a>
+                                                <i class="fa-brands fa-twitter"></i>
+                                            </a>
+                                        </div>
+                                        <div class="footer-social-menu-logos-container">
+                                            <a>
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                        </div> 
                                     </div>
-                                    <div class="footer-social-menu-logos-container">
-                                        <a>
-                                            <i class="fa-brands fa-linkedin-in"></i>
-                                        </a>
-                                    </div>
-                                    <div class="footer-social-menu-logos-container">
-                                        <a>
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-                                    </div>
-                                    <div class="footer-social-menu-logos-container">
-                                        <a>
-                                            <i class="fa-brands fa-instagram"></i>
-                                        </a>
-                                    </div> 
                                 </div>
                             </div>
-                        </div>
-                    
-                        <div class="link-row">
-                            <div class="col-xs-12 col-sm-6 col-md-3 footer-menu">
-                                <h4>ABOUT NETMATTERS</h4>
-                                <ul>
-                                    <li><a>Our Careers</a></li>
-                                    <li><a></a>Our Team</a></li>
-                                    <li><a></a>Contact Us</a></li>
-                                    <li><a></a>Privacy Policy</a></li>
-                                    <li><a></a>Cookie Policy</a></li>
-                                    <li><a></a>Data retention & Disposal Policy</a></li>
-                                    <li><a></a>CCTV Policy</a></li>
-                                    <li><a></a>Enviromental Policy</a></li>
-                                    <li><a></a>Terms & Conditions</a></li>
-                                </ul>
+                        
+                            <div class="link-row">
+                                <div class="col-xs-12 col-sm-6 col-md-3 footer-menu">
+                                    <h4>ABOUT NETMATTERS</h4>
+                                    <ul>
+                                        <li><a>Our Careers</a></li>
+                                        <li><a></a>Our Team</a></li>
+                                        <li><a></a>Contact Us</a></li>
+                                        <li><a></a>Privacy Policy</a></li>
+                                        <li><a></a>Cookie Policy</a></li>
+                                        <li><a></a>Data retention & Disposal Policy</a></li>
+                                        <li><a></a>CCTV Policy</a></li>
+                                        <li><a></a>Enviromental Policy</a></li>
+                                        <li><a></a>Terms & Conditions</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 footer-menu">
+                                    <h4>OUR SERVICES</h4>
+                                    <ul>
+                                        <li><a>Bespoke Software</a></li>
+                                        <li><a></a>IT Support</a></li>
+                                        <li><a></a>Digital Marketing</a></li>
+                                        <li><a></a>Telecoms Services</a></li>
+                                        <li><a></a>Web Design</a></li>
+                                        <li><a></a>Cyber Security</a></li>
+                                        <li><a></a>Developer Training</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 footer-menu">
+                                    <h4>OUR INDUSTRIES</h4>
+                                    <ul>
+                                        <li><a>Financial Services</a></li>
+                                        <li><a></a>Construction</a></li>
+                                        <li><a></a>Retail & E-Commerce</a></li>
+                                        <li><a></a>Non-profits</a></li>
+                                        <li><a></a>SME's</a></li>
+                                        <li><a></a>Healthcare</a></li>
+                                        <li><a></a>Education & Training</a></li>
+                                        <li><a></a>Travel & Leisure</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 footer-menu">
+                                    <h4>LOCATIONS</h4>
+                                    <ul>
+                                        <li><a>London Office</a></li>
+                                        <li><a></a>Cambridge Office</a></li>
+                                        <li><a></a>Wymondham Office</a></li>
+                                        <li><a></a>Great Yarmouth Office</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col-xs-12 col-sm-6 col-md-3 footer-menu">
-                                <h4>OUR SERVICES</h4>
-                                <ul>
-                                    <li><a>Bespoke Software</a></li>
-                                    <li><a></a>IT Support</a></li>
-                                    <li><a></a>Digital Marketing</a></li>
-                                    <li><a></a>Telecoms Services</a></li>
-                                    <li><a></a>Web Design</a></li>
-                                    <li><a></a>Cyber Security</a></li>
-                                    <li><a></a>Developer Training</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-3 footer-menu">
-                                <h4>OUR INDUSTRIES</h4>
-                                <ul>
-                                    <li><a>Financial Services</a></li>
-                                    <li><a></a>Construction</a></li>
-                                    <li><a></a>Retail & E-Commerce</a></li>
-                                    <li><a></a>Non-profits</a></li>
-                                    <li><a></a>SME's</a></li>
-                                    <li><a></a>Healthcare</a></li>
-                                    <li><a></a>Education & Training</a></li>
-                                    <li><a></a>Travel & Leisure</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-3 footer-menu">
-                                <h4>LOCATIONS</h4>
-                                <ul>
-                                    <li><a>London Office</a></li>
-                                    <li><a></a>Cambridge Office</a></li>
-                                    <li><a></a>Wymondham Office</a></li>
-                                    <li><a></a>Great Yarmouth Office</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>     
-                </div>
+                        </div>     
+                    </div>
+            </div>
         </main>
         </footer>
             <div class="footer-bottom">
@@ -1178,6 +1793,7 @@
                 </div>
             </div>
     <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/slick/slick.js"></script>
     <script src="js/app.js"></script>
     </body>
 </html>
