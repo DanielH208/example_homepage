@@ -953,7 +953,7 @@ picture > img {
   width: 100%;
   display: block;
   background-color: white;
-  padding-bottom: 30px;
+  padding: 60px 0px;
 }
 
 #slider-certification {
@@ -963,14 +963,14 @@ picture > img {
   transition: all 0.25s ease 0s;
 }
 
-.slider-certification-item-container {
+.slider-item-container {
   position: relative;
   min-height: 1px;
   float: left;
   width: auto;
 }
 
-.slider-certification-item {
+.slider-item {
   vertical-align: middle;
   padding: 0 20px;
   position: relative;
@@ -983,11 +983,133 @@ picture > img {
 }
 
 .slider-certification-image {
+  max-height: 70px;
+  max-width: 200px;
+}
+
+.slider-certification-image {
   filter: grayscale(100%);
 }
 
 .slider-certification-image:hover {
   filter: grayscale(0%);
+}
+
+#slider-outer {
+  overflow: visible;
+}
+
+#slider-clients {
+  position: relative;
+  display: block;
+  width: 3000px;
+  transition: all 0.25s ease 0s;
+}
+
+.slider-description {
+  z-index: 10000000000000000000000000000000000000000000000000;
+  display: none;
+  position: absolute;
+  width: 280px;
+  bottom: 100%;
+  left: 0px;
+  right: 0px;
+}
+
+.slider {
+  overflow: visible;
+}
+
+.slick-list {
+  overflow: visible !important;
+}
+
+.slider-box {
+  background-color: #333645;
+  color: #fff;
+  padding: 20px;
+  font-size: 0.875rem;
+  max-width: 280px;
+  margin: 0 auto 50px;
+}
+
+.slider-box > h3 {
+  position: relative;
+  font-size: 1.125rem;
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  font-size: 18px;
+  padding-bottom: 17px;
+  margin: 0;
+}
+
+.slider-box > p {
+  font-size: 13px;
+  line-height: 1.375rem;
+  margin: 0px;
+  color: white;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.slider-clients-button {
+  margin-top: 11px;
+  font-size: 16px;
+  display: flex;
+  height: auto;
+  color: #fff;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  white-space: normal;
+  text-decoration: none;
+}
+
+.no-description {
+  padding-bottom: 0px !important;
+}
+
+.marketing-colour {
+  background-color: #25a35a;
+  border-color: #25a35a;
+}
+
+.web-design-colour {
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+
+.support-colour {
+  background-color: #21579c;
+  border-color: #21579c;
+}
+
+.software-colour {
+  background-color: #4d617a;
+  border-color: #4d617a;
+}
+
+.slider-clients-button > i {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.arrow {
+  position: absolute;
+  left: 50%;
+  margin-left: -37px;
+  width: 0;
+  height: 0;
+  margin-top: 18px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 35px solid #333645;
+}
+
+.slider-item:hover .slider-description {
+  display: block;
 }
 
 .brand-background {
