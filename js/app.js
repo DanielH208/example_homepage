@@ -118,20 +118,16 @@ $("#hamburger-menu-btn").on("click", () => {
     }
 })
 
-/*
-$("main").on("click", function () {
+
+$("#main-content").on("click", function () {
     //event.stopPropagation();
     console.log("outside mouse")
-    if (open == false) {
-        openNav();
-        open = true;    
-    } 
-    else {
+    if (open == true) {
         closeNav()
         open = false;
     }
 });
-*/
+
 
 /// CERTIFICATION SLIDER 
 $("#slider-certification").slick({
@@ -140,5 +136,27 @@ $("#slider-certification").slick({
     draggable: false,
     dots: false,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3500,
   });
+
+
+/// CERTIFICATION SLIDER 
+$("#slider-clients").slick({
+    slidesToShow: 12,
+    arrows: false,
+    draggable: false,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 3500,
+  });
+
+$("#banner-slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    arrows: false,
+    draggable: false,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+});
