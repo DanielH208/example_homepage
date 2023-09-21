@@ -926,6 +926,36 @@ a[class$="-block"] {
 
 
 // BANNER SLIDER
+
+#why-banner-btn {
+    background-color: #926fb1;
+    border-color: #926fb1;
+}
+#software-banner-btn {
+    background-color: #67809f;
+    border-color: #67809f;
+}
+#support-banner-btn {
+    background-color: #4183d7;
+    border-color: #4183d7;
+}
+#digital-banner-btn {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+#telecoms-banner-btn {
+    background-color: #d64541;
+    border-color: #d64541;
+}
+#web-banner-btn {
+    background-color: #926fb1;
+    border-color: #926fb1;
+}
+#cyber-banner-btn {
+    background-color: #f62459;
+    border-color: #f62459;
+}
+
 .text > h1 {
     font-size: 2.5rem;
     line-height: 3rem;
@@ -944,7 +974,7 @@ a[class$="-block"] {
 .text > p {
     font-size: 1.25rem;
     line-height: 1.75rem;
-    margin-top: 0 0 0.375rem;
+    margin-top: 0px;
     font-weight: 600;
 }
 .banner {
@@ -956,25 +986,44 @@ a[class$="-block"] {
 
 .content {
     position: relative;
-    z-index: 4;
-    padding: 60px 0px;
+    z-index: 10;
+    //padding: 60px 0px;
+    padding-bottom: 0px;
+    height: 241px;
+    margin-top: -400px;
+    overflow: hidden;
+    text-align: center;
 }
 
 .image-cover-container {
-    position: absolute;
+    position: relative;
     height: 550px;
     width: 100%;
+    z-index: 10;
 }
 
-picture > img{
+picture > img {
     height: 550px;
+    z-index: 10000000;
     width: 100%;
     object-fit: cover;
+    position: relative;
+}
+
+.slick-dots {
+    position: absolute !important;
+    //bottom: -70px !important;
+    display: block !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+    text-align: center !important;
 }
 
 .banner-btn-web {
     height: auto;
-    padding: 5px 20px;
+    padding: 18px 15px;
     font-size: 1.25rem;
     border: 1px solid transparent;
     border-radius: 3px;
@@ -982,11 +1031,15 @@ picture > img{
     text-align: center;
     vertical-align: middle;
     color: rgb(232, 230, 227);
-    background-color: rgb(94, 65, 119);
-    border-color: rgb(86, 59, 109);
     margin-top: 1.938rem;
-    margin-bottom: 1.125;
+    font-size: 20px;
+    text-transform: capitalize;
     line-height: 50px;
+    
+}
+
+.banner-btn-web > i {
+    margin-left: 5px;
 }
 
 // CERTIFICATION SLIDER 
@@ -1489,6 +1542,20 @@ footer .container ul li {
     align-items: center;
 }
 
+
+@media (max-width: 453px) { 
+    .content {
+        height: 350px;
+        margin-top: -550px;
+    }
+    #first-banner > h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    #first-banner > p {
+        font-size: 15px;
+    }
+}
 @media (max-width: 767px) {
     
     .footer-social{
@@ -1525,6 +1592,10 @@ footer .container ul li {
     #search-form-button > i {
         font-size: 20px;
     }
+    .content {
+        height: 350px;
+        margin-top: -450px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -1541,6 +1612,13 @@ footer .container ul li {
 
     #header-support-button, #header-contact-button {
         display: none;
+    }
+    
+    .content {
+        margin-left: 0px;
+    }
+    .slick-dots {
+        bottom: -10px !important;
     }
 
 }
@@ -1601,6 +1679,9 @@ footer .container ul li {
     }
     .banner {
         margin-top: 110px;
+    }
+    .slick-dots {
+        bottom: -60px !important;
     }
 
 
@@ -1677,6 +1758,17 @@ footer .container ul li {
     #side-nav-bar {
         width: 350px;
     }
+    .content {
+        height: 297px;
+        margin-top: -450px;
+        margin-left: 100px;
+        text-align: left;
+        overflow: unset;
+    }
+    .slick-dots {
+        bottom: -20px !important;
+    }
+    
 }
 
 
