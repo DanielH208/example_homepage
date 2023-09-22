@@ -102,6 +102,124 @@ main {
     flex-wrap: wrap;
 }
 
+// COOKIE CONSENT 
+#cookie-consent {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000000;
+    background-color: rgba(0,0,0,.7);
+    //display: flex;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -ms-flex-pack: center!important;
+    padding: 30px;
+}
+
+#cookie-consent .modal-dialog {
+    margin: auto;
+}
+
+#modal-content {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 5px;
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    background-clip: padding-box;
+    outline: none;
+}
+
+#modal-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #e5e5e5;
+    min-height: 16.42857143px;
+}
+
+#modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
+
+#modal-body {
+    position: relative;
+    padding: 20px;
+}
+
+#modal-body > p {
+    line-height: 1.875rem;
+    margin-bottom: 25px;
+    margin: 0 0 10px;
+}
+
+#modal-body > a {
+    color: #333645;
+    text-decoration: none;
+}
+
+#modal-footer {
+    margin: 0;
+    padding: 19px 20px 20px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
+#cookie-row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.cookie-button-anchor { 
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.spacer-xs { 
+    margin-bottom: 30px;
+}
+
+.cookie-button {
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    font-size: 1.063rem;
+    border-radius: 3px;
+    white-space: normal;
+    text-align: center;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.btn-default {
+    color: #fff;
+    background-color: #999aa2;
+    border-color: #999aa2;
+}
+
+.btn-web {
+    color: #fff;
+    background-color: #926fb1;
+    border-color: #926fb1;
+}
+
+
 
 // SIDENAV 
 
