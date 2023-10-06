@@ -1,0 +1,78 @@
+@use "../base/mixins" as mixin;
+@import "../base/colours";
+
+// NEWSLETTER
+
+.newsletter {
+    background-color: $light-black-v2;
+    color: $lightest-white-v3;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-signup {
+    padding: 50px 0px;
+}
+
+
+.form-group input {
+    width: 90%;
+    background-color: $dark-black;
+    padding: 5px 15px;
+}
+
+.form-group label.required {
+    font-size: 16px;
+    color: $lightest-white-v3;
+    margin: 0px 0px 5px;
+}
+
+.sign-up-input {
+    flex: 1 1 450px;
+    padding: 15px 0px;
+}
+
+.form-group label .required:after {
+    content: " *";
+    color: $lightest-red;
+}
+
+.sign-up-inputs-group {
+    @include mixin.flex-container(0, wrap);
+}
+
+.checkbox-left {
+    padding-right: 0;
+}
+.media-body, .media-left {
+    display: table-cell;
+    vertical-align: top;
+}
+
+#button-checkbox {
+    border-color: $lightest-brown-v2;
+}
+#button-checkbox {
+
+    margin-right: 20px;
+}
+
+#newsletter-btn-primary {
+    color: $lightest-white-v2;
+    background-color: $dark-purple;
+    border-color: $lightest-grey-v2;
+}
+
+.heading-container {
+    display: flex;
+    color: $lightest-white-v3;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.smallestvp-view-all {
+    text-align: center;
+    display: none;
+}

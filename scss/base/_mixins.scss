@@ -1,0 +1,5 @@
+@mixin flex-container ($direction: row, $wrap: nowrap) {
+    display: flex; 
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}

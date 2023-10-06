@@ -1,0 +1,86 @@
+@import "../base/colours";
+
+// COOKIES 
+
+#modal-body > a {
+    color: $dark-grey;
+    text-decoration: none;
+}
+
+// HEADER
+
+.header-actions > a {
+    text-decoration: none;
+}
+
+// NAVBAR 
+
+.sub-menu > a { 
+    width: 100%;
+}
+
+.sub-menu-content a {
+    color: $defualt-black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+// NEWS
+
+.block h3 a {
+    color: $lightest-blue;
+}
+
+// SIDENAV 
+
+#covid-sidenav > a {
+    margin-bottom: 1px !important;
+}
+
+#side-nav-services > li > a {
+    font-size: 1.125rem;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+    padding: 19px 0 18px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    outline: 1px solid rgba(0,0,0,.25);
+    border: 1px solid hsla(0,0%,100%,.1);
+}
+
+#side-nav-company-info > li > a {
+    font-size: 16px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+    outline: 1px solid rgba(0,0,0,.25);
+    border: 1px solid hsla(0,0%,100%,.1);
+    text-align: left;
+    line-height: 1;
+}
+
+#side-nav-company-info .sidenav-sub-menu-item > a {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 20px;
+}
+
+.sidenav-sub-menu-item > a {
+    display: block;
+    color: $defualt-white;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,.25);
+    padding: 10px;
+    border-top: 1px solid hsla(0,0%,100%,.05);
+    text-decoration: none;
+}
+
+.sidenav-sub-menu-banner > ul > li:not(:first-child) > a {
+    border-top: 1px solid hsla(0,0%,100%,.05);
+}

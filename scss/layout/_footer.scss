@@ -1,0 +1,73 @@
+@use "../base/mixins" as mixin;
+@import "../base/colours";
+
+// FOOTER    
+
+footer {
+    background-color: $light-black;
+    color: white;
+    padding-top: 27px;
+    position: relative;
+}
+
+.footer-bottom {
+    background-color: $medium-black;
+    color: $defualt-white;
+    font-size: 13px;
+}
+
+.footer-social {
+    width: 320px;
+}
+
+.footer-social-menu {
+    margin-right: 80px;
+    width: 100%;
+}
+
+.footer-social-menu > img {
+    max-width: 320px;
+}
+
+.footer-social-menu-logos {
+    @include mixin.flex-container(row, wrap);
+    margin: 0px 0px 30px;
+    width: 100%;
+}
+
+
+
+.link-row div{
+    margin: 0px 0px 30px;
+    padding: 0px 15px;
+
+}
+
+
+.link-row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+
+.footer-row {
+    @include mixin.flex-container(0, wrap);
+    justify-content: space-between;
+}
+
+.footer-social-menu-logos-container {
+    background-color: $medium-black;
+    margin: 0px 10px 10px 0px;
+}
+
+.col-xs-12 {
+    width: 100%;
+}
+
+.license {
+    @include mixin.flex-container(row, wrap);
+    padding: 5px 0px 10px 25px;
+    max-width: 202px;
+    align-items: center;
+}

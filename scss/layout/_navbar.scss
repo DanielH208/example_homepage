@@ -1,0 +1,193 @@
+@use "../base/mixins" as mixin;
+@use "../base/placeholders";
+@import "../base/colours";
+
+
+// NAVIGATION BAR
+
+.main-navigation {
+    background-color: $dark-grey;
+}
+
+.nav-row {
+    @include mixin.flex-container(row, 0);
+    justify-content: space-between;
+}
+
+.nav-row > li {
+    @include mixin.flex-container(0, nowrap);
+    text-align: center;
+    width: 14.28%;
+    flex-grow: 1;
+    color: $defualt-white;
+}
+
+#bespoke-content { 
+    background-color: $light-grey-v2;
+}
+
+#bespoke-triangle {
+    border-top-color: $light-grey;
+}
+
+
+#support-content { 
+    background-color: $light-blue-v2;
+}
+
+#support-triangle {
+    border-top-color: $light-blue;
+    margin-left: 140px;
+}
+
+#digital-content {
+    background-color: $medium-green;
+}
+
+#digital-triangle {
+    border-top-color: $light-green;
+    margin-left: 276px;
+}
+
+#telecoms-content { 
+    background-color: $light-red-v2;
+}
+
+#telecoms-triangle {
+    border-top-color: $light-red;
+    margin-left: 414px;
+}
+
+#web-content {
+    background-color: $light-purple-v2;
+}
+
+#web-triangle {
+    border-top-color: $light-purple;
+    margin-left: 554px;
+}
+
+#security-content {
+    background-color: $medium-pink;
+}
+
+#security-triangle {
+    margin-left: 692px;
+    border-top-color: $dark-pink;
+}
+
+
+#developer-content {
+    background-color: $dark-red-v2;
+}
+
+#developer-triangle {
+    margin-left: 830px;
+    border-top-color: $dark-red;
+}
+
+
+.sub-menu-item-text > i {
+    padding-right: 10px;
+}
+
+.nav-row > li img {
+    width: 23.41px;
+
+}
+
+.sub-menu-item-text {
+    display: inline-flex;
+    flex-direction: row;
+    height: 15px;
+    width: 100%;
+}
+
+.sub-menu-item-text-value {
+    display: inline-block;
+    overflow-wrap: break-word;
+}
+
+.sub-menu {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 18px 0px;
+    background-color: inherit;
+    margin: 0; 
+    overflow-wrap: break-word;
+}
+    
+.triangle-down {
+    margin-top: -15px;
+    width: 0;
+    height: 0;
+    border-left: 69px solid transparent;
+    border-right: 69px solid transparent;
+    border-top: 35px solid $defualt-blue;
+  }
+
+
+
+.content-columns {
+    @include mixin.flex-container(row);
+    width: 100%;
+    flex-grow: 1;
+}
+
+.content-columns > li {
+    width: 33%;
+    flex-grow: 1;
+}
+
+.sub-menu-container {
+    @include mixin.flex-container(row, wrap);
+    width: 970px;
+    text-align: left;
+    @extend %auto-margins;
+    padding-bottom: 20px;
+    letter-spacing: 0.4px;
+    
+}
+
+.sub-menu-item > a > span {
+    color: $defualt-white;
+}
+
+.main-navigation {
+    display: none;
+}
+
+.sub-menu-item {
+    font-size: 19.2px;
+    text-align: left;
+    letter-spacing: 0.4px;
+    line-height: 21px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    
+}
+
+.sub-menu-banner {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.sub-menu-content {
+    display: none;
+    position: absolute;
+    background-color: $defualt-white;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10; 
+}
+
+.sub-menu:hover .sub-menu-content {
+    display: block;
+}

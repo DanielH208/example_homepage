@@ -1,0 +1,103 @@
+@use "../base/mixins" as mixin;
+@import "../base/colours";
+
+// HEADER 
+
+#header-support-button > img, #header-contact-button > img {
+    filter: invert(100%);
+    width: 23.41px;
+    vertical-align: bottom;
+    padding-bottom: 10px;
+}
+
+
+
+#default-form > .search-form-input {
+    background-color: $defualt-white;
+    height: 56px;
+}
+
+#default-form > #search-form-button {
+    position: relative;
+    padding: 7px 20px 3px;
+    height: 56px;
+    font-size: 1.063rem;
+    border-radius: 0 3px 3px 0;
+    border: none;
+    vertical-align: bottom;
+    background-color: none;
+    line-height: 0px;
+    right: 6px;
+}
+
+
+
+
+/*
+#magni-glass {
+    filter: invert(100%);
+    font-size: 23px;
+    width: 28px;
+    height: 32px;
+}
+*/
+.header-actions {
+    @include mixin.flex-container(row, nowrap);
+}
+
+.header .inner {
+    padding: 20px 0px;
+}
+
+#header-row {
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    height: 70px;
+}
+
+.header-icon {
+    float: left;
+    margin-right: auto;
+    
+}
+.header-icon > img {
+    max-width: 402px;
+    width: 100%;
+}
+
+.header-mobile-icon {
+    display: flex;
+    align-items: center;
+}
+
+.header-mobile-icon > img {
+    width: 32.41px;
+    align-self: center;
+}
+
+#header-row i {
+    font-size: 23px;
+}
+
+
+
+.hamburger--slider .hamburger-inner, .hamburger--slider .hamburger-inner::before, .hamburger--slider .hamburger-inner::after {
+    background-color: $defualt-white !important;
+}
+
+.search-form {
+    margin-top: 11px;
+    position: relative;
+}
+
+.search-form-input {
+    width: 100%;
+    padding-right: 40px;
+    background-color: rgba(0,0,0,.1);
+    outline: 1px solid hsla(0,0%,100%,.2);
+    border: 2px solid rgba(0,0,0,.1);
+    box-sizing: border-box;
+    height: 47px;
+    padding: 5px 15px;
+}

@@ -1,0 +1,75 @@
+@import "colours";
+
+// CERTIFICATION
+
+.slider-certification-image:hover {
+    filter: grayscale(0%);
+}
+
+// CLIENTS
+
+.slider-item:hover .slider-description {
+    display: block;
+}
+
+// HEADER
+
+.header-actions > a:hover, #search-form-button:hover {
+    filter: brightness(90%);
+}
+
+// NAVBAR 
+
+#bespoke-menu:hover {
+    background-color: $light-grey;
+    #laptop-icon {
+        color: $defualt-white;
+    }
+}
+
+
+#support-menu:hover {
+    background-color: $light-blue;
+    #desktop-icon {
+        color: $defualt-white;
+    }
+}
+
+#digital-menu:hover {
+    background-color: $light-green;
+    #signal-icon {
+        color: $defualt-white;
+    }
+}
+
+#telecoms-menu:hover {
+    background-color: $light-red;
+    #telecoms-icon {
+        color: $defualt-white;
+    }
+}
+
+#web-menu:hover {
+    background-color: $light-purple;
+    #web-icon {
+        color: $defualt-white;
+    }
+}
+
+#security-menu:hover {
+    background-color: $dark-pink;
+    #security-icon {
+        color: $defualt-white;
+    }
+}
+
+#developer-menu:hover {
+    background-color: $dark-red;
+    #developer-icon {
+        color: $defualt-white;
+    }
+}
+
+.sub-menu-item-text-value:hover {
+    text-decoration: underline;
+}

@@ -6,6 +6,25 @@ let width = window.innerWidth;
 let open = false
 
 
+//localStorage.setItem("cookieState", "false");;
+
+
+function checked () { 
+    localStorage.setItem("cookieState", "true");;
+    $("html").removeClass("stopScroll");
+    $("#cookie-consent").css("display", "none");
+} 
+
+$(window).on("load", () => { 
+    if (localStorage.getItem("cookieState") == false || localStorage.length == 0) {
+        $("#cookie-consent").css("display", "flex");
+        $("html").addClass("stopScroll");
+    } else if (localStorage.getItem("cookieState") == true) {
+        $("html").removeClass("stopScroll");
+    }
+})
+
+
 function disableScroll() {
     // Get the current page scroll position
     scrollTop = window.pageYOffset || document.documentElement.scrollTop;

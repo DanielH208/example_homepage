@@ -1,0 +1,65 @@
+@import "../base/colours";
+
+// SIDENAV 
+
+#side-nav-bar {
+    height: 100%; /* 100% Full-height */
+    width: 275px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    top: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    right: 0px;
+    color: $defualt-white;
+    background-color: $darker-grey-v2; 
+    z-index: 5;
+}
+
+#contact-us-lg-sidenav {
+    padding-top: 0px !important;
+}
+
+#side-nav-services > li {
+    padding-top: 20px;
+}
+
+.nav-up {
+    top: -168px; // same as header height. use variables in LESS/SASS
+}
+
+#side-nav-content {
+    padding: 21px;
+}
+
+#side-nav-company-info {
+    margin-bottom: 25px;
+}
+
+#services-md-hidden-menu {
+    display: none;
+}
+
+.unfocused { 
+    filter: brightness(65%);
+}
+
+#side-nav-company-info > li > a {
+    margin-bottom: -22px;
+}
+
+.sidenav-sub-menu-item > a > i {
+    margin-top: 6px;
+    margin-right: 20px;
+    font-size: 8px;
+}
+
+
+#side-nav-company-info .sidenav-sub-menu-item > li > a {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 100;
+}
+
+.sidenav-sub-menu-banner { 
+    margin-top: 20px;
+}
+

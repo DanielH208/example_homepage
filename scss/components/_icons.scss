@@ -1,0 +1,53 @@
+@use "../base/placeholders";
+@import "../base/colours";
+
+// FOOTER 
+
+.footer-social-menu-logos-icons {
+    font-size: 26px;
+    filter: invert(100%);
+    padding: 12px 22px 16px;
+}
+
+// NAVBAR  
+
+#laptop-icon, #sidenav-laptop-icon {
+    @extend %icon-uniform-size;
+    color: $light-grey-v2;
+}
+
+#desktop-icon, #sidenav-desktop-icon {
+    @extend %icon-uniform-size;
+    color: $light-blue-v2;
+}
+
+#signal-icon, #sidenav-digital-icon {
+    @extend %icon-uniform-size;
+    color: $light-green;
+}
+
+#telecoms-icon, #sidenav-telecoms-icon {
+    @extend %icon-uniform-size;
+    color: $light-red;
+}
+
+#web-icon, #sidenav-code-icon {
+    @extend %icon-uniform-size;
+    color: $light-purple;
+}
+
+#security-icon, #sidenav-cyber-icon {
+    @extend %icon-uniform-size;
+    color: $medium-pink;
+}
+
+#developer-icon, #sidenav-graduation-icon {
+    @extend %icon-uniform-size;
+    color: $dark-red;
+}
+
+// SIDENAV
+
+.side-nav-icon {
+    @extend %icon-uniform-size;
+}
