@@ -18,6 +18,17 @@
 }
 
 // BANNER 
+.brand-background {
+    color: $lightest-white-v4;
+    line-height: 1.875rem;
+    letter-spacing: .4px;
+}
+
+.brand-background a {
+    cursor: unset;
+    color: unset;
+    text-decoration: none;
+}
 
 .text > h1 {
     font-size: 2.5rem;
@@ -25,6 +36,7 @@
     margin: 0 0 1.25rem;
     font-weight: 600;
     z-index: 0;
+    color: $lightest-white-v4
      
 }
 
@@ -33,6 +45,7 @@
     line-height: 1.75rem;
     margin-top: 0px;
     font-weight: 600;
+    color: $lightest-white-v4
 }
 
 
@@ -40,17 +53,28 @@
     margin-left: 5px;
 }
 
+.brand-header, #company-locations {
+    font-weight: 600;
+}
+
 // BRAND 
 
 #client-quote {
     font-size: 20.8px;
+    font-weight: 600;
+    font-style: Italic;
 }
 
 #client-quote-author {
     font-size: 17.6px;
+    color: #a3a8ac;
 }
 
-.brand-header > strong {
+#client-quote-author > a {
+    color: #fff;
+}
+
+.brand-header {
     font-size: 36px;
 }
 
@@ -78,23 +102,27 @@
 }
 
 .marketing-colour { 
-    background-color: $medium-green;
-    border-color: $medium-green;
+    background-color: #2ecc71;
+    //background-color: $medium-green;
+    border-color: #2ecc71;
 }
 
-.web-design-colour {
-    background-color: $light-purple;
-    border-color: $light-purple;
+.web-design-colour { 
+    //background-color: $light-purple;
+    background-color: #926fb1;
+    border-color: #926fb1;
 }
 
 .support-colour {
-    background-color: $medium-blue;
-    border-color: $medium-blue;
+    //background-color: $medium-blue;
+    background-color: #4183d7;
+    border-color: #4183d7;
 }
 
 .software-colour {
-    background-color: $medium-grey;
-    border-color: $medium-grey;
+    //background-color: $medium-grey;
+    background-color: #67809f;
+    border-color: #67809f;
     
 }
 

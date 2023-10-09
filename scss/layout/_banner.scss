@@ -54,4 +54,29 @@ picture > img {
     text-align: center !important;
 }
 
+.slick-active::after {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+
+    //top: -6px;
+    content: "";
+    left: 1px;
+    width: 18px;
+    height: 19px;
+}
+
+.slick-dots li button { 
+    margin-top: 39px
+}
+
+
+
+.slick-dots li button::before {
+    opacity: 1;
+}
+
+.slick-dots li button:before {
+    top: 22px !important;
+}
 

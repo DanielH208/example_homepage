@@ -10,13 +10,14 @@
 }
 
 #btn-google {
-    background-color: $dark-blue;
+    background-color: $medium-blue-v3;
+    text-transform: capitalize;
     margin: 20px 8px 0px 0px;
 }
 
 .btn-trust {
-    background-color: $dark-green;
-
+    background-color: $light-green-v2;
+    text-transform: capitalize;
 }
 
 #btn-choose {
@@ -25,12 +26,12 @@
 
 #btn-choose, #btn-culture {
     background-color: $defualt-dark-purple;
+    text-transform: capitalize;
 }
 
 #search-form-button {
-    background-color:  $lightest-grey !important;
+    background-color: $darker-grey-v3 !important;
     color: $defualt-white;
-    
 }
 
 #search-form-button > i {

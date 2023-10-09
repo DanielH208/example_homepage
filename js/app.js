@@ -174,7 +174,7 @@ $("#banner-slider").slick({
     slidesToScroll: 1,
     infinite: true,
     arrows: false,
-    draggable: false,
+    draggable: true,
     dots: true,
     autoplay: true,
     autoplaySpeed: 4000,

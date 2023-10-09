@@ -73,3 +73,23 @@
 .sub-menu-item-text-value:hover {
     text-decoration: underline;
 }
+
+// BRAND BACKGROUND 
+
+.btn-trust:hover {
+    background-color: #009b69;
+}
+#btn-google:hover {
+    background-color: #166af4;
+}
+
+#btn-choose:hover, #btn-culture:hover {
+    background-color: #121318;
+}
+
+
+// CLIENT SLIDER 
+
+.slider-clients-button:hover {
+    filter: brightness(85%);
+}
