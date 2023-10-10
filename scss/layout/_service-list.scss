@@ -6,7 +6,8 @@
 .services-header {
     @include mixin.flex-container(row, nowrap);
     justify-content: space-between;
-    margin: 0px 20px;
+    //margin: 0px 20px;
+    margin: 0px 17px;
 }
 
 #services-footer {
@@ -132,7 +133,11 @@ span[class^="btn"] {
     background-color: $dark-red;
 }
 
-
+.service-list i {
+    font-size: 25px;
+    //font-family: "fontawesome" !important;
+    margin-top: 18px;
+}
 
 a[class^="card-"] > .icon {
     height: 65px;
@@ -151,6 +156,7 @@ a[class$="-block"] {
     display: block;
     border: 1px solid $lightest-white;
     text-align: center;
+    transition: .5s ease;
 }
 
 .icon > img {
@@ -163,4 +169,10 @@ a[class$="-block"] {
     color: $defualt-white;
     background-color: $light-grey-v2;
     border-color: $light-grey-v2;
+}
+
+.top-cards > a, .other-cards > a, .service-view-work > a {
+    color: unset;
+    cursor: unset;
+    text-decoration: unset;
 }

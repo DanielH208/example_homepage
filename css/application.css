@@ -79,6 +79,147 @@
   filter: brightness(85%);
 }
 
+.card-software-block:hover, .card-it-block:hover, .card-digital-block:hover, .card-telecoms-block:hover,
+.card-web-block:hover, .card-cyber-block:hover, .card-training-block:hover {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.card-software-block:hover {
+  background-color: #67809f !important;
+  color: white !important;
+}
+.card-software-block:hover :first-child {
+  background-color: white !important;
+  color: #67809f !important;
+}
+.card-software-block:hover :first-child i {
+  color: #67809f;
+}
+.card-software-block:hover :last-child {
+  background-color: white !important;
+  color: #67809f !important;
+  border-color: white;
+  transition: unset;
+}
+
+.card-it-block:hover {
+  background-color: #4183d7 !important;
+  color: white !important;
+}
+.card-it-block:hover :first-child {
+  background-color: white !important;
+  color: #4183d7 !important;
+}
+.card-it-block:hover :first-child i {
+  color: #4183d7;
+}
+.card-it-block:hover :last-child {
+  background-color: white !important;
+  color: #4183d7 !important;
+  border-color: white;
+  transition: unset;
+}
+
+.card-digital-block:hover {
+  background-color: #2ecc71 !important;
+  color: white !important;
+}
+.card-digital-block:hover :first-child {
+  background-color: white !important;
+  color: #2ecc71 !important;
+}
+.card-digital-block:hover :first-child i {
+  color: #2ecc71;
+}
+.card-digital-block:hover :last-child {
+  background-color: white !important;
+  color: #2ecc71 !important;
+  border-color: white;
+  transition: unset;
+}
+
+.card-telecoms-block:hover {
+  background-color: #d64541 !important;
+  color: white !important;
+}
+.card-telecoms-block:hover :first-child {
+  background-color: white !important;
+  color: #d64541 !important;
+}
+.card-telecoms-block:hover :first-child i {
+  color: #d64541;
+}
+.card-telecoms-block:hover :last-child {
+  background-color: white !important;
+  color: #d64541 !important;
+  border-color: white;
+  transition: unset;
+}
+
+.card-web-block:hover {
+  background-color: #926fb1 !important;
+  color: white !important;
+}
+.card-web-block:hover :first-child {
+  background-color: white !important;
+  color: #926fb1 !important;
+}
+.card-web-block:hover :first-child i {
+  color: #926fb1;
+}
+.card-web-block:hover :last-child {
+  background-color: white !important;
+  color: #926fb1 !important;
+  border-color: white;
+  transition: unset;
+}
+
+.card-cyber-block:hover {
+  background-color: #f62459 !important;
+  color: white !important;
+}
+.card-cyber-block:hover :first-child {
+  background-color: white !important;
+  color: #f62459 !important;
+}
+.card-cyber-block:hover :first-child i {
+  color: #f62459;
+}
+.card-cyber-block:hover :last-child {
+  background-color: white !important;
+  color: #f62459 !important;
+  border-color: white;
+  transition: unset;
+}
+
+.card-training-block:hover {
+  background-color: #ce4125 !important;
+  color: white !important;
+}
+.card-training-block:hover :first-child {
+  background-color: white !important;
+  color: #ce4125 !important;
+}
+.card-training-block:hover :first-child i {
+  color: #ce4125;
+}
+.card-training-block:hover :last-child {
+  background-color: white !important;
+  color: #ce4125 !important;
+  border-color: white;
+  transition: unset;
+}
+
+.service-view-work:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.service-view-work:hover :first-child {
+  text-decoration: underline;
+}
+
 #modal-title {
   margin: 0;
   font-size: 26px;
@@ -760,7 +901,7 @@ main {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin: 0px 20px;
+  margin: 0px 17px;
 }
 
 #services-footer {
@@ -884,6 +1025,11 @@ span[class^=btn] {
   background-color: #ce4125;
 }
 
+.service-list i {
+  font-size: 25px;
+  margin-top: 18px;
+}
+
 a[class^=card-] > .icon {
   height: 65px;
   width: 65px;
@@ -901,6 +1047,7 @@ a[class$=-block] {
   display: block;
   border: 1px solid #ccc;
   text-align: center;
+  transition: 0.5s ease;
 }
 
 .icon > img {
@@ -913,6 +1060,12 @@ a[class$=-block] {
   color: white;
   background-color: #526781;
   border-color: #526781;
+}
+
+.top-cards > a, .other-cards > a, .service-view-work > a {
+  color: unset;
+  cursor: unset;
+  text-decoration: unset;
 }
 
 /*
@@ -1912,6 +2065,12 @@ footer {
     position: absolute;
     background: linear-gradient(270deg, transparent 25%, #000);
   }
+  .card-software-block, .card-it-block, .card-digital-block {
+    height: 252px;
+  }
+  .services-header {
+    margin: 0px 25px 0px 17px;
+  }
 }
 @media (min-width: 1260px) {
   .container {
@@ -1971,6 +2130,9 @@ footer {
     border-left: 85px solid transparent;
     border-right: 85px solid transparent;
     border-top: 35px solid blue;
+  }
+  #digital-btn {
+    margin-top: 20px;
   }
 }
 

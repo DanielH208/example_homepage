@@ -3,3 +3,8 @@
     flex-direction: $direction;
     flex-wrap: $wrap;
 }
+
+@mixin invert-colour ($invert-background, $invert-color) {
+    background-color: $invert-background !important;
+    color: $invert-color !important;  
+}

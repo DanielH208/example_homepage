@@ -1,4 +1,6 @@
+@use "mixins" as mixin;
 @import "colours";
+
 
 // CERTIFICATION
 
@@ -92,4 +94,132 @@
 
 .slider-clients-button:hover {
     filter: brightness(85%);
+}
+
+// SERVICE LIST 
+
+.card-software-block:hover, .card-it-block:hover, .card-digital-block:hover, .card-telecoms-block:hover,
+.card-web-block:hover, .card-cyber-block:hover, .card-training-block:hover {
+    margin-top:15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.card-software-block:hover {
+    @include mixin.invert-colour($light-grey, white);
+    :first-child {
+        @include mixin.invert-colour(white, $light-grey);
+        i {
+            color: $light-grey;
+        }
+    }
+
+    :last-child {
+        @include mixin.invert-colour(white, $light-grey);
+        border-color: white;
+        transition: unset;
+    }
+}
+
+.card-it-block:hover {
+    @include mixin.invert-colour($light-blue, white);
+    :first-child {
+        @include mixin.invert-colour(white, $light-blue);
+        i {
+            color: $light-blue;
+        }
+    }
+
+    :last-child {
+        @include mixin.invert-colour(white, $light-blue);
+        border-color: white;
+        transition: unset;
+    }
+}
+
+.card-digital-block:hover {
+    @include mixin.invert-colour($light-green, white);
+    :first-child {
+        @include mixin.invert-colour(white, $light-green);
+        i {
+            color: $light-green;
+        }
+    }
+
+    :last-child {
+        @include mixin.invert-colour(white, $light-green);
+        border-color: white;
+        transition: unset;
+    }
+}
+
+.card-telecoms-block:hover {
+    @include mixin.invert-colour($light-red, white);
+    :first-child {
+        @include mixin.invert-colour(white, $light-red);
+        i {
+            color: $light-red;
+        }
+    }
+
+    :last-child {
+        @include mixin.invert-colour(white, $light-red);
+        border-color: white;
+        transition: unset;
+    }
+}
+
+.card-web-block:hover {
+    @include mixin.invert-colour($light-purple, white);
+    :first-child {
+        @include mixin.invert-colour(white, $light-purple);
+        i {
+            color: $light-purple;
+        }
+    }
+
+    :last-child {
+        @include mixin.invert-colour(white, $light-purple);
+        border-color: white;
+        transition: unset;
+    }
+}
+
+.card-cyber-block:hover {
+    @include mixin.invert-colour($darker-pink, white);
+    :first-child {
+        @include mixin.invert-colour(white, $darker-pink);
+        i {
+            color: $darker-pink;
+        }
+    }
+
+    :last-child {
+        @include mixin.invert-colour(white, $darker-pink);
+        border-color: white;
+        transition: unset;
+    }
+}
+.card-training-block:hover {
+    @include mixin.invert-colour($dark-red, white);
+    :first-child {
+        @include mixin.invert-colour(white, $dark-red);
+        i {
+            color: $dark-red;
+        }
+    }
+
+    :last-child {
+        @include mixin.invert-colour(white, $dark-red);
+        border-color: white;
+        transition: unset;
+    }
+}
+
+.service-view-work:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    :first-child {
+        text-decoration: underline;
+    }
 }
