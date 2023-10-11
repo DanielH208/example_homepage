@@ -3,9 +3,14 @@
 
 // FOOTER 
 
-.footer-social-menu-logos-icons {
+.footer-social-menu-logos > a {
+    //width: 26px;
     font-size: 26px;
-    filter: invert(100%);
+    line-height: 26px;
+    color: white;
+    text-align: center;
+    //filter: invert(100%);
+    background-color: #212330;
     padding: 12px 22px 16px;
 }
 

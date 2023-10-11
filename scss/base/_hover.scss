@@ -242,3 +242,26 @@
 .article-list > div:hover {
     margin-top: -10px;
 }
+
+// FOOTER 
+
+.link-row li > a:hover {
+    text-decoration: underline;
+    cursor: pointer
+}
+
+#footer-facebook-icon:hover {
+    background-color: #3b5998;
+}
+
+#footer-linkedin-icon:hover {
+    background-color: #0077b5;
+}
+#footer-twitter-icon:hover {
+    background-color: #00aced;
+}
+
+#footer-instagram-icon:hover {
+    background-color: #d93175;
+}
+

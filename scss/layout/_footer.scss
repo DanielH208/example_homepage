@@ -4,16 +4,17 @@
 // FOOTER    
 
 footer {
-    background-color: $light-black;
+    background-color: #323544;
     color: white;
     padding-top: 27px;
     position: relative;
 }
 
 .footer-bottom {
-    background-color: $medium-black;
+    background-color: #212330;
     color: $defualt-white;
     font-size: 13px;
+    padding-top: 10px;
 }
 
 .footer-social {
@@ -56,7 +57,7 @@ footer {
     justify-content: space-between;
 }
 
-.footer-social-menu-logos-container {
+.footer-social-menu-logos > a {
     background-color: $medium-black;
     margin: 0px 10px 10px 0px;
 }
@@ -67,7 +68,13 @@ footer {
 
 .license {
     @include mixin.flex-container(row, wrap);
-    padding: 5px 0px 10px 25px;
+    padding: 5px 0 10px;
     max-width: 202px;
     align-items: center;
+}
+
+.link-row li > a {
+    color: unset;
+    cursor: unset;
+    text-decoration: unset;
 }
