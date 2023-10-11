@@ -223,3 +223,22 @@
         text-decoration: underline;
     }
 }
+
+// NEWS 
+
+.careers-btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.smallestvp-view-all:hover, #articles-bar-view-all:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    :first-child {
+        text-decoration: underline;
+    }
+}
+
+.article-list > div:hover {
+    margin-top: -10px;
+}

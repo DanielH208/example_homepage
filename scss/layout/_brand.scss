@@ -29,6 +29,10 @@
     padding-bottom: 50px;
 }
 
+.row div[class^="article"] {
+    width: 100%;
+}
+
 .col-clients{
     min-height: 1px;
     padding: 0px 15px;

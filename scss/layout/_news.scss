@@ -3,13 +3,11 @@
 
 // NEWS 
 .latest-articles {
-    background-color: $dark-black;
-    color: $defualt-white;
+    background-color: $lightest-white-v4;
+    color: $light-grey-v3;
 }
 
-.row div[class^="article"] {
-    width: 100%;
-}
+
 
 .article-image {
     width: 100%;
@@ -24,13 +22,21 @@
     width: 100%;
     @include mixin.flex-container(row, wrap);
 }
+    
 
+.article-one, .article-two, .article-three {
+    position: relative;
+    transition: .5s ease-in-out;
+
+}
 
 div[class^="block"] {
     border-color: $medium-grey-v2;
     border: 1px solid $lightest-white;
     border-radius: 0px 0px 3px 3px;
     padding: 30px;
+    box-shadow: 0 3px 35px rgba(0,0,0,.1);
+    margin-top: -7px;
 }
 
 
@@ -64,8 +70,35 @@ div[class^="block"] {
 }
 
 #reception-button, #receptionist-careers-btn {
-    color: $lightest-white-v2;
     background-color: $medium-purple;
     border-color: $medium-purple-v2;
 }
 
+.article-top-link {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+.latest-articles .section {
+    padding-top: 10px;
+}
+
+.latest-articles .heading-container {
+    padding-top: 50px;
+    text-align: center;
+}
+
+#articles-bar-view-all {
+    margin-top: 37px;
+}
+
+.smallestvp-view-all > a, #articles-bar-view-all > a {
+    color: black;
+    cursor: unset;
+    text-decoration: unset;
+}

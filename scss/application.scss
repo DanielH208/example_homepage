@@ -57,6 +57,10 @@
         height: 350px;
         margin-top: -450px;
     }
+    .latest-articles .section {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -158,6 +162,12 @@
     }
     .cookie-button-anchor {
         width: 50%;
+    }
+    .article-list .block h3 {
+        min-height: 3rem;
+    }
+    .latest-articles .heading-container {
+        margin-left: 15px;
     }
 }
 
@@ -277,6 +287,12 @@
 
     .article-one, .article-two, .article-three {
         padding: 0px 15px;
+    }
+    .article-list .image-container {
+        height: 214px;
+    }
+    .article-list .block {
+        height: 329px;
     }
     .heading-container {
         width: 1170px;

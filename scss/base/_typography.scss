@@ -231,3 +231,56 @@ footer .container ul li {
     margin: 0px;
     font-size: 16px;
 }
+
+// NEWS 
+
+.article-list p {
+    font-size: 13px;
+    margin: 0px 0px 30px 0px;
+}
+
+.article-list .block > h3 {
+    font-size: 17px;
+    margin: 0px 0px 15px 0px;
+}
+
+.article-list .user {
+    margin-top: 35px;
+}
+
+.article-list .user .avatar > img {
+    border-radius: 100%;
+}
+
+.article-list .article-buttons, .article-list .block > h3 > a {
+    text-decoration: none;
+}
+.article-list .article-buttons {
+    line-height: 35px;
+    padding: 12px 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.063rem;
+    border: 1px transparent;
+    border-radius: 3px;
+}
+
+.latest-articles .heading-container > h2 {
+    color: black;
+    font-size: 36px;
+}
+
+.latest-articles .heading-container > h3 {
+    color: black;
+    font-size: 26px;
+}
+
+.careers-title {
+    color: $medium-blue
+}
+
+.smallestvp-view-all {
+    color: black;
+    font-size: 26px;
+    font-weight: bold;
+}
