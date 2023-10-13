@@ -626,7 +626,7 @@
                         <div class="container">
                             <div class="row" id="header-row">
                                 <div class="header-icon">
-                                    <img src="assets/images/asset 0.png">
+                                    <a href="#"><img src="assets/images/asset 0.png"></a>
                                 </div>
                                 <div class="header-mobile-icon">
                                     <i class="fa-solid fa-phone-volume"></i>
@@ -669,7 +669,7 @@
                         <ul class="nav-row">
                             <li id="software" >
                                 <div class="sub-menu" id="bespoke-menu">
-                                    <a class="dropbtn" id="bespoke-header">
+                                    <a class="dropbtn header-nav-link" href="#">
                                         <span id="laptop-icon">
                                             <i class="fa-solid fa-laptop"></i>
                                         </span>
@@ -797,7 +797,7 @@
                             </li>
                             <li id="it" class="it-nav">
                                 <div class="sub-menu" id="support-menu">
-                                    <a class="dropbtn">
+                                    <a class="dropbtn header-nav-link" href="#">
                                         <span id="desktop-icon">
                                             <i class="fa-solid fa-desktop"></i>
                                         </span>
@@ -878,7 +878,7 @@
                             </li>
                             <li id="digital" class="digital-nav">
                                 <div class="sub-menu" id="digital-menu">
-                                    <a class="dropbtn">
+                                    <a class="dropbtn header-nav-link" href="#">
                                         <span id="signal-icon">
                                             <i class="fa-solid fa-signal"></i>
                                         </span>
@@ -959,7 +959,7 @@
                             </li>
                             <li id="telecoms" class="telecoms-nav">
                                 <div class="sub-menu" id="telecoms-menu">
-                                    <a class="dropbtn">
+                                    <a class="dropbtn header-nav-link" href="#">
                                         <span id="telecoms-icon">
                                             <i class="fa-solid fa-phone-volume"></i>
                                         </span>
@@ -1040,7 +1040,7 @@
                             </li>
                             <li id="web" class="web-nav">
                                 <div class="sub-menu" id="web-menu">
-                                    <a class="dropbtn">
+                                    <a class="dropbtn header-nav-link" href="#">
                                         <span id="web-icon">
                                             <i class="fa-solid fa-code"></i>
                                         </span>
@@ -1121,7 +1121,7 @@
                             </li>
                             <li id="security" class="security-nav">
                                 <div class="sub-menu" id="security-menu">
-                                    <a class="dropbtn">
+                                    <a class="dropbtn header-nav-link" href="#">
                                         <span id="security-icon">
                                             <i class="fa-solid fa-shield-halved"></i>
                                         </span>
@@ -1202,7 +1202,7 @@
                             </li>
                             <li id="developer" class="developer-nav">
                                 <div class="sub-menu" id="developer-menu">
-                                    <a class="dropbtn"> 
+                                    <a class="dropbtn header-nav-link" href="#"> 
                                         <span id="developer-icon">
                                             <i class="fa-solid fa-graduation-cap"></i>
                                         </span>
@@ -2035,11 +2035,11 @@
                 <div class="newsletter">
                     <div class="container">
                         <form class="form-signup">
-                            <h2>Email Newsletter <br> Sign-Up</h2>
+                            <h2>Email Newsletter Sign-Up</h2>
                             <div class="sign-up-inputs-group">
                                 <div class="sign-up-input">
                                     <div class="form-group">
-                                        <label for="form-name" class="required">Your Name *</label>
+                                        <label for="form-name" class="required">Your Name <span id="required-input">*</span></label>
                                         <br>
                                         <input id="form-name" name="name" type="text">
                                     </div>
@@ -2047,7 +2047,7 @@
                                 <div class="sign-up-input">
                                     <div class="form-group">
                                         <label for="form-email" class="required">
-                                            Your Email 
+                                            Your Email <span id="required-input">*</span>
                                         </label>
                                         <br>
                                         <input id="form-email" name="name" type="text">
@@ -2059,7 +2059,7 @@
                                     <span class="media-left checkbox-left">
                                         <span id="button-checkbox" class="button">
                                             <span class="mdi-action-done"></span>
-                                            <input name="preference" type="checkbox" vaule="1">
+                                            <input id="form-checkbox" name="preference" type="checkbox" vaule="1">
                                         </span>
                                     </span>
                                 <span class="media-body">

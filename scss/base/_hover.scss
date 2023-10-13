@@ -15,9 +15,26 @@
 }
 
 // HEADER
-
+/*
 .header-actions > a:hover, #search-form-button:hover {
     filter: brightness(90%);
+}*/
+
+#header-contact-button:hover {
+    background-color: #84858f;
+}
+#header-support-button:hover {
+    background-color: #2a6ec6;
+}
+#search-form-button:hover {
+    background-color: #7e808a !important;
+}
+#hamburger-menu-btn:hover {
+    background-color: #22242e !important;
+}
+
+.hamburger.is-active:hover, .hamburger:hover {
+    opacity: unset !important;
 }
 
 // NAVBAR 

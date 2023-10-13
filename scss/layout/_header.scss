@@ -24,14 +24,26 @@
     font-size: 1.063rem;
     border-radius: 0 3px 3px 0;
     border: none;
+    background-color: #999aa2;
     vertical-align: bottom;
     background-color: none;
     line-height: 0px;
     right: 6px;
 }
 
+.nav-row > li > a {
+    text-decoration: unset;
+    color: unset;
+    cursor: pointer;
+}
 
-
+.nav-header-button-link {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0; 
+    bottom: 0;
+}
 
 /*
 #magni-glass {
@@ -61,7 +73,7 @@
     margin-right: auto;
     
 }
-.header-icon > img {
+.header-icon > a > img {
     max-width: 402px;
     width: 100%;
 }
@@ -96,8 +108,20 @@
     padding-right: 40px;
     background-color: rgba(0,0,0,.1);
     outline: 1px solid hsla(0,0%,100%,.2);
-    border: 2px solid rgba(0,0,0,.1);
+    //outline: 4px solid hsla(0, 0%, 100%, 0.2);
+    border: 1px solid rgba(0,0,0,.1);
+   // border: 1px solid #e5e5e5;
+   box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     box-sizing: border-box;
     height: 47px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     padding: 5px 15px;
+}
+
+.search-form-input:focus {
+    outline-width: 3px;
+    border-width: 2px;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    border-radius: 0px !important;
 }
