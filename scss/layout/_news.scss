@@ -54,6 +54,9 @@ div[class^="block"] {
     @include mixin.flex-container(row, 0);
 }
 
+
+
+
 .details {
     padding: 0px 0px 0px 20px;
     font-size: 14px;
@@ -99,6 +102,4 @@ div[class^="block"] {
 
 .smallestvp-view-all > a, #articles-bar-view-all > a {
     color: black;
-    cursor: unset;
-    text-decoration: unset;
 }

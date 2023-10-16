@@ -279,6 +279,11 @@
   background-color: #d93175;
 }
 
+#side-nav-company-info > li:hover > a {
+  background-color: #ffffff;
+  opacity: 5%;
+}
+
 #modal-title {
   margin: 0;
   font-size: 26px;
@@ -299,12 +304,6 @@
   color: #ffffff;
   line-height: 1.875rem;
   letter-spacing: 0.4px;
-}
-
-.brand-background a {
-  cursor: unset;
-  color: unset;
-  text-decoration: none;
 }
 
 .text > h1 {
@@ -509,10 +508,6 @@ footer .container ul li {
   border-radius: 100%;
 }
 
-.article-list .article-buttons, .article-list .block > h3 > a {
-  text-decoration: none;
-}
-
 .article-list .article-buttons {
   line-height: 35px;
   padding: 12px 15px;
@@ -557,6 +552,12 @@ html {
   overflow-x: hidden; /* Disable horizontal scroll */
 }
 
+html a {
+  cursor: pointer;
+  color: unset;
+  text-decoration: none;
+}
+
 .stopScroll {
   height: 100%;
   overflow: hidden;
@@ -587,6 +588,14 @@ main {
   transition: right 0.5s ease-in-out;
 }
 
+.hide-scroll-bars {
+  overflow: hidden;
+}
+
+.unset-hide-scroll-bars {
+  overflow: show !important;
+}
+
 .open {
   margin-right: 200px;
   overflow: hidden;
@@ -597,7 +606,6 @@ main {
   height: 168px;
   position: absolute;
   top: 0;
-  transition: top 0.2s ease-in-out;
   width: 100%;
   background-color: white;
   z-index: 100000;
@@ -702,6 +710,7 @@ main {
 
 .unfocused {
   filter: brightness(65%);
+  pointer-events: none;
 }
 
 #side-nav-company-info > li > a {
@@ -712,6 +721,10 @@ main {
   margin-top: 6px;
   margin-right: 20px;
   font-size: 8px;
+}
+
+.sidenav-sub-menu-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.45);
 }
 
 #side-nav-company-info .sidenav-sub-menu-item > li > a {
@@ -748,12 +761,6 @@ main {
   background-color: none;
   line-height: 0px;
   right: 6px;
-}
-
-.nav-row > li > a {
-  text-decoration: unset;
-  color: unset;
-  cursor: pointer;
 }
 
 .nav-header-button-link {
@@ -1033,18 +1040,6 @@ main {
   z-index: 10;
 }
 
-.sub-menu > a {
-  color: unset;
-  cursor: pointer;
-  text-decoration: unset;
-}
-
-/*
-.header-nav-link:hover {
-    .sub-menu .sub-menu-content {
-        display: block;
-    }
-}*/
 .sub-menu:hover .sub-menu-content {
   display: block;
 }
@@ -1078,14 +1073,10 @@ a[class^=card-] > span {
   background-color: white;
 }
 
-.top-cards {
+.top-cards, .other-cards {
   margin-left: 15px;
   margin-right: 15px;
-}
-
-.other-cards {
-  margin-left: 15px;
-  margin-right: 15px;
+  flex-grow: 1;
 }
 
 span[class^=btn] {
@@ -1215,17 +1206,6 @@ a[class$=-block] {
   border-color: #526781;
 }
 
-.top-cards > a, .other-cards > a, .service-view-work > a {
-  color: unset;
-  cursor: unset;
-  text-decoration: unset;
-}
-
-/*
-.image-cover-container img {
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,255,255,1));
-}
-*/
 .banner {
   height: 550px;
   width: 100%;
@@ -1529,8 +1509,6 @@ div[class^=block] {
 
 .smallestvp-view-all > a, #articles-bar-view-all > a {
   color: black;
-  cursor: unset;
-  text-decoration: unset;
 }
 
 .newsletter {
@@ -1719,12 +1697,6 @@ footer {
   align-items: center;
 }
 
-.link-row li > a {
-  color: unset;
-  cursor: unset;
-  text-decoration: unset;
-}
-
 .arrow {
   position: absolute;
   left: 50%;
@@ -1870,7 +1842,6 @@ footer {
   white-space: normal;
   text-align: center;
   vertical-align: middle;
-  color: rgb(232, 230, 227);
   margin-top: 1.938rem;
   font-size: 20px;
   text-transform: capitalize;
@@ -2001,11 +1972,6 @@ footer {
 
 #modal-body > a {
   color: #333645;
-  text-decoration: none;
-}
-
-.header-actions > a {
-  text-decoration: none;
 }
 
 .sub-menu > a {
@@ -2071,7 +2037,6 @@ footer {
   background-color: rgba(0, 0, 0, 0.25);
   padding: 10px;
   border-top: 1px solid hsla(0, 0%, 100%, 0.05);
-  text-decoration: none;
 }
 
 .sidenav-sub-menu-banner > ul > li:not(:first-child) > a {
@@ -2256,6 +2221,13 @@ footer {
   .latest-articles .heading-container {
     margin-left: 15px;
   }
+  .other-cards {
+    width: 45%;
+  }
+  #articles-container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -2344,7 +2316,7 @@ footer {
     height: 252px;
   }
   .services-header {
-    margin: 0px 25px 0px 17px;
+    margin: 0px 18px 0px 17px;
   }
 }
 @media (min-width: 1260px) {

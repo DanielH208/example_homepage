@@ -40,6 +40,7 @@
 
 .unfocused { 
     filter: brightness(65%);
+    pointer-events: none;
 }
 
 #side-nav-company-info > li > a {
@@ -52,6 +53,9 @@
     font-size: 8px;
 }
 
+.sidenav-sub-menu-item { 
+    border-top: 1px solid rgba(0,0,0,.45);
+}
 
 #side-nav-company-info .sidenav-sub-menu-item > li > a {
     font-size: 14px;

@@ -282,3 +282,12 @@
     background-color: #d93175;
 }
 
+// SIDENAV 
+
+#side-nav-company-info > li:hover {
+    
+    > a {
+        background-color: #ffffff;
+        opacity: 5%;
+    }
+}

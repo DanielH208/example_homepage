@@ -4,14 +4,9 @@
 
 #modal-body > a {
     color: $dark-grey;
-    text-decoration: none;
 }
 
 // HEADER
-
-.header-actions > a {
-    text-decoration: none;
-}
 
 // NAVBAR 
 
@@ -82,7 +77,6 @@
     background-color: rgba(0,0,0,.25);
     padding: 10px;
     border-top: 1px solid hsla(0,0%,100%,.05);
-    text-decoration: none;
 }
 
 .sidenav-sub-menu-banner > ul > li:not(:first-child) > a {

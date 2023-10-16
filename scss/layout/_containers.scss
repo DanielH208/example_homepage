@@ -7,6 +7,12 @@ html {
     overflow-x: hidden; /* Disable horizontal scroll */
 }
 
+html a {
+    cursor: pointer;
+    color: unset;
+    text-decoration: none;
+}
+
 .stopScroll {
     height: 100%;
     overflow: hidden;
@@ -40,6 +46,14 @@ main {
     transition: right 0.5s ease-in-out;
 }
 
+.hide-scroll-bars {
+    overflow: hidden;
+}
+
+.unset-hide-scroll-bars {
+    overflow: show !important;
+}
+
 .open {
     margin-right: 200px;
     overflow: hidden;
@@ -50,7 +64,7 @@ main {
     height: 168px;
     position: absolute;
     top: 0;
-    transition: top 0.2s ease-in-out;
+    //transition: top 0.2s ease-in-out;
     width: 100%;
     background-color: $defualt-white;
     z-index: 100000;

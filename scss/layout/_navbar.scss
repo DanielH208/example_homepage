@@ -186,18 +186,6 @@
     z-index: 10; 
 }
 
-.sub-menu > a {
-    color: unset;
-    cursor: pointer;
-    text-decoration: unset;
-}
-
-/*
-.header-nav-link:hover {
-    .sub-menu .sub-menu-content {
-        display: block;
-    }
-}*/
 
 .sub-menu:hover .sub-menu-content {
     display: block;
