@@ -19,19 +19,36 @@
 #required-input {
     color: red;
 }
+.checkbox {
+    border-radius: 3px;
+    border: 3px solid #333645;
+    height: 26px;
+    width: 26px;
+    position: relative;
+    margin-right: 20px;
+}
 
 
-  .mdi-action-done:before {
+.checkbox label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 11px;
+  }
+  
+.checkbox label:before {
     content: "";
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 26px;
+    height: 26px; 
     margin-right: 10px;
     position: absolute;
     left: 0;
-    bottom: 1px;
-    background-color: pink;
-    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    bottom: -8px;
+    background-color: #ddd;
+
 }
   
   input[type=checkbox] {
@@ -43,11 +60,16 @@
   
   input[type=checkbox]:checked + label:before {
     content: "\2713";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    font-size: 12px;
-    color: #fff;
+    font-weight: 1000;
+    width: 30px;
+    height: 30px;
+    left: -2px;
+    top: -20px;
+    font-size: 22px;
+    color: white;
+    background-color: #333645;;
     text-align: center;
-      line-height: 12px;
+    line-height: 30px;
   }
 
 
@@ -57,14 +79,16 @@
 
 .form-group input {
     width: 90%;
-    border: 1px transparent;
+    border: 1px solid;
+    border-color: #ccc;
+    height: 37px;
     padding: 5px 15px;
+    margin: 5px 0px 0px 0px;
 }
 
-.form-group label.required {
+.form-group .required {
     font-size: 16px;
     font-weight: 600;
-    margin: 0px 0px 5px;
 }
 
 .sign-up-input {
@@ -100,9 +124,10 @@
 }
 
 #newsletter-btn-primary {
-    color: $lightest-white-v2;
-    background-color: $dark-purple;
-    border-color: $lightest-grey-v2;
+    color: white;
+    background-color: #333645;
+    border-color: #333645;
+    border-radius: 3px;
 }
 
 .heading-container {

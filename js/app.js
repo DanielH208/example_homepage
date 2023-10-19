@@ -165,7 +165,7 @@ $("#main-content").on("click", function () {
 
 /// CERTIFICATION SLIDER 
 $("#slider-certification").slick({
-    slidesToShow: 11,
+    slidesToShow: 10,
     arrows: false,
     draggable: false,
     dots: false,

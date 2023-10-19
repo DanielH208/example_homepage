@@ -280,8 +280,7 @@
 }
 
 #side-nav-company-info > li:hover > a {
-  background-color: #ffffff;
-  opacity: 5%;
+  background-color: #3b3f50;
 }
 
 #modal-title {
@@ -426,7 +425,8 @@ footer .container ul li {
   font-size: 32px;
   color: #333645;
   font-weight: 400;
-  margin: 0px 0px 15px;
+  margin: 0px 0px;
+  line-height: 35px;
 }
 
 #services-footer > h3 {
@@ -1528,17 +1528,34 @@ div[class^=block] {
   color: red;
 }
 
-.mdi-action-done:before {
+.checkbox {
+  border-radius: 3px;
+  border: 3px solid #333645;
+  height: 26px;
+  width: 26px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.checkbox label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 15px;
+  font-size: 11px;
+}
+
+.checkbox label:before {
   content: "";
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 26px;
+  height: 26px;
   margin-right: 10px;
   position: absolute;
   left: 0;
-  bottom: 1px;
-  background-color: pink;
-  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.8);
+  bottom: -8px;
+  background-color: #ddd;
 }
 
 input[type=checkbox] {
@@ -1551,11 +1568,16 @@ input[type=checkbox] {
 
 input[type=checkbox]:checked + label:before {
   content: "✓";
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  font-size: 12px;
-  color: #fff;
+  font-weight: 1000;
+  width: 30px;
+  height: 30px;
+  left: -2px;
+  top: -20px;
+  font-size: 22px;
+  color: white;
+  background-color: #333645;
   text-align: center;
-  line-height: 12px;
+  line-height: 30px;
 }
 
 .form-group .media-body {
@@ -1564,14 +1586,16 @@ input[type=checkbox]:checked + label:before {
 
 .form-group input {
   width: 90%;
-  border: 1px transparent;
+  border: 1px solid;
+  border-color: #ccc;
+  height: 37px;
   padding: 5px 15px;
+  margin: 5px 0px 0px 0px;
 }
 
-.form-group label.required {
+.form-group .required {
   font-size: 16px;
   font-weight: 600;
-  margin: 0px 0px 5px;
 }
 
 .sign-up-input {
@@ -1610,9 +1634,10 @@ input[type=checkbox]:checked + label:before {
 }
 
 #newsletter-btn-primary {
-  color: rgb(232, 230, 227);
-  background-color: #282a36;
-  border-color: rgb(120, 112, 99);
+  color: white;
+  background-color: #333645;
+  border-color: #333645;
+  border-radius: 3px;
 }
 
 .heading-container {
