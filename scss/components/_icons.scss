@@ -16,6 +16,11 @@
 
 // NAVBAR  
 
+.header-mobile-icon > i {
+    font-size: 28px;
+    margin-left: 10px;
+}
+
 #laptop-icon, #sidenav-laptop-icon {
     @extend %icon-uniform-size;
     color: $light-grey-v2;

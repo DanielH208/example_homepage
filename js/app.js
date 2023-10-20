@@ -79,14 +79,9 @@ window.addEventListener("resize", () => {
 function hasScrolled() {
 
     var st = $(this).scrollTop(); 
-    /*
-    if (Math.abs(lastScrollTop - st) <= delta) {
-        return;
-    }*/
 
     // If current position > last position AND scrolled past navbar...
     if (st > lastScrollTop && st > navbarHeight ){
-        console.log("scroll down")
         reOpenedNav = true;
         // Scroll Down
         $(".header").removeClass("nav-down").addClass("nav-up");
@@ -94,7 +89,6 @@ function hasScrolled() {
         // Scroll Up
         // If did not scroll past the document (possible on mac)...
         if(reOpenedNav == true && st + $(window).height() < $(document).height()) {      
-            console.log("scroll up")  
             reOpenedNav = true;
             $(".header").css("transition", "top 0.2s ease-in-out"); 
             $(".header").removeClass("nav-up").addClass("nav-down");
@@ -113,6 +107,7 @@ function closeNav() {
     $("#hamburger-menu-btn").removeClass("hamburger hamburger--slider is-active");
     $("main").css("margin-right", "0px").css("margin-left", "0px");
     $("#main-content > div").removeClass("unfocused");
+    $("footer").removeClass("unfocused");
     //$(".main-navigation").removeClass("unfocused");
     $("html").removeClass("hide-scroll-bars");  
 }
@@ -121,6 +116,7 @@ function closeNav() {
 function openNav() {
     disableScroll();
     $("#main-content > div").addClass("unfocused");
+    $("footer").addClass("unfocused");
     //$(".main-navigation").addClass("unfocused");
     $("#hamburger-menu-btn").addClass("hamburger hamburger--slider is-active");
     $("html").addClass("hide-scroll-bars");
@@ -141,7 +137,6 @@ function openNav() {
 
 $("#hamburger-menu-btn").on("click", () => {
     //event.stopPropagation();
-    console.log("button menu")
     if (open == false) {
         openNav();
         open = true;    
@@ -155,7 +150,6 @@ $("#hamburger-menu-btn").on("click", () => {
 
 $("#main-content").on("click", function () {
     //event.stopPropagation();
-    console.log("outside mouse")
     if (open == true) {
         closeNav()
         open = false;

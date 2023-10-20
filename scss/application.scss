@@ -5,10 +5,6 @@
 
 
 @media (max-width: 399px) { 
-    #first-banner-content h1 {
-        //font-size: 30px;
-        //line-height: 40px;
-    }
     #first-banner-content p {
        padding-bottom: 20px;
     }
@@ -62,17 +58,13 @@
     .article-one, .article-two, .article-three {
         margin-bottom: 40px;
     }
-    #search-form-button {
+    .search-form-button {
         background-color: transparent !important;   
         color: #333645;
     }
 
-    #search-form-button > i {
+    .search-form-button > i {
         font-size: 20px;
-    }
-    .content {
-        //height: 350px;
-       // margin-top: -450px;
     }
     .latest-articles .section {
         padding-top: 10px;
@@ -165,7 +157,7 @@
         max-width: 100%
     }
     .search-form-input:focus {
-        border-color: lightblue;
+        border-color: #5bc0de99;
         box-shadow: 0px 0px 15px lightgray;
     }
     .header {
@@ -249,7 +241,7 @@
         display: none;
     }
 
-    #search-form-button {
+    .search-form-button {
         border-radius: 3px !important;
         left: 1px;
     }
@@ -269,7 +261,7 @@
     #side-nav-content { 
         display: none;
     }
-    #support-sidenav {
+    .support-sidenav {
         display: none;
     }
     #side-nav-company-info {
@@ -279,14 +271,7 @@
         width: 350px;
     }
     .content {
-        //height: 297px;
-        //margin-top: -450px;
-        //margin-left: 100px;
-        //text-align: left;
         overflow: unset;
-    }
-    .slick-dots {
-        //bottom: -20px !important;
     }
     .image-cover-container::before {
         content: '';
@@ -343,7 +328,7 @@
         width: 240px;     
     }
 
-    #search-form-button { 
+    .search-form-button { 
         border-radius: 0px 3px 3px 0px !important;
         left: -6px;
     }

@@ -29,12 +29,12 @@
     text-transform: capitalize;
 }
 
-#search-form-button {
+.search-form-button {
     //background-color: $darker-grey-v3 !important;
     color: $defualt-white;
 }
 
-#search-form-button > i {
+.search-form-button > i {
     font-size: 23px;
     line-height: 23px;
 }
@@ -197,7 +197,7 @@
     margin-left: 20px;
 }
 
-#search-form-button {
+.search-form-button {
     position: absolute;
     border: none;
     line-height: 47px;

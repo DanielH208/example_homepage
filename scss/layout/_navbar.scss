@@ -142,6 +142,11 @@
     flex-grow: 1;
 }
 
+.sub-menu-content-container {
+    width: 100%;
+    display: flex;
+}
+
 .sub-menu-container {
     @include mixin.flex-container(row, wrap);
     width: 970px;
