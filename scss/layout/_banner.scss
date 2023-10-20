@@ -4,45 +4,60 @@
 
 .banner {
     height: 550px;
+    box-sizing: border-box;
     width: 100%;
     color: $defualt-white;
     margin-top: 154px;
 }
 
+#banner-slider {
+    position: relative;
+}
+
 .content {
     position: relative;
-    z-index: 10;
-    //padding: 60px 0px;
-    padding-bottom: 0px;
-    height: 241px;
-    margin-top: -400px;
-    overflow: hidden;
-    text-align: center;
+    z-index: 4;
+    padding: 3.75rem 0;
 }
 
 .image-cover-container {
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
     height: 550px;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.image-cover-container > picture {
     width: 100%;
-    z-index: 10;
+    height: 100%;
 }
 
 picture > img {
-    height: 550px;
-    z-index: 10000000;
-    width: 100%;
     object-fit: cover;
-    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 100000000000000000000000000;
+
+}
+
+.text {
+    box-sizing: border-box;
 }
 
 .slick-dots {
     position: absolute !important;
-    //bottom: -70px !important;
-    display: block !important;
-    width: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    list-style: none !important;
+    bottom: 350px !important;
+    display: unset !important;
+    top: 430px;
+    left: 0;
+    right: 0;
     text-align: center !important;
 }
 
@@ -50,8 +65,6 @@ picture > img {
     border-radius: 50%;
     border: 2px solid #fff;
     position: absolute;
-
-    //top: -6px;
     content: "";
     left: 1px;
     width: 18px;
@@ -72,3 +85,20 @@ picture > img {
     top: 22px !important;
 }
 
+.banner-slider-item {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    position: relative;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-slider-item > .content {
+     align-self: center;
+}
+
+.text {
+    margin-bottom: 30px;
+}

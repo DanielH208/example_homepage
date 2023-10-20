@@ -306,18 +306,19 @@
 }
 
 .text > h1 {
-  font-size: 2.5rem;
+  font-size: 40px;
   line-height: 3rem;
-  margin: 0 0 1.25rem;
+  padding: 0px 0px 20px 0px;
   font-weight: 600;
   z-index: 0;
   color: #ffffff;
 }
 
 .text > p {
-  font-size: 1.25rem;
+  font-size: 20px;
   line-height: 1.75rem;
-  margin-top: 0px;
+  margin: unset;
+  padding: 0px 0px 36px 0px;
   font-weight: 600;
   color: #ffffff;
 }
@@ -1208,43 +1209,60 @@ a[class$=-block] {
 
 .banner {
   height: 550px;
+  box-sizing: border-box;
   width: 100%;
   color: white;
   margin-top: 154px;
 }
 
+#banner-slider {
+  position: relative;
+}
+
 .content {
   position: relative;
-  z-index: 10;
-  padding-bottom: 0px;
-  height: 241px;
-  margin-top: -400px;
-  overflow: hidden;
-  text-align: center;
+  z-index: 4;
+  padding: 3.75rem 0;
 }
 
 .image-cover-container {
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
   height: 550px;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-cover-container > picture {
   width: 100%;
-  z-index: 10;
+  height: 100%;
 }
 
 picture > img {
-  height: 550px;
-  z-index: 10000000;
-  width: 100%;
   object-fit: cover;
-  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 100000000000000000000000000;
+}
+
+.text {
+  box-sizing: border-box;
 }
 
 .slick-dots {
   position: absolute !important;
-  display: block !important;
-  width: 100% !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  list-style: none !important;
+  bottom: 350px !important;
+  display: unset !important;
+  top: 430px;
+  left: 0;
+  right: 0;
   text-align: center !important;
 }
 
@@ -1268,6 +1286,24 @@ picture > img {
 
 .slick-dots li button:before {
   top: 22px !important;
+}
+
+.banner-slider-item {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  position: relative;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-slider-item > .content {
+  align-self: center;
+}
+
+.text {
+  margin-bottom: 30px;
 }
 
 .slider {
@@ -2068,17 +2104,12 @@ footer {
   border-top: 1px solid hsla(0, 0%, 100%, 0.05);
 }
 
-@media (max-width: 453px) {
-  .content {
-    height: 350px;
-    margin-top: -550px;
+@media (max-width: 399px) {
+  #first-banner-content p {
+    padding-bottom: 20px;
   }
-  #first-banner > h1 {
-    font-size: 30px;
-    line-height: 30px;
-  }
-  #first-banner > p {
-    font-size: 15px;
+  #first-banner-content {
+    padding-top: 0px;
   }
 }
 @media (max-width: 480px) {
@@ -2091,6 +2122,9 @@ footer {
   }
   .footer-social-menu-logos {
     max-width: 312px;
+  }
+  .banner-slider-item br {
+    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -2123,10 +2157,6 @@ footer {
   #search-form-button > i {
     font-size: 20px;
   }
-  .content {
-    height: 350px;
-    margin-top: -450px;
-  }
   .latest-articles .section {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -2154,9 +2184,6 @@ footer {
   }
   .content {
     margin-left: 0px;
-  }
-  .slick-dots {
-    bottom: -10px !important;
   }
   .image-cover-container img {
     filter: brightness(50%);
@@ -2224,9 +2251,6 @@ footer {
   }
   .banner {
     margin-top: 110px;
-  }
-  .slick-dots {
-    bottom: -60px !important;
   }
   #modal-dialog {
     width: 600px;
@@ -2319,14 +2343,7 @@ footer {
     width: 350px;
   }
   .content {
-    height: 297px;
-    margin-top: -450px;
-    margin-left: 100px;
-    text-align: left;
     overflow: unset;
-  }
-  .slick-dots {
-    bottom: -20px !important;
   }
   .image-cover-container::before {
     content: "";
