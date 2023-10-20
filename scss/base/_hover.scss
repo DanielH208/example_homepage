@@ -1,0 +1,287 @@
+@use "mixins" as mixin;
+@import "colours";
+
+
+// CERTIFICATION
+
+.slider-certification-image:hover {
+    filter: grayscale(0%);
+}
+
+// CLIENTS
+
+.slider-item:hover .slider-description {
+    display: block;
+}
+
+
+#header-contact-button:hover {
+    background-color: #84858f;
+}
+#header-support-button:hover {
+    background-color: #2a6ec6;
+}
+.search-form-button:hover {
+    background-color: #7e808a !important;
+}
+#hamburger-menu-btn:hover {
+    background-color: #22242e !important;
+}
+
+.hamburger.is-active:hover, .hamburger:hover {
+    opacity: unset !important;
+}
+
+// NAVBAR 
+
+#bespoke-menu:hover {
+    background-color: $light-grey;
+    #laptop-icon {
+        color: $defualt-white;
+    }
+}
+
+
+#support-menu:hover {
+    background-color: $light-blue;
+    #desktop-icon {
+        color: $defualt-white;
+    }
+}
+
+#digital-menu:hover {
+    background-color: $light-green;
+    #signal-icon {
+        color: $defualt-white;
+    }
+}
+
+#telecoms-menu:hover {
+    background-color: $light-red;
+    #telecoms-icon {
+        color: $defualt-white;
+    }
+}
+
+#web-menu:hover {
+    background-color: $light-purple;
+    #web-icon {
+        color: $defualt-white;
+    }
+}
+
+#security-menu:hover {
+    background-color: $dark-pink;
+    #security-icon {
+        color: $defualt-white;
+    }
+}
+
+#developer-menu:hover {
+    background-color: $dark-red;
+    #developer-icon {
+        color: $defualt-white;
+    }
+}
+
+.sub-menu-item-text-value:hover {
+    text-decoration: underline;
+}
+
+// BRAND BACKGROUND 
+
+.btn-trust:hover {
+    background-color: #009b69;
+}
+#btn-google:hover {
+    background-color: #166af4;
+}
+
+#btn-choose:hover, #btn-culture:hover {
+    background-color: #121318;
+}
+
+
+// CLIENT SLIDER 
+
+.slider-clients-button:hover {
+    filter: brightness(85%);
+}
+
+// SERVICE LIST 
+
+.card-software-block:hover, .card-it-block:hover, .card-digital-block:hover, .card-telecoms-block:hover,
+.card-web-block:hover, .card-cyber-block:hover, .card-training-block:hover {
+    margin-top:15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.card-software-block:hover {
+    @include mixin.invert-colour($light-grey, white);
+    :first-child {
+        @include mixin.invert-colour(white, $light-grey);
+        i {
+            color: $light-grey;
+        }
+    }
+
+    :last-child {
+        @include mixin.invert-colour(white, $light-grey);
+        border-color: white;
+        transition: unset;
+    }
+}
+
+.card-it-block:hover {
+    @include mixin.invert-colour($light-blue, white);
+    :first-child {
+        @include mixin.invert-colour(white, $light-blue);
+        i {
+            color: $light-blue;
+        }
+    }
+
+    :last-child {
+        @include mixin.invert-colour(white, $light-blue);
+        border-color: white;
+        transition: unset;
+    }
+}
+
+.card-digital-block:hover {
+    @include mixin.invert-colour($light-green, white);
+    :first-child {
+        @include mixin.invert-colour(white, $light-green);
+        i {
+            color: $light-green;
+        }
+    }
+
+    :last-child {
+        @include mixin.invert-colour(white, $light-green);
+        border-color: white;
+        transition: unset;
+    }
+}
+
+.card-telecoms-block:hover {
+    @include mixin.invert-colour($light-red, white);
+    :first-child {
+        @include mixin.invert-colour(white, $light-red);
+        i {
+            color: $light-red;
+        }
+    }
+
+    :last-child {
+        @include mixin.invert-colour(white, $light-red);
+        border-color: white;
+        transition: unset;
+    }
+}
+
+.card-web-block:hover {
+    @include mixin.invert-colour($light-purple, white);
+    :first-child {
+        @include mixin.invert-colour(white, $light-purple);
+        i {
+            color: $light-purple;
+        }
+    }
+
+    :last-child {
+        @include mixin.invert-colour(white, $light-purple);
+        border-color: white;
+        transition: unset;
+    }
+}
+
+.card-cyber-block:hover {
+    @include mixin.invert-colour($darker-pink, white);
+    :first-child {
+        @include mixin.invert-colour(white, $darker-pink);
+        i {
+            color: $darker-pink;
+        }
+    }
+
+    :last-child {
+        @include mixin.invert-colour(white, $darker-pink);
+        border-color: white;
+        transition: unset;
+    }
+}
+.card-training-block:hover {
+    @include mixin.invert-colour($dark-red, white);
+    :first-child {
+        @include mixin.invert-colour(white, $dark-red);
+        i {
+            color: $dark-red;
+        }
+    }
+
+    :last-child {
+        @include mixin.invert-colour(white, $dark-red);
+        border-color: white;
+        transition: unset;
+    }
+}
+
+.service-view-work:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    :first-child {
+        text-decoration: underline;
+    }
+}
+
+// NEWS 
+
+.careers-btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.smallestvp-view-all:hover, #articles-bar-view-all:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    :first-child {
+        text-decoration: underline;
+    }
+}
+
+.article-list > div:hover {
+    margin-top: -10px;
+}
+
+// FOOTER 
+
+.link-row li > a:hover {
+    text-decoration: underline;
+    cursor: pointer
+}
+
+#footer-facebook-icon:hover {
+    background-color: #3b5998;
+}
+
+#footer-linkedin-icon:hover {
+    background-color: #0077b5;
+}
+#footer-twitter-icon:hover {
+    background-color: #00aced;
+}
+
+#footer-instagram-icon:hover {
+    background-color: #d93175;
+}
+
+// SIDENAV 
+
+#side-nav-company-info > li:hover {
+    
+    > a {
+        background-color: #3b3f50;
+    }
+}

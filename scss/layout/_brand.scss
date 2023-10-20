@@ -1,0 +1,59 @@
+@use "../base/mixins" as mixin;
+@import "../base/colours";
+
+// BRAND 
+
+.brand-background {
+    background-color: $dark-grey;
+    color: $defualt-white;
+    
+} 
+
+.row {
+    width: 100%;
+    @include mixin.flex-container(0, wrap);
+}
+
+.brand-header {
+    margin: -6px 0px 40px;
+}
+
+
+.col-welcome > p, .col-clients > p {
+    margin: 0px 0px 25px;
+}
+
+.col-welcome {
+    min-height: 1px;
+    padding: 0px 15px;
+    padding-bottom: 50px;
+}
+
+.row div[class^="article"] {
+    width: 100%;
+}
+
+.col-clients{
+    min-height: 1px;
+    padding: 0px 15px;
+
+}
+
+/*
+.star {
+    display: inline-block;
+    width: 46.84px;
+    height: 51px;
+    font-weight: 400;
+    line-height: 1;
+    //filter: invert(75%) sepia(30%) saturate(6191%) hue-rotate(359deg) brightness(102%) contrast(106%);
+    margin-bottom: 25px;
+    margin-bottom: 25px;
+   
+}*/
+
+.fa-star {
+    color: #ffa500;
+    font-size: 50px;
+    margin-bottom: 25px;
+}

@@ -1,0 +1,224 @@
+@import "../base/colours";
+
+.btn {
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 1.063rem;
+    white-space: normal;
+}
+
+#btn-google {
+    background-color: $medium-blue-v3;
+    text-transform: capitalize;
+    margin: 20px 8px 0px 0px;
+}
+
+.btn-trust {
+    background-color: $light-green-v2;
+    text-transform: capitalize;
+}
+
+#btn-choose {
+    margin: 20px 8px 0px 0px;
+}
+
+#btn-choose, #btn-culture {
+    background-color: $defualt-dark-purple;
+    text-transform: capitalize;
+}
+
+.search-form-button {
+    //background-color: $darker-grey-v3 !important;
+    color: $defualt-white;
+}
+
+.search-form-button > i {
+    font-size: 23px;
+    line-height: 23px;
+}
+
+.row a[class^="btn"] {
+    padding: 10px 30px;
+    margin: 20px 0px 0px;
+    font-size: 20px;
+    border-radius: 6px;
+}
+.clients-buttons, .brand-buttons {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+// COOKIE 
+.cookie-button {
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    font-size: 1.063rem;
+    letter-spacing: .4px;
+    border-radius: 3px;
+    white-space: normal;
+    text-align: center;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.cookie-button-anchor { 
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.btn-default {
+    color: $defualt-white;
+    background-color: $lightest-grey;
+    border-color: $lightest-grey;
+}
+
+.btn-web {
+    color: $defualt-white;
+    background-color: $light-purple;
+    border-color: $light-purple;
+}
+
+// BANNER
+
+#why-banner-btn {
+    background-color: $light-purple;
+    border-color: $light-purple;
+}
+#software-banner-btn {
+    background-color: $light-grey;
+    border-color: $light-grey;
+}
+#support-banner-btn {
+    background-color: $light-blue;
+    border-color: $light-blue;
+}
+#digital-banner-btn {
+    background-color: $light-green;
+    border-color: $light-green;
+}
+#telecoms-banner-btn {
+    background-color: $light-red;
+    border-color: $light-red;
+}
+#web-banner-btn {
+    background-color: $light-purple;
+    border-color: $light-purple;
+}
+#cyber-banner-btn {
+    background-color: $darker-pink;
+    border-color: $darker-pink;
+}
+
+.banner-btn-web {
+    height: auto;
+    padding: 18px 15px;
+    font-size: 1.25rem;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    white-space: normal;
+    text-align: center;
+    vertical-align: middle;
+    //color: rgb(232, 230, 227);
+    margin-top: 1.938rem;
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 50px;
+    
+}
+
+// CLIENTS 
+
+.slider-clients-button {
+    margin-top: 11px;
+    font-size: 16px;
+    display: flex;
+    height: auto;
+    color: #fff;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    white-space: normal;
+    text-decoration: none;
+}
+
+// HEADER 
+
+.header-actions-buttons {
+    height: 56px;
+    line-height: 46px;
+    font-size: 1.125rem;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    top: 20px;
+}
+
+#header-support-button {
+    background-color: $light-blue;
+    color: $defualt-white;
+    border-color: $light-blue;
+}
+
+#header-support-button , #header-contact-button {
+    height: 44px;
+    align-self: flex-end;
+    border-radius: 3px;
+}
+
+#header-contact-button {
+    background-color: $lightest-grey;
+    color: $defualt-white;
+    border-color: $lightest-grey;
+    margin: 0px 20px;
+}
+
+#hamburger-menu-btn {
+    position: relative;
+    background-color: $dark-grey !important;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    padding: 5px 15px !important;
+    height: 56px !important;   
+    align-self: flex-end;
+    margin-left: 20px;
+}
+
+.search-form-button {
+    position: absolute;
+    border: none;
+    line-height: 47px;
+    font-size: 20px;
+    bottom: 0;
+    right: 5px;
+
+}
+
+
+// NEWS
+
+.careers-btn {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: #fff;
+    background-color: $medium-blue;
+    font-size: .75rem;
+    padding: 0 10px;
+    line-height: 1.438rem;
+    text-transform: uppercase;
+    z-index: 1000;
+}

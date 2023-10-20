@@ -3,7 +3,25 @@ var lastScrollTop = 0;
 var delta = 20;
 var navbarHeight = $(".header").outerHeight();
 let width = window.innerWidth;
-let open = false
+let open = false;
+let reOpenedNav = false;
+
+
+
+function checked () { 
+    localStorage.setItem("cookieState", "true");;
+    $("html").removeClass("stopScroll");
+    $("#cookie-consent").css("display", "none");
+} 
+
+$(window).on("load", () => { 
+    if (localStorage.getItem("cookieState") == false || localStorage.length == 0) {
+        $("#cookie-consent").css("display", "flex");
+        $("html").addClass("stopScroll");
+    } else if (localStorage.getItem("cookieState") == true) {
+        $("html").removeClass("stopScroll");
+    }
+})
 
 
 function disableScroll() {
@@ -23,11 +41,21 @@ function enableScroll() {
 }
 
 
+
+function homepageLink() {
+    $(".header").addClass("nav-down").removeClass("nav-up");
+    $(".header").css("transition", "unset");
+    reOpenedNav = false;
+    $("html").scrollTop(0);
+}
+
 // on scroll, let the interval function know the user has scrolled
 $(window).scroll(function(event){
     didScroll = true;
     if ($(this).scrollTop()  == 0) {
         $(".header").removeAttr("style");
+        $(".header").css("transition", "unset");
+        reOpenedNav = false;
     }
     if (didScroll && $(this).scrollTop() >= navbarHeight) { 
         hasScrolled();
@@ -51,21 +79,18 @@ window.addEventListener("resize", () => {
 function hasScrolled() {
 
     var st = $(this).scrollTop(); 
-    
-    if (Math.abs(lastScrollTop - st) <= delta) {
-        return;
-    }
 
     // If current position > last position AND scrolled past navbar...
-    if (st > lastScrollTop && st > navbarHeight){
-        console.log("scroll down")
+    if (st > lastScrollTop && st > navbarHeight ){
+        reOpenedNav = true;
         // Scroll Down
         $(".header").removeClass("nav-down").addClass("nav-up");
     } else {
         // Scroll Up
         // If did not scroll past the document (possible on mac)...
-        if(st + $(window).height() < $(document).height()) {      
-            console.log("scroll up")   
+        if(reOpenedNav == true && st + $(window).height() < $(document).height()) {      
+            reOpenedNav = true;
+            $(".header").css("transition", "top 0.2s ease-in-out"); 
             $(".header").removeClass("nav-up").addClass("nav-down");
             $(".header").css("position", "fixed");
         }
@@ -81,16 +106,21 @@ function closeNav() {
     enableScroll();
     $("#hamburger-menu-btn").removeClass("hamburger hamburger--slider is-active");
     $("main").css("margin-right", "0px").css("margin-left", "0px");
-    $("#main-content").removeClass("unfocused");
-    
-    
+    $("#main-content > div").removeClass("unfocused");
+    $("footer").removeClass("unfocused");
+    //$(".main-navigation").removeClass("unfocused");
+    $("html").removeClass("hide-scroll-bars");  
 }
 
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 function openNav() {
     disableScroll();
-    $("#main-content").addClass("unfocused");
+    $("#main-content > div").addClass("unfocused");
+    $("footer").addClass("unfocused");
+    //$(".main-navigation").addClass("unfocused");
     $("#hamburger-menu-btn").addClass("hamburger hamburger--slider is-active");
+    $("html").addClass("hide-scroll-bars");
+    $("#side-nav-bar").addClass("unset-hide-scroll-bars");
     
     
     if (width >= 992) {
@@ -107,7 +137,6 @@ function openNav() {
 
 $("#hamburger-menu-btn").on("click", () => {
     //event.stopPropagation();
-    console.log("button menu")
     if (open == false) {
         openNav();
         open = true;    
@@ -121,7 +150,6 @@ $("#hamburger-menu-btn").on("click", () => {
 
 $("#main-content").on("click", function () {
     //event.stopPropagation();
-    console.log("outside mouse")
     if (open == true) {
         closeNav()
         open = false;
@@ -131,7 +159,7 @@ $("#main-content").on("click", function () {
 
 /// CERTIFICATION SLIDER 
 $("#slider-certification").slick({
-    slidesToShow: 11,
+    slidesToShow: 10,
     arrows: false,
     draggable: false,
     dots: false,
@@ -155,7 +183,7 @@ $("#banner-slider").slick({
     slidesToScroll: 1,
     infinite: true,
     arrows: false,
-    draggable: false,
+    draggable: true,
     dots: true,
     autoplay: true,
     autoplaySpeed: 4000,

@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Daniel Higgins hand coded clone of NetMatters homepage">
+        <meta name="keywords" content="Daniel, Higgins, Netmatters, Software, Software developer, HTML, CSS, JavaScript">
+        <meta name="author" content="Daniel Higgins">
         <title>Homepage Example </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,600&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/application.css">
         <link rel="stylesheet" href="css/hamburgers.css">
-        <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+        <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
         <script src="https://kit.fontawesome.com/7cba581338.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -24,7 +32,7 @@
                             and what they do, and to opt-in on non-essential cookies click 
                             "change settings". For a detailed explanation, click on
                             "<a>Privacy Policy</a>"
-                            otherwise click "Accept Cookies" to enter
+                            otherwise click "Accept Cookies" to enter.
                         </p>
                         
                     </div>
@@ -34,7 +42,7 @@
                                 <a class="cookie-button btn-block btn-default">Change Settings</a>
                             </div>
                             <div class="cookie-button-anchor">
-                                <a class="cookie-button btn-block btn-web">Accept Cookies</a>
+                                <a class="cookie-button btn-block btn-web" onclick="checked()">Accept Cookies</a>
                             </div>
                         </div>
                     </div>
@@ -124,7 +132,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li id="support-sidenav">
+                    <li class="support-sidenav">
                         <a href="#">
                             <span id="sidenav-desktop-icon" class="side-nav-icon">
                                 <i class="fa-solid fa-desktop"></i>
@@ -388,7 +396,7 @@
             </div>
             <ul id="side-nav-company-info">
                 <li id="services-md-hidden-menu">
-                    <a href="#">
+                    <a id="dvdvdfvdfv" href="#">
                         <h1>SERVICES</h1>
                     </a>
                     <div class="sidenav-sub-menu-banner">
@@ -608,7 +616,7 @@
                         <h1>COVID RISK ASSESSMENTS</h1>
                     </a>
                 </li>
-                <li id="support-sidenav">
+                <li class="support-sidenav">
                     <a href="#">
                         <h1>SUPPORT</h1>
                     </a>
@@ -622,7 +630,7 @@
                         <div class="container">
                             <div class="row" id="header-row">
                                 <div class="header-icon">
-                                    <img src="assets/images/asset 0.png">
+                                    <a href="#"><img src="assets/images/asset%200.png" alt="Netmatters logo"></a>
                                 </div>
                                 <div class="header-mobile-icon">
                                     <i class="fa-solid fa-phone-volume"></i>
@@ -638,7 +646,7 @@
                                     </a>
                                     <form id="default-form" method="GET" accept-charset="UTF-8" class="search-form">
                                         <input class="search-form-input" placeholder="Search..." type="text">
-                                        <button id="search-form-button" type="submit">
+                                        <button class="search-form-button" type="submit">
                                             <i class="fa-solid fa-magnifying-glass"></i>
                                         </button>
                                     </form>
@@ -652,8 +660,8 @@
                             <div class="header-large-search">
                                 <form id="large-form" method="GET" accept-charset="UTF-8" class="search-form">
                                     <input class="search-form-input" placeholder="Search..." type="text">
-                                    <button id="search-form-button" type="submit">
-                                        <i class="fa-solid fa-magnifying-glass" class="header-icons"></i>
+                                    <button class="search-form-button" type="submit">
+                                        <i class="fa-solid fa-magnifying-glass header-icons"></i>
                                     </button>
                                 </form>
                             </div>
@@ -665,7 +673,7 @@
                         <ul class="nav-row">
                             <li id="software" >
                                 <div class="sub-menu" id="bespoke-menu">
-                                    <a class="dropbtn" id="bespoke-header">
+                                    <a class="dropbtn header-nav-link" href="#">
                                         <span id="laptop-icon">
                                             <i class="fa-solid fa-laptop"></i>
                                         </span>
@@ -678,122 +686,125 @@
                                                 <div class="triangle-down" id="bespoke-triangle"></div>
                                                 <h2>Our Bespoke Software Services</h2>
                                             </li>
-                                            <ul class="content-columns">
-                                                <li>
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-gears"></i>
-                                                                    <span class="sub-menu-item-text-value">Bespoke CRM</span>   
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-mobile-screen-button"></i>
-                                                                    <span class="sub-menu-item-text-value">Mobile App Development</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-download"></i>
-                                                                    <span class="sub-menu-item-text-value">Operational Systems</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-cloud"></i>
-                                                                    <span class="sub-menu-item-text-value">Intranet Development</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-briefcase"></i>
-                                                                    <span class="sub-menu-item-text-value">Buisness Automation</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-folder-open"></i>
-                                                                    <span class="sub-menu-item-text-value">Bespoke Databases</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-users"></i>
-                                                                    <span class="sub-menu-item-text-value">Buisness Central Implementation</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-cloud-arrow-down"></i>
-                                                                    <span class="sub-menu-item-text-value">Customer Portal Development</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-shuffle"></i>
-                                                                    <span class="sub-menu-item-text-value">Software Integrations</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                                                                    <span class="sub-menu-item-text-value">Sharepoint Development</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-laptop"></i>
-                                                                    <span class="sub-menu-item-text-value">Internet of Things (IoT) Software</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-earth-americas"></i>
-                                                                    <span class="sub-menu-item-text-value">Reporting Hub</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>    
-                                            </ul>   
+                                            <li class="sub-menu-content-container">
+                                                <ul class="content-columns">
+                                                    <li>
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-gears"></i>
+                                                                        <span class="sub-menu-item-text-value">Bespoke CRM</span>   
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-mobile-screen-button"></i>
+                                                                        <span class="sub-menu-item-text-value">Mobile App Development</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-download"></i>
+                                                                        <span class="sub-menu-item-text-value">Operational Systems</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-cloud"></i>
+                                                                        <span class="sub-menu-item-text-value">Intranet Development</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-briefcase"></i>
+                                                                        <span class="sub-menu-item-text-value">Buisness Automation</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-folder-open"></i>
+                                                                        <span class="sub-menu-item-text-value">Bespoke Databases</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-users"></i>
+                                                                        <span class="sub-menu-item-text-value">Buisness Central Implementation</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-cloud-arrow-down"></i>
+                                                                        <span class="sub-menu-item-text-value">Customer Portal Development</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-shuffle"></i>
+                                                                        <span class="sub-menu-item-text-value">Software Integrations</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                                                        <span class="sub-menu-item-text-value">Sharepoint Development</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-laptop"></i>
+                                                                        <span class="sub-menu-item-text-value">Internet of Things (IoT) Software</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-earth-americas"></i>
+                                                                        <span class="sub-menu-item-text-value">Reporting Hub</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>    
+                                                </ul> 
+                                            </li> 
                                         </ul>
                                     </div>
                                 </div>
                             </li>
                             <li id="it" class="it-nav">
                                 <div class="sub-menu" id="support-menu">
-                                    <a class="dropbtn">
+                                    <a class="dropbtn header-nav-link" href="#">
                                         <span id="desktop-icon">
                                             <i class="fa-solid fa-desktop"></i>
                                         </span>
@@ -806,75 +817,77 @@
                                                 <div class="triangle-down" id="support-triangle"></div>
                                                 <h2>OUR IT SUPPORT SERVICES</h2>
                                             </li>
-                                            <ul class="content-columns">
-                                                <li>
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-headphones-simple"></i>
-                                                                    <span class="sub-menu-item-text-value">Managed IT Support</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-graduation-cap"></i>
-                                                                    <span class="sub-menu-item-text-value">IT Consultancy</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-briefcase"></i>
-                                                                    <span class="sub-menu-item-text-value">Buisness IT Support</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-cloud"></i>
-                                                                    <span class="sub-menu-item-text-value">Cloud Service Provider</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-laptop"></i>
-                                                                    <span class="sub-menu-item-text-value">Office 365 for Buisness</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-hard-drive"></i>
-                                                                    <span class="sub-menu-item-text-value">Data Backup & Disaster Recovery</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>  
-                                            </ul>           
+                                            <li class="sub-menu-content-container">
+                                                <ul class="content-columns">
+                                                    <li>
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-headphones-simple"></i>
+                                                                        <span class="sub-menu-item-text-value">Managed IT Support</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-graduation-cap"></i>
+                                                                        <span class="sub-menu-item-text-value">IT Consultancy</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-briefcase"></i>
+                                                                        <span class="sub-menu-item-text-value">Buisness IT Support</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-cloud"></i>
+                                                                        <span class="sub-menu-item-text-value">Cloud Service Provider</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-laptop"></i>
+                                                                        <span class="sub-menu-item-text-value">Office 365 for Buisness</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-hard-drive"></i>
+                                                                        <span class="sub-menu-item-text-value">Data Backup & Disaster Recovery</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>  
+                                                </ul> 
+                                            </li>          
                                         </ul>
                                 </div>
                                 </div>
                             </li>
                             <li id="digital" class="digital-nav">
                                 <div class="sub-menu" id="digital-menu">
-                                    <a class="dropbtn">
+                                    <a class="dropbtn header-nav-link" href="#">
                                         <span id="signal-icon">
                                             <i class="fa-solid fa-signal"></i>
                                         </span>
@@ -887,75 +900,77 @@
                                                 <div class="triangle-down" id="digital-triangle"></div>
                                                 <h2>Our Digital Marketing Services</h2>
                                             </li>
-                                            <ul class="content-columns">
-                                                <li>                          
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                                                    <span class="sub-menu-item-text-value">Search Engine Optimisation (SEO)</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-envelope"></i>
-                                                                    <span class="sub-menu-item-text-value">Email Marketing</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li> 
-                                                <li>
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-regular fa-money-bill-1"></i>
-                                                                    <span class="sub-menu-item-text-value">Pay Per Click Advertising (PPC)</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-users"></i>
-                                                                    <span class="sub-menu-item-text-value">Social Media Marketing</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li> 
-                                                <li>
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-arrow-trend-up"></i>
-                                                                    <span class="sub-menu-item-text-value">Conversion Rate Optimisation (CRO)</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-pencil"></i>
-                                                                    <span class="sub-menu-item-text-value">Content Marketing</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>          
+                                            <li class="sub-menu-content-container">
+                                                <ul class="content-columns">
+                                                    <li>                          
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                                                        <span class="sub-menu-item-text-value">Search Engine Optimisation (SEO)</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-envelope"></i>
+                                                                        <span class="sub-menu-item-text-value">Email Marketing</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li> 
+                                                    <li>
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-regular fa-money-bill-1"></i>
+                                                                        <span class="sub-menu-item-text-value">Pay Per Click Advertising (PPC)</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-users"></i>
+                                                                        <span class="sub-menu-item-text-value">Social Media Marketing</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li> 
+                                                    <li>
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-arrow-trend-up"></i>
+                                                                        <span class="sub-menu-item-text-value">Conversion Rate Optimisation (CRO)</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-pencil"></i>
+                                                                        <span class="sub-menu-item-text-value">Content Marketing</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>    
+                                            </li>      
                                         </ul>
-                                </div>
+                                    </div>
                                 </div>
                             </li>
                             <li id="telecoms" class="telecoms-nav">
                                 <div class="sub-menu" id="telecoms-menu">
-                                    <a class="dropbtn">
+                                    <a class="dropbtn header-nav-link" href="#">
                                         <span id="telecoms-icon">
                                             <i class="fa-solid fa-phone-volume"></i>
                                         </span>
@@ -968,75 +983,77 @@
                                                 <div class="triangle-down" id="telecoms-triangle"></div>
                                                 <h2>Our Telecoms Services</h2>
                                             </li>
-                                            <ul class="content-columns">
-                                                <li>
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-ticket"></i>
-                                                                    <span class="sub-menu-item-text-value">Buisness Mobile</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-gauge-high"></i>
-                                                                    <span class="sub-menu-item-text-value">Buisness Broadband</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>  
-                                                <li>
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-phone"></i>
-                                                                    <span class="sub-menu-item-text-value">Hosted VoIP Provider</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-regular fa-handshake"></i>
-                                                                    <span class="sub-menu-item-text-value">Leased Lines Provide</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li> 
-                                                <li>
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-square-phone"></i>
-                                                                    <span class="sub-menu-item-text-value">Buisness VoIP Systems</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-phone-volume"></i>
-                                                                    <span class="sub-menu-item-text-value">3CX Systems</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>    
-                                            </ul>
+                                            <li class="sub-menu-content-container">
+                                                <ul class="content-columns">
+                                                    <li>
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-ticket"></i>
+                                                                        <span class="sub-menu-item-text-value">Buisness Mobile</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-gauge-high"></i>
+                                                                        <span class="sub-menu-item-text-value">Buisness Broadband</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>  
+                                                    <li>
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-phone"></i>
+                                                                        <span class="sub-menu-item-text-value">Hosted VoIP Provider</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-regular fa-handshake"></i>
+                                                                        <span class="sub-menu-item-text-value">Leased Lines Provide</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li> 
+                                                    <li>
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-square-phone"></i>
+                                                                        <span class="sub-menu-item-text-value">Buisness VoIP Systems</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-phone-volume"></i>
+                                                                        <span class="sub-menu-item-text-value">3CX Systems</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>    
+                                                </ul>
+                                            </li>
                                         </ul>
-                                </div>
+                                    </div>
                                 </div>
                             </li>
                             <li id="web" class="web-nav">
                                 <div class="sub-menu" id="web-menu">
-                                    <a class="dropbtn">
+                                    <a class="dropbtn header-nav-link" href="#">
                                         <span id="web-icon">
                                             <i class="fa-solid fa-code"></i>
                                         </span>
@@ -1049,75 +1066,77 @@
                                                 <div class="triangle-down" id="web-triangle"></div>
                                                 <h2>Our Web Design Services</h2>
                                             </li>
-                                            <ul class="content-columns">
-                                                <li>
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-pencil"></i>
-                                                                    <span class="sub-menu-item-text-value">Bespoke Website Design</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-bullhorn"></i>
-                                                                    <span class="sub-menu-item-text-value">Branding & Design</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li> 
-                                                <li>
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-cart-shopping"></i>
-                                                                    <span class="sub-menu-item-text-value">eCommerce Website Design</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-mobile-screen-button"></i>
-                                                                    <span class="sub-menu-item-text-value">Mobile App Development</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-desktop"></i>
-                                                                    <span class="sub-menu-item-text-value">Pay Monthly Websites</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-cloud"></i>
-                                                                    <span class="sub-menu-item-text-value">Web Hosting</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li> 
-                                            </ul>     
+                                            <li class="sub-menu-content-container">
+                                                <ul class="content-columns">
+                                                    <li>
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-pencil"></i>
+                                                                        <span class="sub-menu-item-text-value">Bespoke Website Design</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-bullhorn"></i>
+                                                                        <span class="sub-menu-item-text-value">Branding & Design</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li> 
+                                                    <li>
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-cart-shopping"></i>
+                                                                        <span class="sub-menu-item-text-value">eCommerce Website Design</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-mobile-screen-button"></i>
+                                                                        <span class="sub-menu-item-text-value">Mobile App Development</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-desktop"></i>
+                                                                        <span class="sub-menu-item-text-value">Pay Monthly Websites</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-cloud"></i>
+                                                                        <span class="sub-menu-item-text-value">Web Hosting</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li> 
+                                                </ul> 
+                                            </li>    
                                         </ul>
-                                </div>
+                                    </div>
                                 </div>
                             </li>
                             <li id="security" class="security-nav">
                                 <div class="sub-menu" id="security-menu">
-                                    <a class="dropbtn">
+                                    <a class="dropbtn header-nav-link" href="#">
                                         <span id="security-icon">
                                             <i class="fa-solid fa-shield-halved"></i>
                                         </span>
@@ -1130,75 +1149,77 @@
                                                 <div class="triangle-down" id="security-triangle"></div>
                                                 <h2>Our Cyber Security Services</h2>
                                             </li>
-                                            <ul class="content-columns">
-                                                <li>            
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-paste"></i>
-                                                                    <span class="sub-menu-item-text-value">Cyber Security Assessment</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-graduation-cap"></i>
-                                                                    <span class="sub-menu-item-text-value">Cyber Essentials Certification</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li> 
-                                                <li>
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-regular fa-clock"></i>
-                                                                    <span class="sub-menu-item-text-value">Cyber Security Management</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-shield-halved"></i>
-                                                                    <span class="sub-menu-item-text-value">PCI Compliance</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-flask"></i>
-                                                                    <span class="sub-menu-item-text-value">Cyber Penetration Testing</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-lock"></i>
-                                                                    <span class="sub-menu-item-text-value">Hacking Prevention</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                            <li class="sub-menu-content-container">
+                                                <ul class="content-columns">
+                                                    <li>            
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-paste"></i>
+                                                                        <span class="sub-menu-item-text-value">Cyber Security Assessment</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-graduation-cap"></i>
+                                                                        <span class="sub-menu-item-text-value">Cyber Essentials Certification</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li> 
+                                                    <li>
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-regular fa-clock"></i>
+                                                                        <span class="sub-menu-item-text-value">Cyber Security Management</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-shield-halved"></i>
+                                                                        <span class="sub-menu-item-text-value">PCI Compliance</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-flask"></i>
+                                                                        <span class="sub-menu-item-text-value">Cyber Penetration Testing</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-lock"></i>
+                                                                        <span class="sub-menu-item-text-value">Hacking Prevention</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
                                         </ul>
-                                </div>
+                                    </div>
                                 </div>
                             </li>
                             <li id="developer" class="developer-nav">
                                 <div class="sub-menu" id="developer-menu">
-                                    <a class="dropbtn"> 
+                                    <a class="dropbtn header-nav-link" href="#"> 
                                         <span id="developer-icon">
                                             <i class="fa-solid fa-graduation-cap"></i>
                                         </span>
@@ -1211,54 +1232,56 @@
                                                 <div class="triangle-down" id="developer-triangle"></div>
                                                 <h2>Our Developer Course Services</h2>
                                             </li>
-                                            <ul class="content-columns">
-                                                <li>
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-laptop"></i>
-                                                                    <span class="sub-menu-item-text-value">Train For A Career In Tech</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-regular fa-handshake"></i>
-                                                                    <span class="sub-menu-item-text-value">Scion Collaborators</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-code"></i>
-                                                                    <span class="sub-menu-item-text-value">Skills Bootcamp</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <ul class="content-block">
-                                                        <li class="sub-menu-item">
-                                                            <a href="#">
-                                                                <span class="sub-menu-item-text">
-                                                                    <i class="fa-solid fa-circle-question"></i>
-                                                                    <span class="sub-menu-item-text-value">Scion Scheme Frequently Asked Question</span>
-                                                                </span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li> 
-                                            </ul>  
+                                            <li class="sub-menu-content-container">
+                                                <ul class="content-columns">
+                                                    <li>
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-laptop"></i>
+                                                                        <span class="sub-menu-item-text-value">Train For A Career In Tech</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-regular fa-handshake"></i>
+                                                                        <span class="sub-menu-item-text-value">Scion Collaborators</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-code"></i>
+                                                                        <span class="sub-menu-item-text-value">Skills Bootcamp</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="content-block">
+                                                            <li class="sub-menu-item">
+                                                                <a href="#">
+                                                                    <span class="sub-menu-item-text">
+                                                                        <i class="fa-solid fa-circle-question"></i>
+                                                                        <span class="sub-menu-item-text-value">Scion Scheme Frequently Asked Question</span>
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li> 
+                                                </ul>  
+                                            </li>
                                         </ul>
-                                </div>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -1268,22 +1291,22 @@
             <div id="main-content">
                 <div class="banner">
                     <div id="banner-slider">
-                        <div class="banner-slider-item">
+                        <div  id="first-banner" class="banner-slider-item">
                             <div class="image-cover-container">
                                 <picture>
-                                    <img src="assets/images/asset 3.png">
+                                    <img src="assets/images/asset%203.png" alt="Netmatters office">
                                 </picture>
                             </div>>
-                            <div class="content">
+                            <div class="content" id="first-banner-content">
                                 <div class="container">
-                                    <div id="first-banner" class="text">
+                                    <div class="text">
                                         <h1>The East Of England's Leading Technology Company</h1>
                                         <p>
                                             Performance-driven digital and technology services
                                             <br>
                                             with complete transparency.
                                         </p>
-                                        <a id="why-banner-btn" class="banner-btn-web">
+                                        <a id="why-banner-btn" class="banner-btn-web" href="#">
                                             WHY CHOOSE US <i class="fa-solid fa-arrow-right"></i>
                                         </a>
                                     </div>
@@ -1293,7 +1316,7 @@
                         <div class="banner-slider-item">
                             <div class="image-cover-container">
                                 <picture>
-                                    <img src="assets/images/asset 4.jpeg">
+                                    <img src="assets/images/asset%204.jpeg" alt="Man smiling whilst talking through headset">
                                 </picture>
                             </div>
                             <div class="content">
@@ -1305,7 +1328,7 @@
                                             <br>
                                             solutions across a range of industries.
                                         </p>
-                                        <a id="software-banner-btn" class="banner-btn-web">
+                                        <a id="software-banner-btn" class="banner-btn-web" href="#">
                                             Find Out More <i class="fa-solid fa-arrow-right"></i>
                                         </a>
                                     </div>
@@ -1315,7 +1338,7 @@
                         <div class="banner-slider-item">
                             <div class="image-cover-container">
                                 <picture>
-                                    <img src="assets/images/asset 5.png">
+                                    <img src="assets/images/asset%205.png" alt="Man fixing a desktop PC">
                                 </picture>
                             </div>
                             <div class="content">
@@ -1327,7 +1350,7 @@
                                             <br>                          
                                             services for your business.
                                         </p>
-                                        <a id="support-banner-btn" class="banner-btn-web">
+                                        <a id="support-banner-btn" class="banner-btn-web" href="#">
                                             Find Out More <i class="fa-solid fa-arrow-right"></i>
                                         </a>
                                     </div>
@@ -1337,7 +1360,7 @@
                         <div class="banner-slider-item">
                             <div class="image-cover-container">
                                 <picture>
-                                    <img src="assets/images/asset 6.png">
+                                    <img src="assets/images/asset%206.png" alt="Woman smiling whilst working on desktop PC in unison with coworkers">
                                 </picture>
                             </div>
                             <div class="content">
@@ -1349,7 +1372,7 @@
                                             <br>                      
                                             results-driven marketing activities.
                                         </p>
-                                        <a id="digital-banner-btn"class="banner-btn-web">
+                                        <a id="digital-banner-btn" class="banner-btn-web" href="#">
                                             Find Out More <i class="fa-solid fa-arrow-right"></i>
                                         </a>
                                     </div>
@@ -1359,7 +1382,7 @@
                         <div class="banner-slider-item">
                             <div class="image-cover-container">
                                 <picture>
-                                    <img src="assets/images/asset 7.png">
+                                    <img src="assets/images/asset%207.png" alt="Finger pressing number on a telephone set">
                                 </picture>
                             </div>
                             <div class="content">
@@ -1371,7 +1394,7 @@
                                             <br>
                                             how we can help your business.
                                         </p>
-                                        <a id="telecoms-banner-btn" class="banner-btn-web">
+                                        <a id="telecoms-banner-btn" class="banner-btn-web" href="#">
                                             Find Out More <i class="fa-solid fa-arrow-right"></i>
                                         </a>
                                     </div>
@@ -1381,7 +1404,7 @@
                         <div class="banner-slider-item">
                             <div class="image-cover-container">
                                 <picture>
-                                    <img src="assets/images/asset 1.jpeg">
+                                    <img src="assets/images/asset%201.jpeg" alt="Man smiling whilst in conversation">
                                 </picture>
                             </div>
                             <div class="content">
@@ -1393,7 +1416,7 @@
                                             <br>                                       
                                             and effective first impression.
                                         </p>
-                                        <a id="web-banner-btn" class="banner-btn-web">
+                                        <a id="web-banner-btn" class="banner-btn-web" href="#">
                                             Find Out More <i class="fa-solid fa-arrow-right"></i>
                                         </a>
                                     </div>
@@ -1403,7 +1426,7 @@
                         <div class="banner-slider-item">
                             <div class="image-cover-container">
                                 <picture>
-                                    <img src="assets/images/asset 2.png">
+                                    <img src="assets/images/asset%202.png" alt="Lock protecting wide range of digital devices">
                                 </picture>
                             </div>
                             <div class="content">
@@ -1415,7 +1438,7 @@
                                             <br>
                                             sensitive information protected.
                                         </p>
-                                        <a id="cyber-banner-btn" class="banner-btn-web">
+                                        <a id="cyber-banner-btn" class="banner-btn-web" href="#">
                                             Find Out More <i class="fa-solid fa-arrow-right"></i>
                                         </a>
                                     </div>
@@ -1431,15 +1454,15 @@
                                 <h2>
                                     <strong>Our Services</strong>
                                 </h2>
-                                <h3>
-                                    <a>
+                                <h3 class="service-view-work">
+                                    <a href="#" onclick="homepageLink()">
                                         View Our Work <i class="fa-solid fa-arrow-right"></i>
                                     </a>
                                 </h3>
                             </div>
                             <div class="row">
                                 <div class="top-cards">
-                                    <a class="card-software-block">
+                                    <a class="card-software-block" href="#" onclick="homepageLink()">
                                         <span class="icon" id="software-background">
                                             <i class="fa-solid fa-laptop"></i>
                                         </span>
@@ -1456,7 +1479,7 @@
                                     </a>
                                 </div>
                                 <div class="top-cards">
-                                    <a class="card-it-block">
+                                    <a class="card-it-block" href="#" onclick="homepageLink()">
                                         <span class="icon" id="it-background">
                                             <i class="fa-solid fa-desktop"></i>
                                         </span>
@@ -1473,7 +1496,7 @@
                                     </a>
                                 </div>
                                 <div class="top-cards">
-                                    <a class="card-digital-block">
+                                    <a class="card-digital-block" href="#" onclick="homepageLink()">
                                         <span class="icon" id="digital-background">
                                             <i class="fa-solid fa-signal"></i>
                                         </span>
@@ -1490,7 +1513,7 @@
                                     </a>
                                 </div>
                                 <div class="other-cards">
-                                    <a class="card-telecoms-block">
+                                    <a class="card-telecoms-block" href="#" onclick="homepageLink()">
                                         <span class="icon" id="telecoms-background">
                                             <i class="fa-solid fa-phone-volume"></i>
                                         </span>
@@ -1507,7 +1530,7 @@
                                     </a>
                                 </div>
                                 <div class="other-cards">
-                                    <a class="card-web-block">
+                                    <a class="card-web-block" href="#" onclick="homepageLink()">
                                         <span class="icon" id="web-background">
                                             <i class="fa-solid fa-code"></i>
                                         </span>
@@ -1524,7 +1547,7 @@
                                     </a>
                                 </div>
                                 <div class="other-cards">
-                                    <a class="card-cyber-block">
+                                    <a class="card-cyber-block" href="#" onclick="homepageLink()">
                                         <span class="icon" id="cyber-background">
                                             <i class="fa-solid fa-shield-halved"></i>
                                         </span>
@@ -1540,7 +1563,7 @@
                                     </a>
                                 </div>
                                 <div class="other-cards">
-                                    <a class="card-training-block">
+                                    <a class="card-training-block" href="#" onclick="homepageLink()">
                                         <span class="icon" id="training-background">
                                             <i class="fa-solid fa-graduation-cap"></i>
                                         </span>
@@ -1557,8 +1580,8 @@
                                 </div>
                             </div>
                             <div id="services-footer">
-                                <h3>
-                                    <a>
+                                <h3 class="service-view-work">
+                                    <a href="#" onclick="homepageLink()">
                                         View Our Work <i class="fa-solid fa-arrow-right"></i>
                                     </a>
                                 </h3>
@@ -1569,63 +1592,58 @@
                 <div class="slider">
                     <div id="slider-certification">
                         <div class="slider-item-container">
+                            <div class="slider-item">
+                                <img class="slider-certification-image" src="assets/images/asset%209.jpeg" alt="Investing in future growth award">
+                            </div>
+                        </div>
+                        <div class="slider-item-container">
+                            <div class="slider-item">
+                                <img class="slider-certification-image" src="assets/images/asset%2011.jpeg" alt="Norfolk 2021 golden carbon charter certification">
+                            </div>
+                        </div>
+                        <div class="slider-item-container">
+                            <div class="slider-item">
+                                <img class="slider-certification-image" src="assets/images/asset%2013.jpeg" alt="Prompt payment code certified">
+                            </div>
+                        </div>
+                        <div class="slider-item-container">
+                            <div class="slider-item">
+                                <img class="slider-certification-image" src="assets/images/asset%2015.jpeg" alt="Princess royal training award 2020">
+                            </div>
+                        </div>
+                        <div class="slider-item-container">
+                            <div class="slider-item">
+                                <img class="slider-certification-image" src="assets/images/asset%2017.jpeg" alt="Future 50 member certification">
+                            </div>
+                        </div>
+                        <div class="slider-item-container">
                             <div class="slider-item">           
-                                <img class="slider-certification-image" src="assets/images/asset 19.jpeg">         
+                                <img class="slider-certification-image" src="assets/images/asset%2019.jpeg" alt="QMS ISO 9001 : 2015 registered certification">         
                             </div>
                         </div>
                         <div class="slider-item-container">
                             <div class="slider-item">
-                                <img class="slider-certification-image" src="assets/images/asset 9.jpeg">
+                                <img class="slider-certification-image" src="assets/images/asset%2021.jpeg" alt="QMS ISO 27001 : 2013 registered certification">
                             </div>
                         </div>
                         <div class="slider-item-container">
                             <div class="slider-item">
-                                <img class="slider-certification-image" src="assets/images/asset 11.jpeg">
+                                <img class="slider-certification-image" src="assets/images/asset%2023.jpeg" alt="Skills of tommorow winner certificaiton">
                             </div>
                         </div>
                         <div class="slider-item-container">
                             <div class="slider-item">
-                                <img class="slider-certification-image" src="assets/images/asset 13.jpeg">
+                                <img class="slider-certification-image" src="assets/images/asset%2025.jpeg" alt="Google partner certification">
                             </div>
                         </div>
                         <div class="slider-item-container">
                             <div class="slider-item">
-                                <img class="slider-certification-image" src="assets/images/asset 15.jpeg">
+                                <img class="slider-certification-image" src="assets/images/asset%2027.png" alt="We are a living wage employer badge">
                             </div>
                         </div>
                         <div class="slider-item-container">
                             <div class="slider-item">
-                                <img class="slider-certification-image" src="assets/images/asset 17.jpeg">
-                            </div>
-                        </div>
-                        <div class="slider-item-container">
-                            <div class="slider-item">
-                                <img class="slider-certification-image" src="assets/images/asset 19.jpeg">
-                            </div>
-                        </div>
-                        <div class="slider-item-container">
-                            <div class="slider-item">
-                                <img class="slider-certification-image" src="assets/images/asset 21.jpeg">
-                            </div>
-                        </div>
-                        <div class="slider-item-container">
-                            <div class="slider-item">
-                                <img class="slider-certification-image" src="assets/images/asset 23.jpeg">
-                            </div>
-                        </div>
-                        <div class="slider-item-container">
-                            <div class="slider-item">
-                                <img class="slider-certification-image" src="assets/images/asset 25.jpeg">
-                            </div>
-                        </div>
-                        <div class="slider-item-container">
-                            <div class="slider-item">
-                                <img class="slider-certification-image" src="assets/images/asset 27.png">
-                            </div>
-                        </div>
-                        <div class="slider-item-container">
-                            <div class="slider-item">
-                                <img class="slider-certification-image" src="assets/images/asset 29.png">
+                                <img class="slider-certification-image" src="assets/images/asset%2029.png" alt="Norfolk ProHelp Badge">
                             </div>
                         </div>
                     </div>
@@ -1635,26 +1653,24 @@
                         <div class="row">
                             <div class="col-welcome">
                                 <h2 class="brand-header">
-                                    <strong>Welcome To Netmatters</strong>
+                                    Welcome To Netmatters
                                 </h2>
-                                <p>
-                                    <strong>
-                                        Netmatters is a leading 
-                                        <a>Bespoke Software</a>
-                                        ,  
-                                        <a>IT Support</a>
-                                        , and 
-                                        <a>Digital Marketing </a>
-                                        company based in the East of England with offices in 
-                                        <a>London</a>
-                                        , 
-                                        <a>Cambridge</a>
-                                        , 
-                                        <a>Wymondham</a>
-                                        , and 
-                                        <a>Great Yarmouth</a>
-                                        .
-                                    </strong>
+                                <p id="company-locations">                              
+                                    Netmatters is a leading 
+                                    <a href="#" onclick="homepageLink()">Bespoke Software</a>
+                                    ,  
+                                    <a href="#" onclick="homepageLink()">IT Support</a>
+                                    , and 
+                                    <a href="#" onclick="homepageLink()">Digital Marketing </a>
+                                    company based in the East of England with offices in 
+                                    <a href="#" onclick="homepageLink()">London</a>
+                                    , 
+                                    <a href="#" onclick="homepageLink()">Cambridge</a>
+                                    , 
+                                    <a href="#" onclick="homepageLink()">Wymondham</a>
+                                    , and 
+                                    <a href="#" onclick="homepageLink()">Great Yarmouth</a>
+                                    .           
                                 </p>
                                 <p>
                                     We aren't tied into contracts with third-party providers, 
@@ -1668,8 +1684,8 @@
                                     the most from our relationship in an upfront manner.
                                 </p>
                                 <div class="brand-buttons">
-                                    <a id="btn-choose" class="btn-choose">why choose us <i class="fa-solid fa-arrow-right"></i></a>
-                                    <a id="btn-culture" class="btn-culture">our culture <i class="fa-solid fa-arrow-right"></i></a>
+                                    <a id="btn-choose" class="btn-choose" href="#" onclick="homepageLink()">why choose us <i class="fa-solid fa-arrow-right"></i></a>
+                                    <a id="btn-culture" class="btn-culture" href="#" onclick="homepageLink()">our culture <i class="fa-solid fa-arrow-right"></i></a>
                                 </div>
 
                             </div>            
@@ -1696,12 +1712,12 @@
                                 <p>
                                     <span id="client-quote-author">
                                         Eleanor Bishop, Head of Marketing - 
-                                        <a>Ashcroft Partnership LLp</a>
+                                        <a href="#" onclick="homepageLink()">Ashcroft Partnership LLP</a>
                                     </span>
                                 </p>
                                 <div class="clients-buttons">
-                                    <a id="btn-google" class="btn-google">Google Reviews <i class="fa-solid fa-arrow-right"></i></a>
-                                    <a class="btn-trust">Trustpilot reviews <i class="fa-solid fa-arrow-right"></i></a>
+                                    <a id="btn-google" class="btn-google" href="#" onclick="homepageLink()">Google Reviews <i class="fa-solid fa-arrow-right"></i></a>
+                                    <a class="btn-trust" href="#" onclick="homepageLink()">Trustpilot reviews <i class="fa-solid fa-arrow-right"></i></a>
                                 </div>
 
                             </div>
@@ -1716,34 +1732,33 @@
                                     <strong>Latest News</strong>
                                 </h2>
                                 <h3 id="articles-bar-view-all">
-                                    <a>
-                                        View All <i class="fa-solid fa-arrow-right"></i> 
-                                    </a>
+                                    <a href="#" onclick="homepageLink()">View All <i class="fa-solid fa-arrow-right"></i></a>
                                 </h3>
                             </div>
                         </div>
                     </div>
                     <div class="section">
-                        <div class="container">
+                        <div class="container" id="articles-container">
                             <div class="article-list">
                                 <div class="article-one">
+                                    <a class="article-top-link" href="#" onclick="homepageLink()"></a>
                                     <div class="image-container">
-                                        <a class="careers-btn" class="btn"> Careers</a>
-                                        <img class="article-image" src="assets/images/2nd-line-technician-Rnd7.png">
+                                        <div class="careers-btn btn"> Careers</div>
+                                        <img class="article-image" src="assets/images/2nd-line-technician-Rnd7.png" alt="Now hiring 2nd line technician artwork">
                                     </div>
                                     <div class="block">
                                         <h3>
-                                            <a> 2nd Line Technician </a>
+                                            <a href="#" onclick="homepageLink()" class="careers-title"> 2nd Line Technician </a>
                                             <span class="read-time"> - 4 minute read </span>
                                         </h3>
                                         <p>
                                             Salary Range £28k-£36k + Bonuses + Pension Hours 40 hours per week, 
                                             Monday - Friday Location Wymondh...
                                         </p>
-                                        <a class="btn article-buttons" class="btn"> Read More </a>
+                                        <a class="btn article-buttons" href="#" onclick="homepageLink()"> Read More </a>
                                         <div class="user">
                                             <div class="avatar">
-                                                <img src="assets/images/rob-george-zFWY.png" class="article-image">
+                                                <img src="assets/images/rob-george-zFWY.png" class="article-image" alt="Picture of Rob George">
                                             </div>
                                             <div class="details">
                                                 <strong class="text-primary">Posted by Rob George</strong>
@@ -1755,23 +1770,24 @@
                                 </div>
 
                                 <div class="article-two">
+                                    <a class="article-top-link" href="#" onclick="homepageLink()"></a>
                                     <div class="image-container">
-                                        <a class="careers-btn" class="btn"> Careers</a>
-                                        <img class="article-image" src="assets/images/1st-line-technician-PiSq.png">
+                                        <a class="careers-btn" href="#" onclick="homepageLink()"> Careers</a>
+                                        <img class="article-image" src="assets/images/1st-line-technician-PiSq.png" alt="Now hiring first line technician artwork">
                                     </div>
                                     <div class="block">
                                         <h3>
-                                            <a> 1st Line Technician </a>
+                                            <a href="#" onclick="homepageLink()" class="careers-title"> 1st Line Technician </a>
                                         </h3>
                                         <p>
                                             Salary Range £23k-£28k + Bonuses + 
                                             Pension Hours 40 hours per week, Monday 
                                             - Friday Location Wymondh...
                                         </p>
-                                        <a class="btn article-buttons" class="btn"> Read More </a>
+                                        <a class="btn article-buttons" href="#" onclick="homepageLink()"> Read More </a>
                                         <div class="user">
                                             <div class="avatar">
-                                                <img src="assets/images/rob-george-zFWY.png" class="article-image">
+                                                <img src="assets/images/rob-george-zFWY.png" class="article-image" alt="Picture of Rob George">
                                             </div>
                                             <div class="details">
                                                 <strong class="text-primary">Posted by Rob George</strong>
@@ -1782,22 +1798,23 @@
                                     </div>
                                 </div>
                                 <div class="article-three">
+                                    <a class="article-top-link" href="#" onclick="homepageLink()"></a>
                                     <div class="image-container">
-                                        <a id="receptionist-careers-btn" class="careers-btn" class="btn"> Careers </a>
-                                        <img class="article-image" src="assets/images/receptionist-dKHK.png">
+                                        <a id="receptionist-careers-btn" class="careers-btn" href="#" onclick="homepageLink()"> Careers </a>
+                                        <img class="article-image" src="assets/images/receptionist-dKHK.png" alt="Now hiring receptionist artwork">
                                     </div>
                                     <div class="block">
                                         <h3>
-                                            <a id="receptionist-title"> Temporary Role - Receptionist </a>
+                                            <a href="#" onclick="homepageLink()" id="receptionist-title"> Temporary Role - Receptionist </a>
                                         </h3>
                                         <p>
                                             Salary Range £21,000-£23,000 per annum Hours 40 hours per week, 
                                             Mon - Fri Location Wymondham, Norfol...
                                         </p>
-                                        <a id="reception-button" class="btn"> Read More </a>
+                                        <a id="reception-button" class="btn article-buttons" href="#" onclick="homepageLink()"> Read More </a>
                                         <div class="user">
                                             <div class="avatar">
-                                                <img src="assets/images/asset 31.jpeg" class="article-image">
+                                                <img src="assets/images/asset%2031.jpeg" class="article-image" alt="Picture of Bethany Shakespear">
                                             </div>
                                             <div class="details">
                                                 <strong class="text-primary">Posted by Bethany Shakespear</strong>
@@ -1811,10 +1828,7 @@
                         </div>
                     </div>
                     <div class="smallestvp-view-all">
-                        <a>View All</a>
-                        <strong>
-                            &rarr;
-                        </strong>
+                        <a href="#" onclick="homepageLink()">View All <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="slider">
@@ -1830,14 +1844,14 @@
                                                 are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and
                                                 families.
                                             </p>
-                                            <a class="slider-clients-button web-design-colour" href="#">
+                                            <a class="slider-clients-button web-design-colour" href="#" onclick="homepageLink()">
                                                 view our case study
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
                                             <div class="arrow"></div>
                                         </div>
                                     </div>        
-                                    <img class="slider-certification-image" src="assets/images/asset 35.png">         
+                                    <img class="slider-certification-image" src="assets/images/asset%2035.png" alt="Ashcroft company logo: Tree">         
                                 </div>
                             </div>
                             <div class="slider-item-container">
@@ -1846,17 +1860,17 @@
                                         <div class="slider-box">
                                             <h3>One Traveller</h3>        
                                             <p>
-                                                <a>One Traveller</a>
+                                                <a href="#" onclick="homepageLink()">One Traveller</a>
                                                 , founded in 2007, is a leading provider of solo holidays for over 50s.
                                             </p>
-                                            <a class="slider-clients-button web-design-colour" href="#">
+                                            <a class="slider-clients-button web-design-colour" href="#" onclick="homepageLink()">
                                                 view our case study
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
                                             <div class="arrow"></div>
                                         </div>
                                     </div>     
-                                    <img class="slider-certification-image" src="assets/images/asset 36.png">
+                                    <img class="slider-certification-image" src="assets/images/asset%2036.png" alt="One traveller logo: man standing proudly">
                                 </div>
                             </div>
                             <div class="slider-item-container">
@@ -1868,14 +1882,14 @@
                                                 Searles Leisure Resort, on the beautiful North Norfolk coast, 
                                                 is an award-winning UK holiday resort for families
                                             </p>
-                                            <a class="slider-clients-button marketing-colour" href="#">
+                                            <a class="slider-clients-button marketing-colour" href="#" onclick="homepageLink()">
                                                 view our case study
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
                                             <div class="arrow"></div>
                                         </div>   
                                     </div>
-                                    <img class="slider-certification-image" src="assets/images/asset 37.jpeg">
+                                    <img class="slider-certification-image" src="assets/images/asset%2037.jpeg" alt="Searles leisure resort logo: seal bouncing ball on its head">
                                 </div>
                             </div>
                             <div class="slider-item-container">
@@ -1889,7 +1903,7 @@
                                             <div class="arrow"></div>
                                         </div>
                                     </div>  
-                                    <img class="slider-certification-image" src="assets/images/asset 38.png">
+                                    <img class="slider-certification-image" src="assets/images/asset%2038.png" alt="Busseys logo: Busseys text in blue">
                                 </div>
                             </div>
                             <div class="slider-item-container">
@@ -1904,7 +1918,7 @@
                                             <div class="arrow"></div>
                                         </div>
                                     </div>  
-                                    <img class="slider-certification-image" src="assets/images/asset 39.png">
+                                    <img class="slider-certification-image" src="assets/images/asset%2039.png" alt="Crane garden buildings logo: Crane flying">
                                 </div>
                             </div>
                             <div class="slider-item-container">
@@ -1916,14 +1930,14 @@
                                                 Black Swan Care Group own and manage 21 high-quality care 
                                                 and residential homes with a focus on putting the needs of their residents first.
                                             </p>
-                                            <a class="slider-clients-button software-colour" href="#">
+                                            <a class="slider-clients-button software-colour" href="#" onclick="homepageLink()">
                                                 view our case study
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
                                             <div class="arrow"></div>
                                         </div>
                                     </div>  
-                                    <img class="slider-certification-image" src="assets/images/asset 40.png">
+                                    <img class="slider-certification-image" src="assets/images/asset%2040.png" alt="Black Swan Care Group logo: swan floating atop water">
                                 </div>
                             </div>
                             <div class="slider-item-container">
@@ -1934,7 +1948,7 @@
                                             <div class="arrow"></div>
                                         </div>
                                     </div>
-                                    <img class="slider-certification-image" src="assets/images/asset 41.png">
+                                    <img class="slider-certification-image" src="assets/images/asset%2041.png" alt="Xupes logo: Xupes text in black">
                                 </div>
                             </div>
                             <div class="slider-item-container">
@@ -1948,7 +1962,7 @@
                                             <div class="arrow"></div>
                                         </div>
                                     </div>
-                                    <img class="slider-certification-image" src="assets/images/asset 42.png">
+                                    <img class="slider-certification-image" src="assets/images/asset%2042.png" alt="Beat logo: Beat text in black overlaying multicoloured circles">
                                 </div>
                             </div>
                             <div class="slider-item-container">
@@ -1959,7 +1973,7 @@
                                             <div class="arrow"></div>
                                         </div>
                                     </div>
-                                    <img class="slider-certification-image" src="assets/images/asset 43.png">
+                                    <img class="slider-certification-image" src="assets/images/asset%2043.png" alt="Survery solutions logo: square split into 4 squares diagonal matching colours of light blue and aqua">
                                 </div>
                             </div>
                             <div class="slider-item-container">
@@ -1971,14 +1985,14 @@
                                                 Girl Guiding Anglia is part of Girlguiding, the UK's leading 
                                                 charity for girls and young women in the UK.
                                             </p>
-                                            <a class="slider-clients-button support-colour" href="#">
+                                            <a class="slider-clients-button support-colour" href="#" onclick="homepageLink()">
                                                 view our case study
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
                                             <div class="arrow"></div>
                                         </div>
                                     </div>
-                                    <img class="slider-certification-image" src="assets/images/asset 44.png">
+                                    <img class="slider-certification-image" src="assets/images/asset%2044.png" alt="Girl guiding anglia logo: two roughly overlaping slanted down squares">
                                 </div>
                             </div>
                             <div class="slider-item-container">
@@ -1989,14 +2003,14 @@
                                             <p>
                                                 Sweetzy are an online sweets retailer, based in Wymondham.
                                             </p>
-                                            <a class="slider-clients-button marketing-colour" href="#">
+                                            <a class="slider-clients-button marketing-colour" href="#" onclick="homepageLink()">
                                                 view our case study
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
                                             <div class="arrow"></div>
                                         </div>
                                     </div>
-                                    <img class="slider-certification-image" src="assets/images/asset 45.png">
+                                    <img class="slider-certification-image" src="assets/images/asset%2045.png" alt="Sweetzy logo: Sweetzy in white with text ouline being image of sweets">
                                 </div>
                             </div>
                             <div class="slider-item-container">
@@ -2007,7 +2021,7 @@
                                             <div class="arrow"></div>
                                         </div>
                                     </div>
-                                    <img class="slider-certification-image" src="assets/images/asset 46.png">
+                                    <img class="slider-certification-image" src="assets/images/asset%2046.png" alt="Howes percival logo: square split into two triangles one dark blue one yellow">
                                 </div>
                             </div>
                             <div class="slider-item-container">
@@ -2016,17 +2030,17 @@
                                         <div class="slider-box">
                                             <h3>GDST</h3>        
                                             <p>
-                                               The <a>Girls' Day School Trust (GDST)</a>  is the UK's leading family
+                                               The <a href="#" onclick="homepageLink()">Girls' Day School Trust (GDST)</a>  is the UK's leading family
                                                of 25 independent girls' schools.                       
                                             </p>
-                                            <a class="slider-clients-button marketing-colour" href="#">
+                                            <a class="slider-clients-button marketing-colour" href="#" onclick="homepageLink()">
                                                 view our case study
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </a>
                                             <div class="arrow"></div>
                                         </div>
                                     </div>
-                                    <img class="slider-certification-image" src="assets/images/asset 47.png">
+                                    <img class="slider-certification-image" src="assets/images/asset%2047.png" alt="GDST logo: GDST text in black">
                                 </div>
                             </div>
                         </div>
@@ -2035,11 +2049,11 @@
                 <div class="newsletter">
                     <div class="container">
                         <form class="form-signup">
-                            <h2>Email Newsletter <br> Sign-Up</h2>
+                            <h2>Email Newsletter Sign-Up</h2>
                             <div class="sign-up-inputs-group">
                                 <div class="sign-up-input">
                                     <div class="form-group">
-                                        <label for="form-name" class="required">Your Name *</label>
+                                        <label for="form-name" class="required">Your Name <span class="required-input">*</span></label>
                                         <br>
                                         <input id="form-name" name="name" type="text">
                                     </div>
@@ -2047,7 +2061,7 @@
                                 <div class="sign-up-input">
                                     <div class="form-group">
                                         <label for="form-email" class="required">
-                                            Your Email 
+                                            Your Email <span class="required-input">*</span>
                                         </label>
                                         <br>
                                         <input id="form-email" name="name" type="text">
@@ -2055,20 +2069,20 @@
                                 </div>
                             </div>    
                             <div class="form-group">
-                                <span class="media">
-                                    <span class="media-left checkbox-left">
-                                        <span id="button-checkbox" class="button">
-                                            <span class="mdi-action-done"></span>
-                                            <input name="preference" type="checkbox" vaule="1">
-                                        </span>
-                                    </span>
-                                <span class="media-body">
-                                    Please tick this box if you wish to receive marketing information from us.
-                                    Please see our
-                                    <a target="_blank" id="privacy-link" rel="noopener noreferrer">Privacy Policy</a>
-                                    for more information on how we keep your data safe.
-                                </span>    
-                                </span>
+                                <div class="media">
+                                    <div class="media-left checkbox-left">
+                                        <div class="checkbox">
+                                            <input id="check1" type="checkbox" name="check" value="check1">
+                                            <label class="mdi-" for="check1"></label>
+                                        </div>  
+                                    </div>         
+                                    <span class="media-body">
+                                        Please tick this box if you wish to receive marketing information from us.
+                                        Please see our
+                                        <a id="privacy-link" href="#" onclick="homepageLink()">Privacy Policy</a>
+                                        for more information on how we keep your data safe.
+                                    </span>    
+                                </div>            
                             </div>
                             <button class="btn" name="submit" id="newsletter-btn-primary"> Subscribe </button>
                         </form>
@@ -2079,95 +2093,87 @@
                         <div class="footer-row">
                             <div class="footer-social">
                                 <div class="footer-social-menu">
-                                    <img src="assets/images/asset 48.png" width="100%">
-                                    <h4>FOLLOW US ON:</h4>
+                                    <img src="assets/images/asset%2048.png" alt="Netmatters logo in white">
+                                    <p id="follow-us-header">FOLLOW US ON:</p>
                                     <div class="footer-social-menu-logos">
-                                        <div class="footer-social-menu-logos-container">
-                                            <a>
+                                            <a id="footer-facebook-icon" href="#" onclick="homepageLink()">
                                                 <i class="fa-brands fa-facebook-f"></i>
                                             </a>
-                                        </div>
-                                        <div class="footer-social-menu-logos-container">
-                                            <a>
-                                                <i class="fa-brands fa-linkedin-in"></i>
+                                            <a id="footer-linkedin-icon" href="#" onclick="homepageLink()">
+                                                <i  class="fa-brands fa-linkedin-in"></i>
                                             </a>
-                                        </div>
-                                        <div class="footer-social-menu-logos-container">
-                                            <a>
+                                            <a id="footer-twitter-icon" href="#" onclick="homepageLink()"> 
                                                 <i class="fa-brands fa-twitter"></i>
                                             </a>
-                                        </div>
-                                        <div class="footer-social-menu-logos-container">
-                                            <a>
+                                            <a id="footer-instagram-icon" href="#" onclick="homepageLink()"> 
                                                 <i class="fa-brands fa-instagram"></i>
                                             </a>
-                                        </div> 
                                     </div>
                                 </div>
                             </div>
                         
                             <div class="link-row">
                                 <div class="col-xs-12 col-sm-6 col-md-3 footer-menu">
-                                    <h4>ABOUT NETMATTERS</h4>
+                                    <p>ABOUT NETMATTERS</p>
                                     <ul>
-                                        <li><a>Our Careers</a></li>
-                                        <li><a></a>Our Team</a></li>
-                                        <li><a></a>Contact Us</a></li>
-                                        <li><a></a>Privacy Policy</a></li>
-                                        <li><a></a>Cookie Policy</a></li>
-                                        <li><a></a>Data retention & Disposal Policy</a></li>
-                                        <li><a></a>CCTV Policy</a></li>
-                                        <li><a></a>Enviromental Policy</a></li>
-                                        <li><a></a>Terms & Conditions</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Our Careers</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Our Team</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Contact Us</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Privacy Policy</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Cookie Policy</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Data retention & Disposal Policy</a></li>
+                                        <li><a href="#" onclick="homepageLink()">CCTV Policy</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Enviromental Policy</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Terms & Conditions</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-3 footer-menu">
-                                    <h4>OUR SERVICES</h4>
+                                    <p>OUR SERVICES</p>
                                     <ul>
-                                        <li><a>Bespoke Software</a></li>
-                                        <li><a></a>IT Support</a></li>
-                                        <li><a></a>Digital Marketing</a></li>
-                                        <li><a></a>Telecoms Services</a></li>
-                                        <li><a></a>Web Design</a></li>
-                                        <li><a></a>Cyber Security</a></li>
-                                        <li><a></a>Developer Training</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Bespoke Software</a></li>
+                                        <li><a href="#" onclick="homepageLink()">IT Support</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Digital Marketing</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Telecoms Services</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Web Design</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Cyber Security</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Developer Training</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-3 footer-menu">
-                                    <h4>OUR INDUSTRIES</h4>
+                                    <p>OUR INDUSTRIES</p>
                                     <ul>
-                                        <li><a>Financial Services</a></li>
-                                        <li><a></a>Construction</a></li>
-                                        <li><a></a>Retail & E-Commerce</a></li>
-                                        <li><a></a>Non-profits</a></li>
-                                        <li><a></a>SME's</a></li>
-                                        <li><a></a>Healthcare</a></li>
-                                        <li><a></a>Education & Training</a></li>
-                                        <li><a></a>Travel & Leisure</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Financial Services</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Construction</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Retail & E-Commerce</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Non-profits</a></li>
+                                        <li><a href="#" onclick="homepageLink()">SME's</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Healthcare</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Education & Training</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Travel & Leisure</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-3 footer-menu">
-                                    <h4>LOCATIONS</h4>
+                                    <p>LOCATIONS</p>
                                     <ul>
-                                        <li><a>London Office</a></li>
-                                        <li><a></a>Cambridge Office</a></li>
-                                        <li><a></a>Wymondham Office</a></li>
-                                        <li><a></a>Great Yarmouth Office</a></li>
+                                        <li><a href="#" onclick="homepageLink()">London Office</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Cambridge Office</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Wymondham Office</a></li>
+                                        <li><a href="#" onclick="homepageLink()">Great Yarmouth Office</a></li>
                                     </ul>
                                 </div>
                             </div>
-                        </div>     
+                        </div>      
                     </div>
+                </footer>
+                <div class="footer-bottom">
+                    <div class="container license">
+                        © Copyright Netmatters 2023.
+                        All rights reserved.
+                        <a href="#" onclick="homepageLink()">  -  Sitemap</a>
+                    </div>
+                </div>  
             </div>
         </main>
-        </footer>
-            <div class="footer-bottom">
-                <div class="license">
-                    © Copyright Netmatters 2023.
-                    All rights reserved.
-                    <a>-Sitemap</a>
-                </div>
-            </div>
     <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/slick/slick.js"></script>
     <script src="js/app.js"></script>

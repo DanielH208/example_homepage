@@ -1,0 +1,105 @@
+@use "../base/mixins" as mixin;
+@import "../base/colours";
+
+// NEWS 
+.latest-articles {
+    background-color: $lightest-white-v4;
+    color: $light-grey-v3;
+}
+
+
+
+.article-image {
+    width: 100%;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+}
+
+.article-list {
+    width: 100%;
+    @include mixin.flex-container(row, wrap);
+}
+    
+
+.article-one, .article-two, .article-three {
+    position: relative;
+    transition: .5s ease-in-out;
+
+}
+
+div[class^="block"] {
+    border-color: $medium-grey-v2;
+    border: 1px solid $lightest-white;
+    border-radius: 0px 0px 3px 3px;
+    padding: 30px;
+    box-shadow: 0 3px 35px rgba(0,0,0,.1);
+    margin-top: -7px;
+}
+
+
+.read-time {
+    color: rgba(194, 189, 181, 0.5);
+}
+
+.user {
+    width: 100%
+    font-size .875rem;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid $lightest-white;
+    border-top-color: $medium-grey-v2;
+    @include mixin.flex-container(row, 0);
+}
+
+
+
+
+.details {
+    padding: 0px 0px 0px 20px;
+    font-size: 14px;
+    line-height: 1.375rem;
+}
+
+.article-buttons {
+    background-color: $medium-blue;
+    border-color: $medium-blue-v2;
+} 
+
+#receptionist-title {
+    color: $lightest-purple;
+}
+
+#reception-button, #receptionist-careers-btn {
+    background-color: $medium-purple;
+    border-color: $medium-purple-v2;
+}
+
+.article-top-link {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+.latest-articles .section {
+    padding-top: 10px;
+}
+
+.latest-articles .heading-container {
+    padding-top: 50px;
+    text-align: center;
+}
+
+#articles-bar-view-all {
+    margin-top: 37px;
+}
+
+.smallestvp-view-all > a, #articles-bar-view-all > a {
+    color: black;
+}

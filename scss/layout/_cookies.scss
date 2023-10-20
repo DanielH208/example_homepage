@@ -1,0 +1,66 @@
+@import "../base/colours";
+
+// COOKIE CONSENT 
+#cookie-consent {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000000;
+    background-color: rgba(0,0,0,.7);
+    //display: flex;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -ms-flex-pack: center!important;
+    padding: 30px;
+}
+
+#cookie-consent .modal-dialog {
+    margin: auto;
+}
+
+#modal-content {
+    position: relative;
+    background-color: $defualt-white;
+    border: 1px solid $lightest-grey;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 5px;
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    background-clip: padding-box;
+    outline: none;
+}
+
+#modal-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid $eggshell-white;
+    min-height: 16.42857143px;
+}
+
+
+#modal-body {
+    position: relative;
+    padding: 20px;
+}
+
+
+#modal-footer {
+    margin: 0;
+    padding: 19px 20px 20px;
+    text-align: right;
+    border-top: 1px solid $eggshell-white;
+}
+
+#cookie-row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.spacer-xs { 
+    margin-bottom: 30px;
+}

@@ -1,0 +1,168 @@
+@use "../base/mixins" as mixin;
+@import "../base/colours";
+
+// SERVICE LIST 
+
+.services-header {
+    @include mixin.flex-container(row, nowrap);
+    justify-content: space-between;
+    //margin: 0px 20px;
+    margin: 0px 17px;
+}
+
+#services-footer {
+    display: flex; 
+    justify-content: center;
+    margin: 0px 20px;
+}
+
+a[class^="card-"] > span{
+    display: block;
+    text-align: center;
+}
+
+.service-list > .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+#service-section {
+    background-color: $defualt-white;
+}
+
+.top-cards, .other-cards {
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-grow: 1;
+}
+
+span[class^="btn"] {
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 1.063rem;
+    border-radius: 3px;
+    white-space: normal;  
+    margin-bottom: 0;
+    font-weight: 400;
+    border: 1px solid transparent;
+}
+
+
+#software-btn {
+    display: inline-block;
+    color: $defualt-white;
+    background-color: $light-grey;
+    border-color: $light-grey;
+}
+
+#software-background {
+    background-color: $light-grey;
+}
+
+#it-btn {
+    display: inline-block;
+    color: $defualt-white;
+    background-color: $light-blue;
+    border-color: $light-blue;
+}
+
+#it-background {
+    background-color: $light-blue;
+}
+
+#digital-btn {
+    display: inline-block;
+    color: $defualt-white;
+    background-color: $light-green;
+    border-color: $light-green;
+}
+
+#digital-background {
+    background-color: $light-green;
+}
+
+#telecoms-btn {
+    display: inline-block;
+    color: $defualt-white;
+    background-color: $light-red;
+    border-color: $light-red;
+}
+
+#telecoms-background {
+    background-color: $light-red;
+}
+
+#web-btn {
+    display: inline-block;
+    color: $defualt-white;
+    background-color: $light-purple;
+    border-color: $light-purple;
+}
+
+#web-background {
+    background-color: $light-purple;
+}
+
+#cyber-btn {
+    display: inline-block;
+    color: $defualt-white;
+    background-color: $darker-pink;
+    border-color: $darker-pink;
+}
+
+#cyber-background {
+    background-color: $darker-pink;
+}
+
+#training-btn {
+    display: inline-block;
+    color: $defualt-white;
+    background-color: $dark-red;
+    border-color: $dark-red;
+}
+
+#training-background {
+    background-color: $dark-red;
+}
+
+.service-list i {
+    font-size: 25px;
+    //font-family: "fontawesome" !important;
+    margin-top: 18px;
+}
+
+a[class^="card-"] > .icon {
+    height: 65px;
+    width: 65px;
+    margin: 0 auto 17px;
+    background-color: $darker-grey-v2;
+    color: $defualt-white;
+    border-radius: 50%;
+}
+
+a[class$="-block"] {
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px 35px rgba(0,0,0,.1);
+    display: block;
+    border: 1px solid $lightest-white;
+    text-align: center;
+    transition: .5s ease;
+}
+
+.icon > img {
+    width: 32px;
+    filter: invert(100%);
+    padding: 25%;
+}
+
+.software-colour {
+    color: $defualt-white;
+    background-color: $light-grey-v2;
+    border-color: $light-grey-v2;
+}
