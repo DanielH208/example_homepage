@@ -157,6 +157,10 @@ $("#main-content").on("click", function () {
 });
 
 
+function checkbox_check() {
+    $('.checkbox').css("input[type=checkbox]:checked");
+}
+
 /// CERTIFICATION SLIDER 
 $("#slider-certification").slick({
     slidesToShow: 10,

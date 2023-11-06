@@ -175,7 +175,7 @@
 
 #header-support-button , #header-contact-button {
     height: 44px;
-    align-self: flex-end;
+    //align-self: flex-end;
     border-radius: 3px;
 }
 
@@ -191,9 +191,9 @@
     background-color: $dark-grey !important;
     border: 3px solid transparent;
     border-radius: 3px;
-    padding: 5px 15px !important;
+    padding: 1px 15px 5px 15px!important;
     height: 56px !important;   
-    align-self: flex-end;
+    //align-self: flex-end;
     margin-left: 20px;
 }
 
@@ -215,7 +215,7 @@
     top: 10px;
     right: 0;
     color: #fff;
-    background-color: $medium-blue;
+    background-color: #4183d7;;
     font-size: .75rem;
     padding: 0 10px;
     line-height: 1.438rem;

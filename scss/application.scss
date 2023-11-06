@@ -115,6 +115,8 @@
 @media (min-width: 768px) {
     .container{
         width: 750px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .link-row {
         flex-grow: 1;
@@ -197,6 +199,18 @@
         padding-right: 0px;
         padding-left: 0px;
     }
+    .header-actions {
+        padding: 0px 15px;
+    }
+    .header-icon > a > img {
+        padding: 0px 15px;
+        box-sizing: border-box;
+    }
+    footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
 }
 
 
@@ -219,10 +233,15 @@
 
     .row {
         width: 970px;
+        flex-wrap: nowrap;
     }
 
-    .col-clients, .col-welcome {
-        width: 46%;
+    .brand-buttons, .clients-buttons {
+        top: -22px;
+        position: relative;
+    }
+    .clients-buttons { 
+        margin-top: 20px;
     }
     .heading-container {
         width: 940px;
@@ -360,6 +379,12 @@
     }
     #digital-btn {
         margin-top: 20px;
+    }
+    .clients-buttons { 
+        margin-top: 25px;
+    }
+    footer {
+        padding-top: 47px;
     }
 
 

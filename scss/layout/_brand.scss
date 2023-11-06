@@ -18,6 +18,13 @@
     margin: -6px 0px 40px;
 }
 
+.brand-buttons, .clients-buttons {
+    top: -22px;
+    position: relative;
+}
+.clients-buttons { 
+    margin-top: 25px;
+}
 
 .col-welcome > p, .col-clients > p {
     margin: 0px 0px 25px;
@@ -26,6 +33,8 @@
 .col-welcome {
     min-height: 1px;
     padding: 0px 15px;
+    width: 50%;
+    flex-grow: 1;
     padding-bottom: 50px;
 }
 
@@ -33,10 +42,15 @@
     width: 100%;
 }
 
-.col-clients{
+.brand-background .fa-arrow-right {
+    margin-left: 6px;
+}
+
+.col-clients {
     min-height: 1px;
     padding: 0px 15px;
-
+    width: 50%;
+    flex-grow: 1;
 }
 
 /*

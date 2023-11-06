@@ -741,6 +741,10 @@ main {
   padding-bottom: 10px;
 }
 
+.header-actions-buttons, #default-form, #hamburger-menu-btn {
+  align-self: center;
+}
+
 #default-form > .search-form-input {
   background-color: white;
   height: 56px;
@@ -799,7 +803,7 @@ main {
 }
 
 .header-icon > a > img {
-  max-width: 402px;
+  max-width: 370px;
   width: 100%;
 }
 
@@ -818,7 +822,6 @@ main {
 }
 
 .search-form {
-  margin-top: 11px;
   position: relative;
 }
 
@@ -1411,6 +1414,15 @@ picture > img {
   margin: -6px 0px 40px;
 }
 
+.brand-buttons, .clients-buttons {
+  top: -22px;
+  position: relative;
+}
+
+.clients-buttons {
+  margin-top: 25px;
+}
+
 .col-welcome > p, .col-clients > p {
   margin: 0px 0px 25px;
 }
@@ -1418,6 +1430,8 @@ picture > img {
 .col-welcome {
   min-height: 1px;
   padding: 0px 15px;
+  width: 50%;
+  flex-grow: 1;
   padding-bottom: 50px;
 }
 
@@ -1425,9 +1439,15 @@ picture > img {
   width: 100%;
 }
 
+.brand-background .fa-arrow-right {
+  margin-left: 6px;
+}
+
 .col-clients {
   min-height: 1px;
   padding: 0px 15px;
+  width: 50%;
+  flex-grow: 1;
 }
 
 /*
@@ -1484,7 +1504,10 @@ div[class^=block] {
 }
 
 .read-time {
-  color: rgba(194, 189, 181, 0.5);
+  color: rgba(51, 54, 69, 0.5);
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 150;
 }
 
 .user {
@@ -1505,17 +1528,17 @@ div[class^=block] {
 }
 
 .article-buttons {
-  background-color: #21579c;
-  border-color: #1E4F8D;
+  background-color: #4183d7;
+  border-color: #4183d7;
 }
 
 #receptionist-title {
-  color: #9A79B6;
+  color: #926fb1;
 }
 
 #reception-button, #receptionist-careers-btn {
-  background-color: #5E4177;
-  border-color: #563B6D;
+  background-color: #926fb1;
+  border-color: #926fb1;
 }
 
 .article-top-link {
@@ -1566,11 +1589,17 @@ div[class^=block] {
   border: 3px solid #333645;
   height: 26px;
   width: 26px;
+  display: block;
   position: relative;
   margin-right: 20px;
 }
 
-.checkbox label {
+.newsletter > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#checkbox-bfr {
   display: inline-block;
   cursor: pointer;
   position: relative;
@@ -1579,7 +1608,11 @@ div[class^=block] {
   font-size: 11px;
 }
 
-.checkbox label:before {
+.media {
+  cursor: pointer;
+}
+
+#checkbox-bfr:before {
   content: "";
   display: inline-block;
   width: 26px;
@@ -1591,15 +1624,19 @@ div[class^=block] {
   background-color: #ddd;
 }
 
-input[type=checkbox] {
+.media input[type=checkbox] + * {
+  pointer-events: none;
+}
+
+.media input {
   display: none;
 }
 
-.checkbox label:before {
+#checkbox-bfr:before {
   border-radius: 3px;
 }
 
-input[type=checkbox]:checked + label:before {
+.media input:checked + #checkbox-bfr:before {
   content: "✓";
   font-weight: 1000;
   width: 30px;
@@ -1611,6 +1648,10 @@ input[type=checkbox]:checked + label:before {
   background-color: #333645;
   text-align: center;
   line-height: 30px;
+}
+
+.media [type=checkbox] {
+  display: none;
 }
 
 .form-group .media-body {
@@ -1677,7 +1718,7 @@ input[type=checkbox]:checked + label:before {
 #newsletter-btn-primary {
   color: white;
   background-color: #333645;
-  border-color: #333645;
+  border-color: transparent;
   border-radius: 3px;
 }
 
@@ -1691,6 +1732,10 @@ input[type=checkbox]:checked + label:before {
 .smallestvp-view-all {
   text-align: center;
   display: none;
+}
+
+#newsletter-btn-primary:hover {
+  background-color: #22242e;
 }
 
 footer {
@@ -1946,7 +1991,6 @@ footer {
 
 #header-support-button, #header-contact-button {
   height: 44px;
-  align-self: flex-end;
   border-radius: 3px;
 }
 
@@ -1962,9 +2006,8 @@ footer {
   background-color: #333645 !important;
   border: 3px solid transparent;
   border-radius: 3px;
-  padding: 5px 15px !important;
+  padding: 1px 15px 5px 15px !important;
   height: 56px !important;
-  align-self: flex-end;
   margin-left: 20px;
 }
 
@@ -1982,7 +2025,7 @@ footer {
   top: 10px;
   right: 0;
   color: #fff;
-  background-color: #21579c;
+  background-color: #4183d7;
   font-size: 0.75rem;
   padding: 0 10px;
   line-height: 1.438rem;
@@ -2209,6 +2252,8 @@ footer {
 @media (min-width: 768px) {
   .container {
     width: 750px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .link-row {
     flex-grow: 1;
@@ -2287,6 +2332,17 @@ footer {
     padding-right: 0px;
     padding-left: 0px;
   }
+  .header-actions {
+    padding: 0px 15px;
+  }
+  .header-icon > a > img {
+    padding: 0px 15px;
+    box-sizing: border-box;
+  }
+  footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -2305,9 +2361,14 @@ footer {
   }
   .row {
     width: 970px;
+    flex-wrap: nowrap;
   }
-  .col-clients, .col-welcome {
-    width: 46%;
+  .brand-buttons, .clients-buttons {
+    top: -22px;
+    position: relative;
+  }
+  .clients-buttons {
+    margin-top: 20px;
   }
   .heading-container {
     width: 940px;
@@ -2438,6 +2499,12 @@ footer {
   }
   #digital-btn {
     margin-top: 20px;
+  }
+  .clients-buttons {
+    margin-top: 25px;
+  }
+  footer {
+    padding-top: 47px;
   }
 }
 
