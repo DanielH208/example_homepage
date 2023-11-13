@@ -1398,6 +1398,14 @@ picture > img {
   margin-top: 10px;
 }
 
+.main-content-contact {
+  margin-top: 154px;
+}
+
+#enquiry-container {
+  background-color: white;
+}
+
 .brand-background {
   background-color: #333645;
   color: white;
@@ -2307,6 +2315,9 @@ footer {
   .banner {
     margin-top: 110px;
   }
+  .main-content-contact {
+    margin-top: 110px;
+  }
   #modal-dialog {
     width: 600px;
   }
@@ -2396,6 +2407,9 @@ footer {
     top: -215px;
   }
   .banner {
+    margin-top: 215px;
+  }
+  .main-content-contact {
     margin-top: 215px;
   }
   #services-md-hidden-menu {
