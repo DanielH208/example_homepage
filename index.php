@@ -782,6 +782,7 @@
                     </div>
                 </div>
                 <?php include("php/newsletter.php"); ?>
+                <?php include("php/dbConnection.php"); ?>
                 <?php include("php/footer.php"); ?>
             </div>
         </main>
