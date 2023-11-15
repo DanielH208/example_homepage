@@ -55,7 +55,7 @@
         display: none;
     }
 
-    .article-one, .article-two, .article-three {
+    #article-1, #article-2, #article-3 {
         margin-bottom: 40px;
     }
     .search-form-button {
@@ -128,10 +128,10 @@
     .row {
         width: 750px;
     }
-    .article-three {
-        display: none;
+    #article-3 {
+        display: none
     }
-    .article-one, .article-two {
+    #article-1, #article-2 {
         padding: 0px 15px;
     }
     .article-list {
@@ -326,11 +326,11 @@
     .row {
         width: 1200px
     }
-    .article-three {
+    #article-3 {
         display: block;
     }
 
-    .article-one, .article-two, .article-three {
+    #article-1, #article-2, #article-3 {
         padding: 0px 15px;
     }
     .article-list .image-container {
