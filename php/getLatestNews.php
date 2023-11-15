@@ -19,23 +19,23 @@
 
 
     function assembleArticle($article_image, $title, $read_time, $info, $author_image, $author_name, $counter) {
-        //$date = DateTime::createFromFormat('Y-m-d');
+        $date = date('jS F Y');
         return '
         <div id="article-' . $counter . '">
             <a class="article-top-link" href="#" onclick="homepageLink()"></a>
             <div class="image-container">
-                <a id="' . $title . '-careers-btn" class="careers-btn" href="#" onclick="homepageLink()"> Careers </a>
+                <a class="careers-btn ' . str_replace(" ", "-", $title) . '-careers-btn" href="#" onclick="homepageLink()"> Careers </a>
                 <img class="article-image" src="' . $article_image . '" alt="Now hiring receptionist artwork">
             </div>
             <div class="block">
                 <h3>
-                    <a href="#" onclick="homepageLink()" id="' . $title . '-title">' . $title . '</a>
+                    <a href="#" class="'.str_replace(" ", "-", $title) .'-title" onclick="homepageLink()">' . $title . '</a>
                     <span class="read-time">' . $read_time . ' </span>
                 </h3> 
                 <p>
                     ' . $info . '
                 </p>
-                <a id="reception-button" class="btn article-buttons" href="#" onclick="homepageLink()"> Read More </a>
+                <a class="btn article-buttons ' .str_replace(" ", "-", $title) . '-button" href="#" onclick="homepageLink()"> Read More </a>
                 <div class="user">
                     <div class="avatar">
                         <img src="'. $author_image . '" class="article-image" alt="Picture of Bethany Shakespear">
@@ -43,7 +43,7 @@
                     <div class="details">
                         <strong class="text-primary">Posted by ' . $author_name . '</strong>
                         <br>
-                        Date
+                        ' . $date . '
                     </div>
                 </div>
             </div>

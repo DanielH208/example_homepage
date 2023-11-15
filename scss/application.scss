@@ -62,6 +62,10 @@
         background-color: transparent !important;   
         color: #333645;
     }
+    #article-1:hover, #article-2:hover, #article-3:hover {
+        margin-top: -20px;
+        margin-bottom: 60px;
+    }
 
     .search-form-button > i {
         font-size: 20px;
@@ -155,6 +159,9 @@
     .header-mobile-icon {
         display: none;
     } 
+    #article-1:hover, #article-2:hover, #article-3:hover {
+        margin-top: -10px;
+    }
     .license {
         max-width: 100%
     }

@@ -67,18 +67,30 @@ div[class^="block"] {
 }
 
 .article-buttons {
-    background-color: #4183d7;;
-    border-color: #4183d7;;
+    background-color: #4183d7;
+    border-color: #4183d7;
 } 
 
-#receptionist-title {
-    color: #926fb1;;
+
+a[class$="Technician-button"], a[class$="Technician-careers-btn"] {
+    background-color: #4183d7;
+    border-color: #4183d7;
 }
 
-#reception-button, #receptionist-careers-btn {
-    background-color: #926fb1;;
+a[class$="Receptionist-button"], a[class$="Receptionist-careers-btn"]  {
+    
+    background-color: #926fb1;
     border-color: #926fb1;
 }
+
+a[class$="Technician-title"] {
+    color: #4183d7 !important;
+}
+
+a[class$="Receptionist-title"] {
+    color: #926fb1 !important;
+}
+
 
 .article-top-link {
     position: absolute;

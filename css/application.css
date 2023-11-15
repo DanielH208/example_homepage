@@ -250,10 +250,6 @@
   text-decoration: underline;
 }
 
-.article-list > div:hover {
-  margin-top: -10px;
-}
-
 .link-row li > a:hover {
   text-decoration: underline;
   cursor: pointer;
@@ -1540,13 +1536,22 @@ div[class^=block] {
   border-color: #4183d7;
 }
 
-#receptionist-title {
-  color: #926fb1;
+a[class$=Technician-button], a[class$=Technician-careers-btn] {
+  background-color: #4183d7;
+  border-color: #4183d7;
 }
 
-#reception-button, #receptionist-careers-btn {
+a[class$=Receptionist-button], a[class$=Receptionist-careers-btn] {
   background-color: #926fb1;
   border-color: #926fb1;
+}
+
+a[class$=Technician-title] {
+  color: #4183d7 !important;
+}
+
+a[class$=Receptionist-title] {
+  color: #926fb1 !important;
 }
 
 .article-top-link {
@@ -2215,6 +2220,10 @@ footer {
     background-color: transparent !important;
     color: #333645;
   }
+  #article-1:hover, #article-2:hover, #article-3:hover {
+    margin-top: -20px;
+    margin-bottom: 60px;
+  }
   .search-form-button > i {
     font-size: 20px;
   }
@@ -2298,6 +2307,9 @@ footer {
   }
   .header-mobile-icon {
     display: none;
+  }
+  #article-1:hover, #article-2:hover, #article-3:hover {
+    margin-top: -10px;
   }
   .license {
     max-width: 100%;
