@@ -11,8 +11,8 @@
             ');
             return $pdoStatement->fetchAll();
             //debug_to_console($db_data);
-        } catch (Exception $exception) {
-            echo "Database query failed: " . $exception->getMessage();
+        } catch (Exception $e) {
+            echo "Database query failed: " . $e->getMessage();
             exit;
         }
     }

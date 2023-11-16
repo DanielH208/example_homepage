@@ -1402,6 +1402,34 @@ picture > img {
   background-color: white;
 }
 
+#offices-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.offices-item {
+  width: 45%;
+  flex-grow: 1;
+  margin: 0px 15px 20px 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+
+.offices-item > img {
+  width: 100%;
+}
+
+.contact-office-image {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.contact-location-images {
+  border-radius: 0px 0px 20px 20px;
+  margin-bottom: -7px;
+}
+
 .brand-background {
   background-color: #333645;
   color: white;
