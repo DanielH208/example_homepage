@@ -1409,12 +1409,17 @@ picture > img {
 }
 
 .offices-item {
-  width: 45%;
+  width: 100%;
   flex-grow: 1;
   margin: 0px 15px 20px 15px;
   border-radius: 20px;
   border: 1px solid #ccc;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+
+.invalid {
+  border-color: red !important;
+  color: purple;
 }
 
 .offices-item > img {
@@ -1427,6 +1432,7 @@ picture > img {
 
 .contact-location-images {
   border-radius: 0px 0px 20px 20px;
+  height: 250px;
   margin-bottom: -7px;
 }
 
@@ -2484,6 +2490,9 @@ footer {
   }
   .services-header {
     margin: 0px 18px 0px 17px;
+  }
+  .offices-item {
+    width: 45%;
   }
 }
 @media (min-width: 1260px) {

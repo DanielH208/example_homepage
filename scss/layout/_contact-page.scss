@@ -14,7 +14,7 @@
 }
 
 .offices-item { 
-    width: 45%;
+    width: 100%;
     flex-grow: 1;
     margin: 0px 15px 20px 15px;
     border-radius: 20px;
@@ -22,7 +22,10 @@
     box-shadow: 0 3px 35px rgba(0,0,0,.1);
 }
 
-
+.invalid {
+    border-color: red !important;
+    color: purple;
+}
 
 .offices-item > img { 
     width: 100%;  
@@ -34,5 +37,6 @@
 
 .contact-location-images {
     border-radius: 0px 0px 20px 20px;
+    height: 250px;
     margin-bottom: -7px;
 }

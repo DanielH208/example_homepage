@@ -1,4 +1,14 @@
 <?php 
+
+    session_start();
+
+    if (!isset($_SESSION['success'])) {
+        $_SESSION['success'] = false;
+    }
+    if (!isset($_SESSION['errMsg'])) {
+        $_SESSION['errMsg'] = '';
+    }
+
     function debug_to_console($data, $context = 'Debug in Console') {
 
         // Buffering to solve problems frameworks, like header() in this and not a solid return.
@@ -18,17 +28,36 @@
         return $data;
     }
 
-    function validate_input($data, $regex=null, $name) {
+    
+ 
+
+    function validate_input($data, $name, $regex=true) {
+        //$aErrors = isset($_SESSION['myErrors']) ? $_SESSION['myErrors'] : []; 
         if (empty($data) == true) {
             debug_to_console($name . " has no value");
+            //$msg = $name . " has no value";
+            $_SESSION['errMsg'] = $name . " has no value";
+            $_SESSION[$name ."-valid"] = false;
+            debug_to_console($_SESSION[$name ."-valid"]);
+            //header('Location: index.php?msg='.$msg);
+            //$aErrors[$msg];
             return false;
+            exit();
         }
         else if ($regex == false) {
-            $$data = " ";
+            //$$data = " ";
             debug_to_console($data . " is not a valid " . $name);
+            $msg = $data . " is not a valid " . $name;
+            $_SESSION['errMsg'] = $data . " is not a valid " . $name;
+            $_SESSION[$name ."-valid"] = false;
+            //header('Location: index.php?msg='.$msg);
+            //$aErrors[$msg];
             return false;
+            exit();
         }
+        $_SESSION[$name ."-valid"] = true;
         return true;
+        //$_SESSION['myErrors'] = $aErrors; s
     }
 
 
@@ -37,23 +66,52 @@
 
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
         //debug_to_console(htmlspecialchars($_POST["name"]));
         // Filter out any invalid or malicious inputs and store form values inside corresponding variables
         $name = santise_input($_POST["name"]);
+        $_SESSION['name'] = $name;
         $email = santise_input($_POST["email"]);
+        $_SESSION['email'] = $email;
         $company = santise_input($_POST["comp-name"]);
+        $_SESSION['company'] = $company;
         $phone = santise_input($_POST["telephone-num"]);
+        $_SESSION['telephone'] = $phone;
         $message = santise_input($_POST["message"]);
+        $_SESSION['message'] = $message;
         
+        // Session variables for storing whether an input is valid 
+        $_session['name-valid'] = true;
+        $_session["email-valid"]= true;
+        $_session["telephone number-valid"]= true;
+        $_session["message-valid"]= true;
+
+
         // If all inputs are validated to true call function to send data to database
         if (
-            validate_input($name, preg_match("/^[a-zA-Z-' ]*$/", $name) ,"name")  && 
-            validate_input($email, filter_var($email, FILTER_VALIDATE_EMAIL), "email") && 
-            validate_input($phone, preg_match("/^\\+?[1-9][0-9]{7,14}$/", $phone), "telephone number")
+            validate_input($name,"name", preg_match("/^[a-zA-Z-' ]*$/", $name))  && 
+            validate_input($email, "email", filter_var($email, FILTER_VALIDATE_EMAIL)) && 
+            validate_input($phone, "telephone number", preg_match("/^\\+?[1-9][0-9]{7,14}$/", $phone)) && 
+            validate_input($message, "message")
             ) 
             {
             sendData($name, $email, $company, $phone, $message);
+            unset($_SESSION['name']);
+            unset($_SESSION['email']);
+            unset($_SESSION['company']);
+            unset($_SESSION['telephone']);
+            unset($_SESSION['message']);
+                
+            $_session["name-valid"];
+            unset($_session["email-valid"]);
+            unset($_session["telephone number-valid"]);
+            unset($_session["message-valid"]);
+
+            $_SESSION['success'] = true;
+            $_SESSION['errMsg'] = '';
         } 
+        header('Location: contact.php#enquiry-submit-button');
+        exit();
     }
 ?>
 
@@ -152,19 +210,33 @@
                         </div>
                         <div id="enquiry-container">
                             <form action="contact.php" method="post">
-                                <label for="name">Your Name</label>
-                                <input name="name"> 
-                                <label for="comp-name">Company Name</label>
-                                <input name="comp-name">
-                                <label for="email">Your Email</label>
-                                <input name="email">
-                                <label for="telephone-num">Your Telephone Number</label>
-                                <input name="telephone-num">
-                                <label for="message">Message</label>
-                                <textarea name="message">
-                                    Hi, I am interested in discussing a Our Offices solution, 
-                                    could you please give me a call or send an email?
-                                </textarea>
+                                <label for="name" class="required">Your Name <span class="required-input">*</span></label>
+                                <input name="name" class="form-name-input <?php if($_SESSION['name-valid'] == false){
+                                echo 'invalid';} else if (empty($_SESSION['name-valid']) == true) {
+                                    echo '';
+                                };
+                                ?>" value="<?= $_SESSION['name'] ?? '' ?>">
+                                <label for="comp-name" class="required">Company Name </label>
+                                <input name="comp-name" value="<?= $_SESSION['company'] ?? '' ?>">
+                                <label for="email" class="required">Your Email <span class="required-input">*</span></label>
+                                <input name="email" class="form-name-input <?php if($_SESSION['email-valid'] == false){
+                                echo 'invalid';} else if (empty($_SESSION['email-valid']) == true) {
+                                    echo '';
+                                };
+                                ?>" value="<?= $_SESSION['email'] ?? '' ?>">
+                                <label for="telephone-num" class="required">Your Telephone Number <span class="required-input">*</span></label>
+                                <input name="telephone-num" class="form-name-input <?php if($_SESSION['telephone number-valid'] == false){
+                                echo 'invalid';} else if (empty($_SESSION['telephone number-valid']) == true) {
+                                    echo '';
+                                };
+                                ?>" value="<?= $_SESSION['telephone'] ?? '' ?>">
+                                <label for="message" class="required">Message <span class="required-input">*</span></label>
+                                <textarea name="message" placeholder="Hi, I am interested in discussing a Our Offices solution, 
+                                    could you please give me a call or send an email?" class="form-name-input <?php if($_SESSION['message-valid'] == false){
+                                echo 'invalid';} else if (empty($_SESSION['message-valid']) == true) {
+                                    echo '';
+                                };
+                                ?>" value="<?= $_SESSION['message'] ?? '' ?>"></textarea>
                                 <div class="form-group" >
                                     <label class="media">
                                         <span class="media-left checkbox-left">
@@ -181,7 +253,19 @@
                                         </span>    
                                     </label>            
                                 </div>
-                                <button type="submit">Send Enquiry</button>
+                                <span class="enquiry-error<?php if ($_SESSION['errMsg']) echo '-active' ?>">
+                                <?php
+                                    echo $_SESSION['errMsg'];
+                                    unset($_SESSION['errMsg']);
+                                    ?>
+                                </span>
+                                <?php
+                                if ($_SESSION['success']) {
+                                    echo "<span class='Equiry-success-message'>Thank you for your enquiry</span>";
+                                    unset($_SESSION['success']);
+                                }
+                                ?>
+                                <button type="submit" id="enquiry-submit-button">Send Enquiry</button>
                                 <div id="contact-enquiry-info">
                                 </div>
                             </form>
