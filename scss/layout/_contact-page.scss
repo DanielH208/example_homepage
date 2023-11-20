@@ -24,8 +24,39 @@
 
 .invalid {
     border-color: red !important;
-    color: purple;
 }
+
+#show-hiddent-contact-details {
+    cursor: pointer;
+}
+
+#enquiry-form { 
+    background-color: #e6e7e9;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.hidden-contact-details {
+    transition: top 2s ease 0s;
+    display: none;
+}
+
+.show-details {
+    display: block;
+}
+
+#enquiry-input-row > input, textarea {
+    width: 100% !important;
+}
+
+.enquiry-error-active {
+    color: red;
+} 
+
+.Equiry-success-message {
+    color: green;
+}
+
 
 .offices-item > img { 
     width: 100%;  

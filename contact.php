@@ -64,7 +64,7 @@
         $_SESSION['message'] = $message;
 
         $marketing = $_POST["marketing-checkbox"];
-        
+
         if ($marketing != "yes") { 
             $marketing = "no";
         } 
@@ -194,49 +194,64 @@
                             </ul>
                         </div>
                         <div id="enquiry-container">
-                        <form action="contact.php" method="post">
-                                <label for="name" class="required">Your Name <span class="required-input">*</span></label>
-                                <input name="name" class="form-name-input <?php if(isset($_SESSION['name-valid']) && !$_SESSION['name-valid'])  echo 'invalid'?>" value="<?= $_SESSION['name'] ?? '' ?>">
-                                <label for="comp-name" class="required">Company Name </label>
-                                <input name="comp-name" value="<?= $_SESSION['company'] ?? '' ?>">
-                                <label for="email" class="required">Your Email <span class="required-input">*</span></label>
-                                <input name="email" class="form-name-input <?php if(isset($_SESSION['email-valid']) && !$_SESSION['email-valid'])  echo 'invalid'?>" value="<?= $_SESSION['email'] ?? '' ?>">
-                                <label for="telephone-num" class="required">Your Telephone Number <span class="required-input">*</span></label>
-                                <input name="telephone-num" value="<?= $_SESSION['telephone'] ?? '' ?>" class="form-name-input <?php if(isset($_SESSION['telephone number-valid']) && !$_SESSION['telephone number-valid'])  echo 'invalid'?>">
-                                <label for="message" class="required">Message <span class="required-input">*</span></label>
-                                <textarea name="message" placeholder="Hi, I am interested in discussing a Our Offices solution, 
-                                    could you please give me a call or send an email?" class="form-name-input <?php if(isset($_SESSION['message-valid']) && !$_SESSION['message-valid'])  echo 'invalid'?>" value="<?= $_SESSION['message'] ?? '' ?>"></textarea>
-                                <div class="form-group" >
-                                    <label class="media">
-                                        <span class="media-left checkbox-left">
-                                            <span class="checkbox">
-                                                <input type="checkbox" name="marketing-checkbox" value="yes">
-                                                <span id="checkbox-bfr" class="mdi-"></span>
-                                            </span>  
-                                        </span>         
-                                        <span class="media-body">
-                                            Please tick this box if you wish to receive marketing information from us.
-                                            Please see our
-                                            <a id="privacy-link" href="#" onclick="homepageLink()">Privacy Policy</a>
-                                            for more information on how we keep your data safe.
-                                        </span>    
-                                    </label>            
+                            <div id="enquiry-contact-details">
+                                <p><strong>Email us on:</strong><br></p>
+                                <p><a href="mailto:sales@netmatters.com">sales@netmatters.com</a></p>
+                                <p><strong>Business hours:</strong></p>
+                                <p><strong>Monday - Friday 07:00 - 18:00&nbsp;</strong></p>
+                                <a id="show-hiddent-contact-details" onclick="showHidden()">Out of hours IT support</a>
+                                <div class="hidden-contact-details ">
+                                    <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+                                    <p><strong>Monday - Friday 18:00 - 22:00</strong></p><br>
+                                    <p><strong>Saturday 08:00 - 16:00</strong></p><br>
+                                    <p><strong>Sunday 10:00 - 18:00</strong></p><br>
+                                    <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours&nbsp; voicemail. A technician will contact you on the number provided within 45 minutes of your call.&nbsp;</p>
                                 </div>
-                                <span class="enquiry-error<?php if ($_SESSION['errMsg']) echo '-active' ?>">
-                                <?php
-                                    echo $_SESSION['errMsg'];
-                                    unset($_SESSION['errMsg']);
+                            </div>  
+                            <form id="enquiry-form" action="contact.php" method="post">
+                                    <div id="enquiry-input-row">
+                                        <label for="name" class="required">Your Name <span class="required-input">*</span></label><br>
+                                        <input name="name" class="form-name-input <?php if(isset($_SESSION['name-valid']) && !$_SESSION['name-valid'])  echo 'invalid'?>" value="<?= $_SESSION['name'] ?? '' ?>"><br>
+                                        <label for="comp-name" class="required">Company Name </label><br>
+                                        <input name="comp-name" value="<?= $_SESSION['company'] ?? '' ?>"><br>
+                                        <label for="email" class="required">Your Email <span class="required-input">*</span></label><br>
+                                        <input name="email" class="form-name-input <?php if(isset($_SESSION['email-valid']) && !$_SESSION['email-valid'])  echo 'invalid'?>" value="<?= $_SESSION['email'] ?? '' ?>"><br>
+                                        <label for="telephone-num" class="required">Your Telephone Number <span class="required-input">*</span></label><br>
+                                        <input name="telephone-num" value="<?= $_SESSION['telephone'] ?? '' ?>" class="form-name-input <?php if(isset($_SESSION['telephone number-valid']) && !$_SESSION['telephone number-valid'])  echo 'invalid'?>"><br>
+                                    </div>  
+                                    <label for="message" class="required">Message <span class="required-input">*</span></label><br>
+                                    <textarea name="message" placeholder="Hi, I am interested in discussing a Our Offices solution, 
+                                        could you please give me a call or send an email?" class="form-name-input <?php if(isset($_SESSION['message-valid']) && !$_SESSION['message-valid'])  echo 'invalid'?>" value="<?= $_SESSION['message'] ?? '' ?>"></textarea><br>
+                                    <div class="form-group" >
+                                        <label class="media">
+                                            <span class="media-left checkbox-left">
+                                                <span class="checkbox">
+                                                    <input type="checkbox" name="marketing-checkbox" value="yes">
+                                                    <span id="checkbox-bfr" class="mdi-"></span>
+                                                </span>  
+                                            </span>         
+                                            <span class="media-body">
+                                                Please tick this box if you wish to receive marketing information from us.
+                                                Please see our
+                                                <a id="privacy-link" href="#" onclick="homepageLink()">Privacy Policy</a>
+                                                for more information on how we keep your data safe.
+                                            </span>    
+                                        </label>            
+                                    </div>
+                                    <span class="enquiry-error<?php if ($_SESSION['errMsg']) echo '-active' ?>">
+                                    <?php
+                                        echo $_SESSION['errMsg'];
+                                        unset($_SESSION['errMsg']);
+                                        ?>
+                                    </span>
+                                    <?php
+                                    if ($_SESSION['success']) {
+                                        echo "<span class='Equiry-success-message'>Thank you for your enquiry</span>";
+                                        unset($_SESSION['success']);
+                                    }
                                     ?>
-                                </span>
-                                <?php
-                                if ($_SESSION['success']) {
-                                    echo "<span class='Equiry-success-message'>Thank you for your enquiry</span>";
-                                    unset($_SESSION['success']);
-                                }
-                                ?>
-                                <button type="submit" id="enquiry-submit-button">Send Enquiry</button>
-                                <div id="contact-enquiry-info">
-                                </div>
+                                    <br>
+                                    <button type="submit" id="enquiry-submit-button">Send Enquiry</button>
                             </form>
                         </div>
                     </div>
@@ -245,8 +260,8 @@
                 <?php include("php/footer.php"); ?>
             </div>
         </main>
-        <script src="js/jquery-3.7.0.min.js"></script>
-        <script src="js/slick/slick.js"></script>
-        <script src="js/app.js"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/slick/slick.js"></script>
+    <script src="js/app.js"></script>
     </body>
 </html>
