@@ -40,7 +40,18 @@ function enableScroll() {
     window.onscroll = function() {};
 }
 
+let hidden = true;
 
+function showHidden() {
+    if (hidden == true) {
+        $(".hidden-contact-details").addClass("show-details");
+        hidden = false;
+    } 
+    else {
+        $(".hidden-contact-details").removeClass("show-details");
+        hidden = true;
+    }
+}
 
 function homepageLink() {
     $(".header").addClass("nav-down").removeClass("nav-up");
@@ -155,6 +166,9 @@ $("#main-content").on("click", function () {
         open = false;
     }
 });
+
+
+
 
 
 function checkbox_check() {
