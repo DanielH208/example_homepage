@@ -4,6 +4,7 @@
 
 #enquiry-container { 
     background-color: white;
+    padding-bottom: 30px;
 }
 
 #offices-row {
@@ -34,6 +35,11 @@
     background-color: #e6e7e9;
     border-radius: 10px;
     padding: 30px;
+}
+
+#enquiry-form, #enquiry-contact-details {
+    position: relative;
+    margin: 0px 15px;
 }
 
 .hidden-contact-details {
@@ -68,6 +74,11 @@
 
 .contact-location-images {
     border-radius: 0px 0px 20px 20px;
+    object-fit: cover;
     height: 250px;
     margin-bottom: -7px;
+}
+
+#offices-container {
+    padding: 0px;
 }

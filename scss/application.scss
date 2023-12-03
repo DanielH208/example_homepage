@@ -220,6 +220,9 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+    #enquiry-form {
+        height: 711px;
+    }
     
 }
 
@@ -323,6 +326,9 @@
     .offices-item { 
         width: 45%;
     }
+    #enquiry-form {
+        height: 499px;
+    }
 }
 
 @media (min-width: 1260px) {
@@ -401,6 +407,22 @@
     footer {
         padding-top: 47px;
     }
+    #enquiry-form {
+        right: 33.33333333%;
+        width: 66.66666667%;
+        float: left;
+        height: 531px;
+    }
+    #enquiry-contact-details {
+        left: 66.66666667%;
+        width: 33.33333333%;
+        float: left;  
+        
 
+    }
+    #enquiry-container {
+        display: flex;
+        flex-direction: row;
+    }
 
 }

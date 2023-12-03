@@ -1400,6 +1400,7 @@ picture > img {
 
 #enquiry-container {
   background-color: white;
+  padding-bottom: 30px;
 }
 
 #offices-row {
@@ -1429,6 +1430,11 @@ picture > img {
   background-color: #e6e7e9;
   border-radius: 10px;
   padding: 30px;
+}
+
+#enquiry-form, #enquiry-contact-details {
+  position: relative;
+  margin: 0px 15px;
 }
 
 .hidden-contact-details {
@@ -1462,8 +1468,13 @@ picture > img {
 
 .contact-location-images {
   border-radius: 0px 0px 20px 20px;
+  object-fit: cover;
   height: 250px;
   margin-bottom: -7px;
+}
+
+#offices-container {
+  padding: 0px;
 }
 
 .brand-background {
@@ -2430,6 +2441,9 @@ footer {
     padding-left: 15px;
     padding-right: 15px;
   }
+  #enquiry-form {
+    height: 711px;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -2524,6 +2538,9 @@ footer {
   .offices-item {
     width: 45%;
   }
+  #enquiry-form {
+    height: 499px;
+  }
 }
 @media (min-width: 1260px) {
   .container {
@@ -2598,6 +2615,21 @@ footer {
   }
   footer {
     padding-top: 47px;
+  }
+  #enquiry-form {
+    right: 33.33333333%;
+    width: 66.66666667%;
+    float: left;
+    height: 531px;
+  }
+  #enquiry-contact-details {
+    left: 66.66666667%;
+    width: 33.33333333%;
+    float: left;
+  }
+  #enquiry-container {
+    display: flex;
+    flex-direction: row;
   }
 }
 
