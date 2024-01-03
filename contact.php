@@ -127,68 +127,78 @@
         <main>
             <?php include("php/header.php"); ?>
             <div id="main-content" class="main-content-contact">
-                <div id="enquiry-container">
+                <div id="top-link-path">
                     <div class="container">
-                        <div>
-                            <p><a>Home</a> / Our Offices</p>
-                        </div>
+                        <p><a id="return-home-link" href="/"><strong>Home</strong></a> / Our Offices</p>
+                    </div>
+                </div>
+                <div id="enquiry-container">
+                    <div class="container">       
                         <h1>Our Offices</h1> 
                         <div id="offices-container" class="container">
                             <ul id="offices-row">
                                 <div class="offices-item">
                                     <img class="contact-office-image" src="assets/images/contact-page/asset-1.jpeg"/>
-                                    <a><h2>London Office</h2></a>
-                                    <p>
-                                        Unit G6,<br>
-                                        Pixel Business Centre,<br>
-                                        110 Brooker Road, Waltham Abbey,<br>
-                                        London,<br>
-                                        EN9 1JH
-                                    </p>
-                                    <a><h1>02045 397354</h1></a>
-                                    <a>VIEW MORE</a>
+                                    <div class="office-content">
+                                        <a><h2>London Office</h2></a>
+                                        <p>
+                                            Unit G6,<br>
+                                            Pixel Business Centre,<br>
+                                            110 Brooker Road, Waltham Abbey,<br>
+                                            London,<br>
+                                            EN9 1JH
+                                        </p>
+                                        <a><h1>02045 397354</h1></a>
+                                        <a class="office-button">VIEW MORE</a>
+                                    </div>
                                     <img class="contact-location-images" src="assets/images/contact-page/london-loc.jpeg"/>
                                 </div>
                                 <div class="offices-item">
                                     <img class="contact-office-image" src="assets/images/contact-page/asset-31.jpeg"/>
-                                    <a><h2>Cambridge Office</h2></a>
-                                    <p>
-                                        Unit 1.31,<br>
-                                        St John's Innovation Centre,<br>
-                                        Cowley Road, Milton,<br>
-                                        Cambridge,<br>
-                                        CB4 0WS
-                                    </p>
-                                    <a><h1>01223 37 57 72</h1></a>
-                                    <a>VIEW MORE</a>
+                                    <div class="office-content">
+                                        <a><h2>Cambridge Office</h2></a>
+                                        <p>
+                                            Unit 1.31,<br>
+                                            St John's Innovation Centre,<br>
+                                            Cowley Road, Milton,<br>
+                                            Cambridge,<br>
+                                            CB4 0WS
+                                        </p>
+                                        <a><h1>01223 37 57 72</h1></a>
+                                        <a class="office-button">VIEW MORE</a>
+                                    </div>
                                     <img class="contact-location-images" src="assets/images/contact-page/cambridge-loc.jpeg"/>
                                 </div>
                                 <div class="offices-item">
                                     <img class="contact-office-image" src="assets/images/contact-page/asset-38.jpeg"/>
-                                    <a><h2>Wymondham Office</h2></a>
-                                    <p>
-                                        Unit 15,<br>
-                                        Penfold Drive,<br>
-                                        Gateway 11 Business Park,<br>
-                                        Wymondham, Norfolk,<br>
-                                        NR18 0WZ
-                                    </p>
-                                    <a><h1>01603 70 40 20</h1></a>
-                                    <a>VIEW MORE</a>
+                                    <div class="office-content">
+                                        <a><h2>Wymondham Office</h2></a>
+                                        <p>
+                                            Unit 15,<br>
+                                            Penfold Drive,<br>
+                                            Gateway 11 Business Park,<br>
+                                            Wymondham, Norfolk,<br>
+                                            NR18 0WZ
+                                        </p>
+                                        <a><h1>01603 70 40 20</h1></a>
+                                        <a class="office-button">VIEW MORE</a>
+                                    </div>
                                     <img class="contact-location-images" src="assets/images/contact-page/wymondham-loc.jpeg"/>
                                 </div>
                                 <div class="offices-item">
                                     <img class="contact-office-image" src="assets/images/contact-page/asset-45.jpeg"/>
-                                    <a><h2>Great Yarmouth Office</h2></a>
-                                    <p>
-                                        Suite F23,<br>
-                                        Beacon Innovation Centre,<br>
-                                        Beacon Park, Gorleston,<br>
-                                        Great Yarmouth, Norfolk<br>
-                                        NR31 7RA
-                                    </p>
-                                    <a><h1>01493 60 32 04</h1></a>
-                                    <a>VIEW MORE</a>
+                                    <div class="office-content">
+                                        <a><h2>Great Yarmouth Office</h2></a>
+                                        <p>
+                                            Suite F23,<br>
+                                            Beacon Innovation Centre,<br>
+                                            Beacon Park, Gorleston,<br>
+                                            Great Yarmouth, Norfolk<br>
+                                            NR31 7RA
+                                        </p>
+                                        <a><h1>01493 60 32 04</h1></a>
+                                        <a class="office-button">VIEW MORE</a>
+                                    </div>
                                     <img class="contact-location-images" src="assets/images/contact-page/yarmouth-loc.jpeg"/>
                                 </div>
                             </ul>

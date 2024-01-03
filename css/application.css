@@ -1477,6 +1477,81 @@ picture > img {
   padding: 0px;
 }
 
+.office-content {
+  padding: 30px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.office-content h2, .office-content p {
+  margin: 0px 0px 15px 0px;
+}
+
+.office-content h2 {
+  font-weight: 400;
+  color: #333645;
+  text-decoration: none;
+}
+
+.office-content p {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+  color: #666666;
+}
+
+.office-content h1 {
+  font-weight: 1000;
+  font-size: 26px;
+  color: #926fb1 !important;
+}
+
+.office-button {
+  margin-top: 15px;
+  padding: 5px 30px;
+  color: #fff;
+  background-color: #926fb1;
+  border-color: #926fb1;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  line-height: 35px;
+  font-size: 14.4px;
+  cursor: pointer;
+  width: 82px;
+}
+
+#enquiry-input-row input {
+  height: 47px;
+  padding: 5px 15px;
+  border-color: #ccc;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  width: 100%;
+}
+
+#top-link-path {
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1) !important;
+  padding: 14px 0 13px;
+  background: white;
+  color: #666666;
+}
+
+#top-link-path p {
+  color: #333645;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+}
+
+#return-home-link {
+  color: #333645;
+  font-weight: 1000;
+}
+
 .brand-background {
   background-color: #333645;
   color: white;
