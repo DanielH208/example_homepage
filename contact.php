@@ -218,19 +218,19 @@
                                     <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours&nbsp; voicemail. A technician will contact you on the number provided within 45 minutes of your call.&nbsp;</p>
                                 </div>
                             </div>  
-                            <form id="enquiry-form" action="contact.php" method="post">
+                            <form id="enquiry-form" action="contact.php" method="post" onsubmit="return validateInputs()">
                                     <div id="enquiry-input-row">
                                         <label for="name" class="required">Your Name <span class="required-input">*</span></label><br>
-                                        <input name="name" class="form-name-input <?php if(isset($_SESSION['name-valid']) && !$_SESSION['name-valid'])  echo 'invalid'?>" value="<?= $_SESSION['name'] ?? '' ?>"><br>
+                                        <input id="contact-name-input" name="name" class="form-name-input <?php if(isset($_SESSION['name-valid']) && !$_SESSION['name-valid'])  echo 'invalid'?>" value="<?= $_SESSION['name'] ?? '' ?>"><br>
                                         <label for="comp-name" class="required">Company Name </label><br>
                                         <input name="comp-name" value="<?= $_SESSION['company'] ?? '' ?>"><br>
                                         <label for="email" class="required">Your Email <span class="required-input">*</span></label><br>
-                                        <input name="email" class="form-name-input <?php if(isset($_SESSION['email-valid']) && !$_SESSION['email-valid'])  echo 'invalid'?>" value="<?= $_SESSION['email'] ?? '' ?>"><br>
+                                        <input id="email-contact-input" name="email" class="form-name-input <?php if(isset($_SESSION['email-valid']) && !$_SESSION['email-valid'])  echo 'invalid'?>" value="<?= $_SESSION['email'] ?? '' ?>"><br>
                                         <label for="telephone-num" class="required">Your Telephone Number <span class="required-input">*</span></label><br>
-                                        <input name="telephone-num" value="<?= $_SESSION['telephone'] ?? '' ?>" class="form-name-input <?php if(isset($_SESSION['telephone number-valid']) && !$_SESSION['telephone number-valid'])  echo 'invalid'?>"><br>
+                                        <input id="phone-contact-input" name="telephone-num" value="<?= $_SESSION['telephone'] ?? '' ?>" class="form-name-input <?php if(isset($_SESSION['telephone number-valid']) && !$_SESSION['telephone number-valid'])  echo 'invalid'?>"><br>
                                     </div>  
                                     <label for="message" class="required">Message <span class="required-input">*</span></label><br>
-                                    <textarea name="message" placeholder="Hi, I am interested in discussing a Our Offices solution, 
+                                    <textarea id="contact-message-input" name="message" placeholder="Hi, I am interested in discussing a Our Offices solution, 
                                         could you please give me a call or send an email?" class="form-name-input <?php if(isset($_SESSION['message-valid']) && !$_SESSION['message-valid'])  echo 'invalid'?>" value="<?= $_SESSION['message'] ?? '' ?>"></textarea><br>
                                     <div class="form-group" >
                                         <label class="media">

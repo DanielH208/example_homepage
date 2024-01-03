@@ -6,6 +6,79 @@ let width = window.innerWidth;
 let open = false;
 let reOpenedNav = false;
 
+function regexPassOrFail(regex, input, field) {
+    if (regex.test(input)) {
+        field.css("border-color", "transparent");
+        return true
+    } else {
+        field.css("border-color", "red");
+        return false
+    }
+}
+
+function empty(input, field) {
+    if (input == "") {
+        field.css("border-color", "red");
+        return false
+    } else {
+        field.css("border-color", "transparent");
+        return true
+    }
+}
+
+function validateInputs() {
+    //event.preventDefault(); 
+
+    const emailRegex = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+    const nameRegex = new RegExp(/^[A-Za-z]+$/);
+    const phoneRegex = new RegExp(/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/);
+
+    let NameInput= $("#contact-name-input").val();
+    let NameField = $("#contact-name-input");
+    
+    let userEmailInput = $("#email-contact-input").val();
+    let emailField = $("#email-contact-input");
+    
+    
+    let phoneInput= $("#phone-contact-input").val();
+    let phoneField= $("#phone-contact-input");
+    
+
+    let textareaInput = $("#contact-message-input").val();
+    let textareaField = $("#contact-message-input");
+
+
+    // empty(NameInput, NameField);
+    // empty(userEmailInput, emailField);
+    // empty(phoneInput, phoneField);
+    // empty(textareaInput, textareaField);
+    // regexPassOrFail(nameRegex, NameInput, NameField);
+    // regexPassOrFail(emailRegex, userEmailInput, emailField);
+    // regexPassOrFail(phoneRegex, phoneInput, phoneField);
+    
+    
+    if (
+        empty(NameInput, NameField) &&
+        empty(userEmailInput, emailField) &&
+        empty(phoneInput, phoneField) &&
+        empty(textareaInput, textareaField)       
+    ) {
+        if (regexPassOrFail(nameRegex, NameInput, NameField) && 
+        regexPassOrFail(emailRegex, userEmailInput, emailField) && 
+        regexPassOrFail(phoneRegex, phoneInput, phoneField))
+        { 
+            return true;
+        }
+
+        else {
+            return false;
+        }
+        
+    } 
+    else {
+        return false;
+    }
+}
 
 
 function checked () { 
