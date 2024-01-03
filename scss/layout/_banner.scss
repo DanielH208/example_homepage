@@ -1,0 +1,104 @@
+@import "../base/colours";
+
+// BANNER SLIDER
+
+.banner {
+    height: 550px;
+    box-sizing: border-box;
+    width: 100%;
+    color: $defualt-white;
+    margin-top: 154px;
+}
+
+#banner-slider {
+    position: relative;
+}
+
+.content {
+    position: relative;
+    z-index: 4;
+    padding: 3.75rem 0;
+}
+
+.image-cover-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 550px;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.image-cover-container > picture {
+    width: 100%;
+    height: 100%;
+}
+
+picture > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 100000000000000000000000000;
+
+}
+
+.text {
+    box-sizing: border-box;
+}
+
+.slick-dots {
+    position: absolute !important;
+    bottom: 350px !important;
+    display: unset !important;
+    top: 420px;
+    left: 0;
+    right: 0;
+    text-align: center !important;
+}
+
+.slick-active::after {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    content: "";
+    left: 1px;
+    width: 18px;
+    height: 19px;
+}
+
+.slick-dots li button { 
+    margin-top: 39px
+}
+
+
+
+.slick-dots li button::before {
+    opacity: 1;
+}
+
+.slick-dots li button:before {
+    top: 22px !important;
+}
+
+.banner-slider-item {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    position: relative;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-slider-item > .content {
+     align-self: center;
+}
+
+.text {
+    margin-bottom: 30px;
+}

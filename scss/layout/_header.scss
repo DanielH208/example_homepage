@@ -1,0 +1,123 @@
+@use "../base/mixins" as mixin;
+@import "../base/colours";
+
+// HEADER 
+
+#header-support-button > img, #header-contact-button > img {
+    filter: invert(100%);
+    width: 23.41px;
+    vertical-align: bottom;
+    padding-bottom: 10px;
+}
+
+.header-actions-buttons, #default-form, #hamburger-menu-btn {
+    align-self: center;
+}
+
+
+#default-form > .search-form-input {
+    background-color: $defualt-white;
+    height: 56px;
+}
+
+#default-form > .search-form-button {
+    position: relative;
+    padding: 7px 20px 3px;
+    height: 56px;
+    font-size: 1.063rem;
+    border-radius: 0 3px 3px 0;
+    border: none;
+    background-color: #999aa2;
+    vertical-align: bottom;
+    background-color: none;
+    line-height: 0px;
+    right: 6px;
+}
+
+
+.nav-header-button-link {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0; 
+    bottom: 0;
+}
+
+/*
+#magni-glass {
+    filter: invert(100%);
+    font-size: 23px;
+    width: 28px;
+    height: 32px;
+}
+*/
+.header-actions {
+    @include mixin.flex-container(row, nowrap);
+}
+
+.header .inner {
+    padding: 20px 0px;
+}
+
+#header-row {
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    height: 70px;
+}
+
+.header-icon {
+    float: left;
+    margin-right: auto;
+    
+}
+.header-icon > a > img {
+    max-width: 370px;
+    width: 100%;
+}
+
+.header-mobile-icon {
+    display: flex;
+    align-items: center;
+}
+
+.header-mobile-icon > img {
+    width: 32.41px;
+    align-self: center;
+}
+
+
+
+
+
+.hamburger--slider .hamburger-inner, .hamburger--slider .hamburger-inner::before, .hamburger--slider .hamburger-inner::after {
+    background-color: $defualt-white !important;
+}
+
+.search-form {
+    //margin-top: 11px;
+    position: relative;
+}
+
+.search-form-input {
+    width: 100%;
+    padding-right: 40px;
+    background-color: rgba(0,0,0,.1);
+    outline: 1px solid hsla(0,0%,100%,.2);
+    //outline: 4px solid hsla(0, 0%, 100%, 0.2);
+    border: 1px solid rgba(0,0,0,.1);
+   // border: 1px solid #e5e5e5;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-sizing: border-box;
+    height: 47px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding: 5px 15px;
+}
+
+.search-form-input:focus {
+    outline-width: 3px;
+    border-width: 2px;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    border-radius: 0px !important;
+}

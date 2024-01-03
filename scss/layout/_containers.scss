@@ -1,0 +1,71 @@
+@use "../base/placeholders";
+@import "../base/colours";
+
+
+html {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+html a {
+    cursor: pointer;
+    color: unset;
+    text-decoration: none;
+}
+
+.stopScroll {
+    height: 100%;
+    overflow: hidden;
+}
+
+#privacy-link {
+    text-decoration: underline;
+}
+
+main {
+    position: relative;
+    transition: all .5s;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    z-index: 1000;
+}
+
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+.container {
+    @extend %auto-margins;
+    padding-left: 15px;
+    padding-right: 15px;  
+}
+
+.body {
+    transition: right 0.5s ease-in-out;
+}
+
+.hide-scroll-bars {
+    overflow: hidden;
+}
+
+.unset-hide-scroll-bars {
+    overflow: show !important;
+}
+
+.open {
+    margin-right: 200px;
+    overflow: hidden;
+    transition: left 0.5s ease-in-out;
+}
+
+.header {
+    height: 168px;
+    position: absolute;
+    top: 0;
+    //transition: top 0.2s ease-in-out;
+    width: 100%;
+    background-color: $defualt-white;
+    z-index: 100000;
+}

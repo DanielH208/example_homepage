@@ -1,0 +1,288 @@
+@import "colours";
+
+// COOKIES 
+#modal-title {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    letter-spacing: .4px;
+    color: $darker-grey-v2;
+}
+
+#modal-body > p {
+    line-height: 1.875rem;
+    margin: 0px 0px 25px 0px;
+    letter-spacing: .4px;
+    color: $light-grey-v3;
+}
+
+// BANNER 
+.brand-background {
+    color: $lightest-white-v4;
+    line-height: 1.875rem;
+    letter-spacing: .4px;
+}
+
+
+
+.text > h1 {
+    font-size: 40px;
+    line-height: 3rem;
+    padding: 0px 0px 20px 0px;
+    font-weight: 600;
+    z-index: 0;
+    color: $lightest-white-v4
+     
+}
+
+.text > p {
+    font-size: 20px;
+    line-height: 1.75rem;
+    margin: unset;
+    padding: 0px 0px 36px 0px;
+    font-weight: 600;
+    color: $lightest-white-v4
+}
+
+
+.banner-btn-web > i {
+    margin-left: 5px;
+}
+
+.brand-header, #company-locations {
+    font-weight: 600;
+}
+
+// BRAND 
+
+#client-quote {
+    font-size: 20.8px;
+    font-weight: 600;
+    font-style: Italic;
+}
+
+#client-quote-author {
+    font-size: 17.6px;
+    color: #a3a8ac;
+}
+
+#client-quote-author > a {
+    color: #fff;
+}
+
+.brand-header {
+    font-size: 36px;
+}
+
+
+// CLIENTS 
+
+.slider-box > h3 {
+    position: relative;
+    font-size: 1.125rem;
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    font-size: 18px;
+    padding-bottom: 17px;
+    margin: 0;
+}
+
+.slider-box > p {
+    font-size: 13px;
+    line-height: 1.375rem;
+    margin: 0px;
+    color: $defualt-white;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.marketing-colour { 
+    background-color: #2ecc71;
+    //background-color: $medium-green;
+    border-color: #2ecc71;
+}
+
+.web-design-colour { 
+    //background-color: $light-purple;
+    background-color: #926fb1;
+    border-color: #926fb1;
+}
+
+.support-colour {
+    //background-color: $medium-blue;
+    background-color: #4183d7;
+    border-color: #4183d7;
+}
+
+.software-colour {
+    //background-color: $medium-grey;
+    background-color: #67809f;
+    border-color: #67809f;
+    
+}
+
+// FOOTER 
+
+footer .container p {
+    font-size: 16px;
+    margin: 0px 0px 26px;
+}
+
+footer .container ul li {
+    font-size: 13px;
+}
+
+#follow-us-header {
+    margin: 24px 0px 26px;
+}
+
+// NAVBAR 
+
+.dropbtn h1 {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: -6px;
+}
+
+.sub-menu-banner > h2 {
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    font-weight: 500;
+}
+
+.dropbtn h2 {
+    font-size: 10px;
+    font-weight: lighter;
+    margin: 0px;
+}
+
+// NEWSLETTER 
+
+.form-signup h2 {
+    font-size: 32px;
+    color: #333645;
+    font-weight: 400;
+    margin: 0px 0px;
+    line-height: 35px;
+}
+
+// SERVICELIST 
+
+#services-footer > h3 {
+    font-size: 26px;
+    
+}
+
+.services-header > h2 {
+    font-size: 43.2px;
+}
+
+.services-header > h3 {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+}
+
+.service-list span.p {
+    font-size: .8125rem;
+    line-height: 1.375rem;
+    margin-bottom: 13px;
+    font-weight: 400;
+}
+
+
+.service-list span.h2 {
+    font-size: 1.3rem;
+    position: relative;
+    padding-bottom: 10px;
+    margin: 0 0 11px;
+}
+
+// SIDENAV 
+
+#side-nav-company-info h2 {
+    font-size: 14px !important;
+    line-height: 20px;
+    font-weight: 100;
+    text-align: left;
+}
+
+#side-nav-company-info > li > a > h1 {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#side-nav-services > li > a > h3 {
+    margin: 0px 0px; 
+    font-size: 10px;
+    font-weight: 100;
+}
+
+#side-nav-services > li > a > h1 {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.sidenav-sub-menu-item > a > h2 {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+#side-nav-bar h2 {
+    margin: 0px;
+    font-size: 16px;
+}
+
+// NEWS 
+
+.article-list p {
+    font-size: 13px;
+    margin: 0px 0px 30px 0px;
+}
+
+.article-list .block > h3 {
+    font-size: 17px;
+    margin: 0px 0px 15px 0px;
+}
+
+.article-list .user {
+    margin-top: 35px;
+}
+
+.article-list .user .avatar > img {
+    border-radius: 100%;
+}
+
+
+.article-list .article-buttons {
+    line-height: 35px;
+    padding: 12px 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.063rem;
+    border: 1px transparent;
+    border-radius: 3px;
+}
+
+.latest-articles .heading-container > h2 {
+    color: black;
+    font-size: 36px;
+}
+
+.latest-articles .heading-container > h3 {
+    color: black;
+    font-size: 26px;
+}
+
+.careers-title {
+    color: $medium-blue
+}
+
+.smallestvp-view-all {
+    color: black;
+    font-size: 26px;
+    font-weight: bold;
+}
