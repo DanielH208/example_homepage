@@ -77,11 +77,16 @@
         $_SESSION["message-valid"] = true;
 
 
+        validate_input($name,"name", preg_match("/^[a-zA-Z-' ]*$/", $name));
+        validate_input($email, "email", filter_var($email, FILTER_VALIDATE_EMAIL));
+        validate_input($phone, "telephone number", preg_match("/^\+?\(?([0-9]{2,4})[)\s\d.-]+([0-9]{3,4})([\s.-]+([0-9]{3,4}))?$/", $phone));
+        validate_input($message, "message");
+
         // If all inputs are validated to true call function to send data to database
         if (
             validate_input($name,"name", preg_match("/^[a-zA-Z-' ]*$/", $name))  && 
             validate_input($email, "email", filter_var($email, FILTER_VALIDATE_EMAIL)) && 
-            validate_input($phone, "telephone number", preg_match("/^\\+?[1-9][0-9]{7,14}$/", $phone)) && 
+            validate_input($phone, "telephone number", preg_match("/^\+?\(?([0-9]{2,4})[)\s\d.-]+([0-9]{3,4})([\s.-]+([0-9]{3,4}))?$/", $phone)) && 
             validate_input($message, "message")
             ) 
             {
@@ -218,7 +223,7 @@
                                     <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours&nbsp; voicemail. A technician will contact you on the number provided within 45 minutes of your call.&nbsp;</p>
                                 </div>
                             </div>  
-                            <form id="enquiry-form" action="contact.php" method="post" onsubmit="return validateInputs()">
+                            <form id="enquiry-form" action="contact.php" method="post">
                                     <div id="enquiry-input-row">
                                         <label for="name" class="required">Your Name <span class="required-input">*</span></label><br>
                                         <input id="contact-name-input" name="name" class="form-name-input <?php if(isset($_SESSION['name-valid']) && !$_SESSION['name-valid'])  echo 'invalid'?>" value="<?= $_SESSION['name'] ?? '' ?>"><br>

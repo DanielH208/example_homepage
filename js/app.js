@@ -19,6 +19,7 @@ function regexPassOrFail(regex, input, field) {
 function empty(input, field) {
     if (input == "") {
         field.css("border-color", "red");
+        //field.css("border-width", "20px");
         return false
     } else {
         field.css("border-color", "transparent");
@@ -31,7 +32,7 @@ function validateInputs() {
 
     const emailRegex = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
     const nameRegex = new RegExp(/^[A-Za-z]+$/);
-    const phoneRegex = new RegExp(/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/);
+    const phoneRegex = new RegExp(/^\+?\(?([0-9]{2,4})[)\s\d.-]+([0-9]{3,4})([\s.-]+([0-9]{3,4}))?$/);
 
     let NameInput= $("#contact-name-input").val();
     let NameField = $("#contact-name-input");
@@ -46,8 +47,7 @@ function validateInputs() {
 
     let textareaInput = $("#contact-message-input").val();
     let textareaField = $("#contact-message-input");
-
-
+    
     // empty(NameInput, NameField);
     // empty(userEmailInput, emailField);
     // empty(phoneInput, phoneField);
@@ -55,26 +55,21 @@ function validateInputs() {
     // regexPassOrFail(nameRegex, NameInput, NameField);
     // regexPassOrFail(emailRegex, userEmailInput, emailField);
     // regexPassOrFail(phoneRegex, phoneInput, phoneField);
-    
+    // empty(textareaInput, textareaField);
+    regexPassOrFail(nameRegex, NameInput, NameField);
+    regexPassOrFail(emailRegex, userEmailInput, emailField);
+    regexPassOrFail(phoneRegex, phoneInput, phoneField);
+    empty(textareaInput, textareaField);
     
     if (
-        empty(NameInput, NameField) &&
-        empty(userEmailInput, emailField) &&
-        empty(phoneInput, phoneField) &&
-        empty(textareaInput, textareaField)       
-    ) {
-        if (regexPassOrFail(nameRegex, NameInput, NameField) && 
-        regexPassOrFail(emailRegex, userEmailInput, emailField) && 
-        regexPassOrFail(phoneRegex, phoneInput, phoneField))
-        { 
-            return true;
-        }
-
-        else {
-            return false;
-        }
-        
-    } 
+        regexPassOrFail(nameRegex, NameInput, NameField) &&
+        regexPassOrFail(emailRegex, userEmailInput, emailField) &&
+        regexPassOrFail(phoneRegex, phoneInput, phoneField) &&
+        empty(textareaInput, textareaField)
+    )
+    { 
+        return true;
+    }
     else {
         return false;
     }

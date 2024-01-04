@@ -6,7 +6,7 @@
             $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
             $pdoStatement = $conn->query('
             SELECT * FROM News 
-            ORDER BY id DESC 
+            ORDER BY date DESC 
             LIMIT 3
             ');
             return $pdoStatement->fetchAll();
@@ -18,8 +18,8 @@
     }
 
 
-    function assembleArticle($article_image, $title, $read_time, $info, $author_image, $author_name, $counter) {
-        $date = date('jS F Y');
+    function assembleArticle($article_image, $title, $read_time, $info, $author_image, $author_name, $date, $counter) {
+        $formatted_date = date('jS F Y', strtotime($date));
         return '
         <div id="article-' . $counter . '">
             <a class="article-top-link" href="#" onclick="homepageLink()"></a>
@@ -43,7 +43,7 @@
                     <div class="details">
                         <strong class="text-primary">Posted by ' . $author_name . '</strong>
                         <br>
-                        ' . $date . '
+                        ' . $formatted_date . '
                     </div>
                 </div>
             </div>

@@ -22,7 +22,7 @@
                 $counter = 0;
                 foreach (getLatestNews() as $article) {
                     $counter++;
-                    echo assembleArticle($article["article-image"], $article["title"], $article["read-time"], $article["info"], $article["author-image"], $article["author-name"], $counter);
+                    echo assembleArticle($article["article-image"], $article["title"], $article["read-time"], $article["info"], $article["author-image"], $article["author-name"], $article["date"], $counter);
                 }
                 ?>
             </div>
