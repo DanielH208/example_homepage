@@ -1552,6 +1552,10 @@ picture > img {
   font-weight: 1000;
 }
 
+#enquiry-form {
+  height: 100% !important;
+}
+
 .brand-background {
   background-color: #333645;
   color: white;
@@ -2516,9 +2520,6 @@ footer {
     padding-left: 15px;
     padding-right: 15px;
   }
-  #enquiry-form {
-    height: 711px;
-  }
 }
 @media (min-width: 992px) {
   .container {
@@ -2613,9 +2614,6 @@ footer {
   .offices-item {
     width: 45%;
   }
-  #enquiry-form {
-    height: 499px;
-  }
 }
 @media (min-width: 1260px) {
   .container {
@@ -2695,7 +2693,6 @@ footer {
     right: 33.33333333%;
     width: 66.66666667%;
     float: left;
-    height: 531px;
   }
   #enquiry-contact-details {
     left: 66.66666667%;

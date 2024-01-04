@@ -6,7 +6,7 @@
         $_SESSION['success'] = false;
     }
     if (!isset($_SESSION['errMsg'])) {
-        $_SESSION['errMsg'] = '';
+        $_SESSION['errMsg'] = [];
     }
 
     function debug_to_console($data, $context = 'Debug in Console') {
@@ -32,12 +32,14 @@
  
     function validate_input($data, $input, $regex=true) {
         if (empty($data) == true) {
-            $_SESSION['errMsg'] = $input . " has no value";
+            //$_SESSION['errMsg'] .= $input . " has no value. ";
+            array_push($_SESSION['errMsg'], $input . " has no value. ");
             $_SESSION[$input ."-valid"] = false;
             return false;
         }
         else if ($regex == false) {
-            $_SESSION['errMsg'] = $data . " is not a valid " . $input;
+            //$_SESSION['errMsg'] .= $data . " is not a valid " . $input;
+            array_push($_SESSION['errMsg'], $data . " is not a valid " . $input);
             $_SESSION[$input ."-valid"] = false;
             return false;
         }
@@ -98,7 +100,7 @@
             unset($_SESSION['message']);
                 
             $_SESSION['success'] = true;
-            $_SESSION['errMsg'] = '';
+            $_SESSION['errMsg'] = [];
         } 
         header('Location: contact.php#enquiry-submit-button');
         exit();
@@ -223,7 +225,7 @@
                                     <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours&nbsp; voicemail. A technician will contact you on the number provided within 45 minutes of your call.&nbsp;</p>
                                 </div>
                             </div>  
-                            <form id="enquiry-form" action="contact.php" method="post">
+                            <form id="enquiry-form" action="contact.php" method="post" onsubmit="return validateInputs()">
                                     <div id="enquiry-input-row">
                                         <label for="name" class="required">Your Name <span class="required-input">*</span></label><br>
                                         <input id="contact-name-input" name="name" class="form-name-input <?php if(isset($_SESSION['name-valid']) && !$_SESSION['name-valid'])  echo 'invalid'?>" value="<?= $_SESSION['name'] ?? '' ?>"><br>
@@ -235,8 +237,9 @@
                                         <input id="phone-contact-input" name="telephone-num" value="<?= $_SESSION['telephone'] ?? '' ?>" class="form-name-input <?php if(isset($_SESSION['telephone number-valid']) && !$_SESSION['telephone number-valid'])  echo 'invalid'?>"><br>
                                     </div>  
                                     <label for="message" class="required">Message <span class="required-input">*</span></label><br>
-                                    <textarea id="contact-message-input" name="message" placeholder="Hi, I am interested in discussing a Our Offices solution, 
-                                        could you please give me a call or send an email?" class="form-name-input <?php if(isset($_SESSION['message-valid']) && !$_SESSION['message-valid'])  echo 'invalid'?>" value="<?= $_SESSION['message'] ?? '' ?>"></textarea><br>
+                                    <textarea id="contact-message-input" name="message"
+                                    placeholder="Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?" 
+                                    class="form-name-input <?php if(isset($_SESSION['message-valid']) && !$_SESSION['message-valid'])  echo 'invalid'?>"><?= $_SESSION['message'] ?? '' ?></textarea><br>
                                     <div class="form-group" >
                                         <label class="media">
                                             <span class="media-left checkbox-left">
@@ -255,7 +258,11 @@
                                     </div>
                                     <span class="enquiry-error<?php if ($_SESSION['errMsg']) echo '-active' ?>">
                                     <?php
-                                        echo $_SESSION['errMsg'];
+                                        foreach ($_SESSION['errMsg'] as $error) {
+                                            echo"<br>";
+                                            echo($error);
+                                        }
+                                        //echo $_SESSION['errMsg'];
                                         unset($_SESSION['errMsg']);
                                         ?>
                                     </span>
