@@ -326,8 +326,29 @@
     .offices-item { 
         width: 45%;
     }
-    #enquiry-form {
-        //height: 499px;
+    // #contact-name-input, #company-name-input, #email-contact-input, #phone-contact-input {
+    //     width: 45%!important;
+    // }
+    .contact-input-containers { 
+        width: 47.6%!important;
+        margin-bottom: 10px;
+    }
+
+    #contact-message-input {
+        margin-bottom: 10px;
+    }
+
+    #enquiry-input-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #contact-name-container, #email-contact-container {
+        margin-right: 30px;
+    }
+    #contact-message-input {
+        width: 98%;
+    
     }
 }
 

@@ -48,14 +48,7 @@ function validateInputs() {
     let textareaInput = $("#contact-message-input").val();
     let textareaField = $("#contact-message-input");
     
-    // empty(NameInput, NameField);
-    // empty(userEmailInput, emailField);
-    // empty(phoneInput, phoneField);
-    // empty(textareaInput, textareaField);
-    // regexPassOrFail(nameRegex, NameInput, NameField);
-    // regexPassOrFail(emailRegex, userEmailInput, emailField);
-    // regexPassOrFail(phoneRegex, phoneInput, phoneField);
-    // empty(textareaInput, textareaField);
+
     regexPassOrFail(nameRegex, NameInput, NameField);
     regexPassOrFail(emailRegex, userEmailInput, emailField);
     regexPassOrFail(phoneRegex, phoneInput, phoneField);
@@ -108,18 +101,23 @@ function enableScroll() {
     window.onscroll = function() {};
 }
 
-let hidden = true;
+// let hidden = true;
 
-function showHidden() {
-    if (hidden == true) {
-        $(".hidden-contact-details").addClass("show-details");
-        hidden = false;
-    } 
-    else {
-        $(".hidden-contact-details").removeClass("show-details");
-        hidden = true;
-    }
-}
+// function showHidden() {
+//     if (hidden == true) {
+//         $(".hidden-contact-details").addClass("show-details");
+//         hidden = false;
+//     } 
+//     else {
+//         $(".hidden-contact-details").removeClass("show-details");
+//         hidden = true;
+//     }
+// }
+
+function showHidden(e) {
+    event.preventDefault();
+    $(".hidden-contact-details").toggleClass("show-details")
+  }
 
 function homepageLink() {
     $(".header").addClass("nav-down").removeClass("nav-up");

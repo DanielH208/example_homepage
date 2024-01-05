@@ -141,7 +141,7 @@
                 </div>
                 <div id="enquiry-container">
                     <div class="container">       
-                        <h1>Our Offices</h1> 
+                        <h1 id="contact-heading">Our Offices</h1> 
                         <div id="offices-container" class="container">
                             <ul id="offices-row">
                                 <div class="offices-item">
@@ -155,7 +155,7 @@
                                             London,<br>
                                             EN9 1JH
                                         </p>
-                                        <a><h1>02045 397354</h1></a>
+                                        <a><h1 class="contact-phone-link">02045 397354</h1></a>
                                         <a class="office-button">VIEW MORE</a>
                                     </div>
                                     <img class="contact-location-images" src="assets/images/contact-page/london-loc.jpeg"/>
@@ -171,7 +171,7 @@
                                             Cambridge,<br>
                                             CB4 0WS
                                         </p>
-                                        <a><h1>01223 37 57 72</h1></a>
+                                        <a><h1 class="contact-phone-link">01223 37 57 72</h1></a>
                                         <a class="office-button">VIEW MORE</a>
                                     </div>
                                     <img class="contact-location-images" src="assets/images/contact-page/cambridge-loc.jpeg"/>
@@ -187,7 +187,7 @@
                                             Wymondham, Norfolk,<br>
                                             NR18 0WZ
                                         </p>
-                                        <a><h1>01603 70 40 20</h1></a>
+                                        <a><h1 class="contact-phone-link">01603 70 40 20</h1></a>
                                         <a class="office-button">VIEW MORE</a>
                                     </div>
                                     <img class="contact-location-images" src="assets/images/contact-page/wymondham-loc.jpeg"/>
@@ -203,7 +203,7 @@
                                             Great Yarmouth, Norfolk<br>
                                             NR31 7RA
                                         </p>
-                                        <a><h1>01493 60 32 04</h1></a>
+                                        <a><h1 class="contact-phone-link">01493 60 32 04</h1></a>
                                         <a class="office-button">VIEW MORE</a>
                                     </div>
                                     <img class="contact-location-images" src="assets/images/contact-page/yarmouth-loc.jpeg"/>
@@ -213,30 +213,38 @@
                         <div id="enquiry-container">
                             <div id="enquiry-contact-details">
                                 <p><strong>Email us on:</strong><br></p>
-                                <p><a href="mailto:sales@netmatters.com">sales@netmatters.com</a></p>
+                                <p><a id="enquiry-email-link" href="mailto:sales@netmatters.com">sales@netmatters.com</a></p>
                                 <p><strong>Business hours:</strong></p>
                                 <p><strong>Monday - Friday 07:00 - 18:00&nbsp;</strong></p>
-                                <a id="show-hiddent-contact-details" onclick="showHidden()">Out of hours IT support</a>
-                                <div class="hidden-contact-details ">
-                                    <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
-                                    <p><strong>Monday - Friday 18:00 - 22:00</strong></p><br>
-                                    <p><strong>Saturday 08:00 - 16:00</strong></p><br>
-                                    <p><strong>Sunday 10:00 - 18:00</strong></p><br>
-                                    <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours&nbsp; voicemail. A technician will contact you on the number provided within 45 minutes of your call.&nbsp;</p>
+                                <a id="show-hiddent-contact-details" onclick="showHidden()"><strong>Out of hours IT support <i id="hidden-contact-icon" class="fa-solid fa-angle-down"></i></strong></a>
+                                <div class="hidden-contact-details">
+                                    <p class="enquiry-contact-details">Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+                                    <p><strong>Monday - Friday 18:00 - 22:00</strong></p>
+                                    <p><strong>Saturday 08:00 - 16:00</strong></p>
+                                    <p><strong>Sunday 10:00 - 18:00</strong></p>
+                                    <p class="enquiry-contact-details">To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours&nbsp; voicemail. A technician will contact you on the number provided within 45 minutes of your call.&nbsp;</p>
                                 </div>
                             </div>  
                             <form id="enquiry-form" action="contact.php" method="post" onsubmit="return validateInputs()">
                                     <div id="enquiry-input-row">
-                                        <label for="name" class="required">Your Name <span class="required-input">*</span></label><br>
-                                        <input id="contact-name-input" name="name" class="form-name-input <?php if(isset($_SESSION['name-valid']) && !$_SESSION['name-valid'])  echo 'invalid'?>" value="<?= $_SESSION['name'] ?? '' ?>"><br>
-                                        <label for="comp-name" class="required">Company Name </label><br>
-                                        <input name="comp-name" value="<?= $_SESSION['company'] ?? '' ?>"><br>
-                                        <label for="email" class="required">Your Email <span class="required-input">*</span></label><br>
-                                        <input id="email-contact-input" name="email" class="form-name-input <?php if(isset($_SESSION['email-valid']) && !$_SESSION['email-valid'])  echo 'invalid'?>" value="<?= $_SESSION['email'] ?? '' ?>"><br>
-                                        <label for="telephone-num" class="required">Your Telephone Number <span class="required-input">*</span></label><br>
-                                        <input id="phone-contact-input" name="telephone-num" value="<?= $_SESSION['telephone'] ?? '' ?>" class="form-name-input <?php if(isset($_SESSION['telephone number-valid']) && !$_SESSION['telephone number-valid'])  echo 'invalid'?>"><br>
+                                        <div id="contact-name-container" class="contact-input-containers">
+                                            <label for="name" class="required">Your Name <span class="required-input">*</span></label><br>
+                                            <input id="contact-name-input" name="name" class="form-name-input <?php if(isset($_SESSION['name-valid']) && !$_SESSION['name-valid'])  echo 'invalid'?>" value="<?= $_SESSION['name'] ?? '' ?>"><br>
+                                        </div>
+                                        <div id="company-name-container" class="contact-input-containers">
+                                            <label for="comp-name" class="required">Company Name </label><br>
+                                            <input id="company-name-input" name="comp-name" value="<?= $_SESSION['company'] ?? '' ?>"><br>
+                                        </div>
+                                        <div id="email-contact-container" class="contact-input-containers">
+                                            <label for="email" class="required">Your Email <span class="required-input">*</span></label><br>
+                                            <input id="email-contact-input" name="email" class="form-name-input <?php if(isset($_SESSION['email-valid']) && !$_SESSION['email-valid'])  echo 'invalid'?>" value="<?= $_SESSION['email'] ?? '' ?>"><br>
+                                        </div>
+                                        <div id="phone-contact-container" class="contact-input-containers">
+                                            <label for="telephone-num" class="required">Your Telephone Number <span class="required-input">*</span></label><br>
+                                            <input id="phone-contact-input" name="telephone-num" value="<?= $_SESSION['telephone'] ?? '' ?>" class="form-name-input <?php if(isset($_SESSION['telephone number-valid']) && !$_SESSION['telephone number-valid'])  echo 'invalid'?>"><br>
+                                        </div>
                                     </div>  
-                                    <label for="message" class="required">Message <span class="required-input">*</span></label><br>
+                                    <label id="contact-message-label" for="message" class="required">Message <span class="required-input">*</span></label><br>
                                     <textarea id="contact-message-input" name="message"
                                     placeholder="Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?" 
                                     class="form-name-input <?php if(isset($_SESSION['message-valid']) && !$_SESSION['message-valid'])  echo 'invalid'?>"><?= $_SESSION['message'] ?? '' ?></textarea><br>
