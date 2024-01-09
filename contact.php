@@ -136,12 +136,16 @@
             <div id="main-content" class="main-content-contact">
                 <div id="top-link-path">
                     <div class="container">
-                        <p><a id="return-home-link" href="/"><strong>Home</strong></a> / Our Offices</p>
+                        <p><a id="return-home-link" href="https://netmatters.daniel-higgins.netmatters-scs.co.uk/"><strong>Home</strong></a> / Our Offices</p>
+                    </div>
+                    <div id="contact-heading-container">
+                        <div class="container">
+                            <h1 id="contact-heading">Our Offices</h1> 
+                        </div>
                     </div>
                 </div>
                 <div id="enquiry-container">
                     <div class="container">       
-                        <h1 id="contact-heading">Our Offices</h1> 
                         <div id="offices-container" class="container">
                             <ul id="offices-row">
                                 <div class="offices-item">
@@ -281,7 +285,10 @@
                                     }
                                     ?>
                                     <br>
-                                    <button type="submit" id="enquiry-submit-button">Send Enquiry</button>
+                                    <div id="contact-submit-row">
+                                        <button type="submit" id="enquiry-submit-button">Send Enquiry</button> 
+                                        <p><span class="required-input">*</span> Fields Required</p>
+                                    </div>
                             </form>
                         </div>
                     </div>
