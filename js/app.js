@@ -6,6 +6,67 @@ let width = window.innerWidth;
 let open = false;
 let reOpenedNav = false;
 
+function regexPassOrFail(regex, input, field) {
+    if (regex.test(input)) {
+        field.css("border-color", "transparent");
+        return true
+    } else {
+        field.css("border-color", "red");
+        return false
+    }
+}
+
+function empty(input, field) {
+    if (input == "") {
+        field.css("border-color", "red");
+        //field.css("border-width", "20px");
+        return false
+    } else {
+        field.css("border-color", "transparent");
+        return true
+    }
+}
+
+function validateInputs() {
+    //event.preventDefault(); 
+
+    const emailRegex = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+    const nameRegex = new RegExp(/^[A-Za-z]+$/);
+    const phoneRegex = new RegExp(/^\+?\(?([0-9]{2,4})[)\s\d.-]+([0-9]{3,4})([\s.-]+([0-9]{3,4}))?$/);
+
+    let NameInput= $("#contact-name-input").val();
+    let NameField = $("#contact-name-input");
+    
+    let userEmailInput = $("#email-contact-input").val();
+    let emailField = $("#email-contact-input");
+    
+    
+    let phoneInput= $("#phone-contact-input").val();
+    let phoneField= $("#phone-contact-input");
+    
+
+    let textareaInput = $("#contact-message-input").val();
+    let textareaField = $("#contact-message-input");
+    
+
+    regexPassOrFail(nameRegex, NameInput, NameField);
+    regexPassOrFail(emailRegex, userEmailInput, emailField);
+    regexPassOrFail(phoneRegex, phoneInput, phoneField);
+    empty(textareaInput, textareaField);
+    
+    if (
+        regexPassOrFail(nameRegex, NameInput, NameField) &&
+        regexPassOrFail(emailRegex, userEmailInput, emailField) &&
+        regexPassOrFail(phoneRegex, phoneInput, phoneField) &&
+        empty(textareaInput, textareaField)
+    )
+    { 
+        return true;
+    }
+    else {
+        return false;
+    }
+}
 
 
 function checked () { 
@@ -40,18 +101,23 @@ function enableScroll() {
     window.onscroll = function() {};
 }
 
-let hidden = true;
+// let hidden = true;
 
-function showHidden() {
-    if (hidden == true) {
-        $(".hidden-contact-details").addClass("show-details");
-        hidden = false;
-    } 
-    else {
-        $(".hidden-contact-details").removeClass("show-details");
-        hidden = true;
-    }
-}
+// function showHidden() {
+//     if (hidden == true) {
+//         $(".hidden-contact-details").addClass("show-details");
+//         hidden = false;
+//     } 
+//     else {
+//         $(".hidden-contact-details").removeClass("show-details");
+//         hidden = true;
+//     }
+// }
+
+function showHidden(e) {
+    event.preventDefault();
+    $(".hidden-contact-details").toggleClass("show-details")
+  }
 
 function homepageLink() {
     $(".header").addClass("nav-down").removeClass("nav-up");
