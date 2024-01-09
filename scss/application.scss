@@ -105,6 +105,23 @@
     .image-cover-container img{
         filter: brightness(50%);
     }
+    #contact-message-input {
+        margin-bottom: 14px;
+    }
+    #enquiry-contact-details {
+        margin-bottom: 20px;
+    }
+    #contact-heading-container {
+        margin-bottom: 50px;
+        padding: 20px 0px;
+        background-color: #333645;
+    }
+    #contact-heading {
+        color: white;
+    }
+    #top-link-path {
+        border-top: 1px solid #333645;
+    }
 
 }
 
@@ -221,7 +238,7 @@
         padding-right: 15px;
     }
     #enquiry-form {
-        height: 711px;
+        //height: 711px;
     }
     
 }
@@ -326,9 +343,34 @@
     .offices-item { 
         width: 45%;
     }
-    #enquiry-form {
-        height: 499px;
+    // #contact-name-input, #company-name-input, #email-contact-input, #phone-contact-input {
+    //     width: 45%!important;
+    // }
+    .contact-input-containers { 
+        width: 47.6%!important;
+        margin-bottom: 10px;
     }
+
+    #contact-message-input {
+        margin-bottom: 10px;
+    }
+
+    #enquiry-input-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #contact-name-container, #email-contact-container {
+        margin-right: 30px;
+    }
+    #contact-message-input {
+        width: 95.5%;
+    
+    }
+    #contact-heading-container {
+        margin: 50px 0px;
+    }
+
 }
 
 @media (min-width: 1260px) {
@@ -411,7 +453,7 @@
         right: 33.33333333%;
         width: 66.66666667%;
         float: left;
-        height: 531px;
+        //height: 531px;
     }
     #enquiry-contact-details {
         left: 66.66666667%;

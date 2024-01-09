@@ -13,7 +13,7 @@
           $pdoStatement->bindValue(':name', $name, PDO::PARAM_STR);
           $pdoStatement->bindValue(':email', $email, PDO::PARAM_STR);
           $pdoStatement->bindValue(':company', $company , PDO::PARAM_STR);
-          $pdoStatement->bindValue(':phone', $phone, PDO::PARAM_INT);
+          $pdoStatement->bindValue(':phone', $phone, PDO::PARAM_STR_CHAR);
           $pdoStatement->bindValue(':message', $message, PDO::PARAM_STR);
           $pdoStatement->bindValue(':marketing', $marketing, PDO::PARAM_STR);
 
